@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
+@theme {
+  --color-charcoalDark: #1f1f1f;
+  --color-charcoalLight: #4a4a4a;
+  --color-gold: #b89c5a;
+  --color-offwhite: #f7f6f3;
+  --font-inter: var(--font-inter);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  color: var(--color-charcoalDark);
+  background-color: var(--color-offwhite);
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h1 {
+  font-size: 1.5rem; /*text-2-xl*/
+  line-height: calc(2 / 1.5);
+  margin-bottom: 1rem;
+  letter-spacing: 0.025em; /*tracking wide*/
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.875rem; /*text-3-xl*/
+    line-height: calc(2.25 / 1.875);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h2 {
+  font-size: 1.25rem; /*text-xl*/
+  line-height: calc(1.75 / 1.25);
+  margin-bottom: 0.5rem;
+}
+
+p,
+h1,
+h2,
+h3,
+span {
+  cursor: default;
+}
+
+/* Navbar */
+.burgermenu {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin: 1rem;
+  margin-right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.burgermenu > span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: var(--color-charcoalDark)
+}
+
+span:nth-child(1) {
+  top: 0px;
+}
+
+span:nth-child(2) {
+  top: 10px;
+}
+
+span:nth-child(3) {
+  top: 20px;
+}
+
+.top.open {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.middle.open {
+  opacity: 0;
+  left: -60px;
+}
+
+.bottom.open {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #71b572;
+  text-underline-offset: 0.4rem; /* Adjust offset if needed */
+  text-decoration-thickness: 0.2em; /* Adjust thickness as desired */
+  transition: text-decoration-color 0.3s ease-in-out; /* Smooth transition effect */
 }
