@@ -38,7 +38,7 @@ export default function Navbar({ className }: Props) {
   return (
     <div className={`${className}`}>
       {/* Mobile */}
-      <div className="lg:hidden p-4 md:p-12">
+      <div className="lg:hidden p-4 md:p-12 fixed bg-offwhite w-full">
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image

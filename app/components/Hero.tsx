@@ -3,7 +3,7 @@ import ContactBtn from "./buttons/ContactBtn";
 
 export default function Hero() {
   return (
-    <div className="h-[70vh] lg:h-[80vh] flex flex-col items-center justify-center">
+    <div className="h-screen lg:h-[80vh] flex flex-col items-center justify-center">
       <div className="mx-4 md:mx-16 lg:mx-32 text-center max-w-4xl">
         <h1 className="!font-semibold lg:!text-6xl/18 !font-geistmono">
           Make your hotel <br /> impossible to ignore.
