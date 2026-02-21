@@ -1,14 +1,8 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 import ContactBtn from "./components/buttons/ContactBtn";
-import InfoBtn from "./components/buttons/InfoBtn";
-import {
-  Calculator,
-  Globe,
-  NotebookPen,
-  SearchCheck,
-  Sliders,
-} from "lucide-react";
+import { Calculator, Globe, SearchCheck, Sliders } from "lucide-react";
+import AccordeonClean from "./components/layouts/AccordeonClean";
 
 export default function Home() {
   return (
@@ -78,6 +72,34 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="px-4 py-24 md:p-16 lg:p-32">
+        <div className="flex flex-col gap-4">
+          <span className="mx-auto">Impact</span>
+          <h1 className="text-center lg:!text-5xl">
+            Why premium hotels choose hotelminds
+          </h1>
+          <p className="max-w-4xl font-light lg:text-center mx-auto">
+            Hotels lose revenue not because of bad service — but because guests
+            never find them. Visibility, ranking, conversion, content quality,
+            metasearch consistency, rate competitiveness — all these decide
+            whether a hotel gets booked or ignored. Most independent hotels
+            can’t manage this complexity internally. That’s where we step in.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
+             <div className="flex-1">
+            <Image
+              src="/images/consulting_stock.jpg"
+              alt="Business environment in the office"
+              width={800}
+              height={600}
+              className="rounded-xl mx-auto"
+            />
+          </div>
+          <AccordeonClean className="flex-1" />
+       
         </div>
       </section>
       {/* <div className="h-40 bg-gold"></div>
