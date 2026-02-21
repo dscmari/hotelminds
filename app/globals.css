@@ -6,6 +6,8 @@
   --color-gold: #b89c5a;
   --color-offwhite: #f7f6f3;
   --font-inter: var(--font-inter);
+  --font-geistsans: var(--font-geist-sans);
+  --font-geistmono: var(--font-geist-mono);
 }
 
 :root {
@@ -26,6 +28,13 @@ body {
   min-height: 100vh;
   max-width: 2048px;
   margin: 0 auto 0 auto;
+}
+
+h1,
+h2,
+button {
+  font-family: var(--font-geist-sans), "sans-serif";
+  font-weight: 700;
 }
 
 h1 {
@@ -90,7 +99,7 @@ span {
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background-color: var(--color-charcoalDark)
+  background-color: var(--color-charcoalDark);
 }
 
 span:nth-child(1) {

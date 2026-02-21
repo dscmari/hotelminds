@@ -37,8 +37,8 @@ export default function Navbar({ className }: Props) {
 
   return (
     <div className={`${className}`}>
-        {/* Mobile */}
-      <div className="lg:hidden dark:bg-black p-4 md:p-12">
+      {/* Mobile */}
+      <div className="lg:hidden p-4 md:p-12">
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
@@ -72,7 +72,7 @@ export default function Navbar({ className }: Props) {
               </div>
               <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
                 <Link className="text-right text-charcoalDark" href="#">
-                 Services
+                  Services
                 </Link>
               </div>
               <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
@@ -91,7 +91,7 @@ export default function Navbar({ className }: Props) {
       </div>
       {/* Desktop */}
       <div className="hidden lg:block">
-        <DesktopNavbar/>
+        <DesktopNavbar />
       </div>
     </div>
   );
