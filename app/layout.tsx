@@ -31,8 +31,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <body >
+    <html
+      lang="en"
+      className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+    >
+      <body>
         <Navbar />
         <main>{children}</main>
       </body>

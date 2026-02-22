@@ -10,7 +10,7 @@ type Props = {
 export default function SEOCheckBtn({ className, content }: Props) {
   return (
     <Link href={"#"}
-      className={`bg-charcoalDark px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap ${className}`}
+      className={`bg-cta px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap ${className}`}
     >
       {content ? content : "Book a Call"}
     </Link>

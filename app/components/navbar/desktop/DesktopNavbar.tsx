@@ -35,7 +35,7 @@ export default function DesktopNavbar({ className }: Props) {
         <div className="flex items-center justify-between w-full">
           <ShiftingDropDown />
           <div className="flex items-center">
-            <ContactBtn className="hover:bg-gold text-charcoalDark"/>
+            <ContactBtn className="hover:bg-gold"/>
           </div>
         </div>
       </div>

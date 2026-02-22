@@ -1,8 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
 
@@ -11,13 +10,7 @@ type Props = {
 };
 
 export default function Navbar({ className }: Props) {
-  const pathname = usePathname();
-  const [isHome, setIsHome] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-
-  useEffect(() => {
-    pathname === "/" ? setIsHome(true) : setIsHome(false);
-  }, [pathname]);
 
   const toggleMenu = () => {
     toggleX();
@@ -90,7 +83,7 @@ export default function Navbar({ className }: Props) {
         ) : null}
       </div>
       {/* Desktop */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block fixed bg-offwhite w-full">
         <DesktopNavbar />
       </div>
     </div>

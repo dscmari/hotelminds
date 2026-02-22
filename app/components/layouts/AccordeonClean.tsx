@@ -1,12 +1,15 @@
-import { Target, Wrench, Cpu, LineChart } from "lucide-react";
+"use client"
 import React from "react";
+import { homeEN, homeDE } from "../../data/home";
+import { Cpu, LineChart, Target, Wrench } from "lucide-react";
 
 type Props = {
   className?: string;
 };
 
 export default function AccordeonClean({ className }: Props) {
-  const home = [
+
+    const home = [
     {
       id: "impact-1",
       icon: <Target />,
@@ -32,6 +35,7 @@ export default function AccordeonClean({ className }: Props) {
       text: "Success shouldn’t be a matter of luck. We utilize a repeatable, structured process specifically designed to generate measurable uplift. By stripping away the guesswork and relying on a battle-tested framework, we transform market volatility into a reliable roadmap for your hotel’s revenue growth.",
     },
   ];
+
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
       {home.map((e, index) => (

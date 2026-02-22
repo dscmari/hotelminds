@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
-import ContactBtn from "./components/buttons/ContactBtn";
 import { Calculator, Globe, SearchCheck, Sliders } from "lucide-react";
+import ContactBtn from "./components/buttons/ContactBtn";
+import Hero from "./components/Hero";
 import AccordeonClean from "./components/layouts/AccordeonClean";
+
 
 export default function Home() {
   return (
@@ -89,7 +90,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
-             <div className="flex-1">
+          <div className="flex-1">
             <Image
               src="/images/consulting_stock.jpg"
               alt="Business environment in the office"
@@ -99,13 +100,12 @@ export default function Home() {
             />
           </div>
           <AccordeonClean className="flex-1" />
-       
         </div>
       </section>
-      {/* <div className="h-40 bg-gold"></div>
+      <div className="h-40 bg-gold"></div>
       <div className="h-40 bg-offwhite"></div>
       <div className="h-40 bg-charcoalDark"></div>
-      <div className="h-40 bg-charcoalLight"></div> */}
+      <div className="h-40 bg-charcoalLight"></div>
     </div>
   );
 }
