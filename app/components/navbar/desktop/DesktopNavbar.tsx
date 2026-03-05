@@ -1,14 +1,16 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import { ShiftingDropDown } from "./ShiftingDropDown";
-import { Mail, Phone } from "lucide-react";
 import ContactBtn from "../../buttons/ContactBtn";
+import LanguageSwitcher from "@/app/components/navbar/LanguageSwitcher";
 
 type Props = {
   className?: string;
+  locale?: string;
+  data: any;
 };
 
-export default function DesktopNavbar({ className }: Props) {
+export default function DesktopNavbar({ className, locale, data }: Props) {
   return (
     <div className={` p-4 px-8 ${className}`}>
       {/* <div className="flex gap-8 justify-end items-center text-sm">
@@ -22,7 +24,7 @@ export default function DesktopNavbar({ className }: Props) {
         </div>
       </div> */}
       <div className="flex items-center gap-8 p-4">
-        <Link href={"/"}>
+        {/* <Link href={"/"}>
           {" "}
           <Image
             src="/images/logo_bgOffwhite.png"
@@ -31,11 +33,19 @@ export default function DesktopNavbar({ className }: Props) {
             width={150}
             height={75}
           />
-        </Link>
+        </Link> */}
         <div className="flex items-center justify-between w-full">
-          <ShiftingDropDown />
-          <div className="flex items-center">
-            <ContactBtn className="hover:bg-gold"/>
+          {/* <ShiftingDropDown /> */}
+          <div className="flex items-center gap-8">
+            {data.navbar.bullets.map((bullet: string, index: number) => (
+              <Link href={`#${bullet}`} className="font-semibold" key={index}>
+                {bullet}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-8">
+            <LanguageSwitcher locale={locale} />
+            <ContactBtn className="hover:bg-gold" />
           </div>
         </div>
       </div>

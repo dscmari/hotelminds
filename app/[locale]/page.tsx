@@ -1,25 +1,36 @@
 import Image from "next/image";
 import { Calculator, Globe, SearchCheck, Sliders } from "lucide-react";
-import ContactBtn from "./components/buttons/ContactBtn";
-import Hero from "./components/Hero";
-import AccordeonClean from "./components/layouts/AccordeonClean";
+import ContactBtn from "../components/buttons/ContactBtn";
+import Hero from "../components/Hero";
+import AccordeonClean from "../components/layouts/AccordeonClean";
+import { dictionary } from "../utils/dictionary";
+import { PageParams } from "../types/i18n";
 
-
-export default function Home() {
+export default async function Home({ params }: PageParams) {
+  const { locale } = await params;
+  const data = await dictionary(locale);
   return (
     <div>
-      <Hero />
-      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32">
+      <Hero params={params} />
+      <section id="Strategy" className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
-            <span className="mx-auto lg:mx-0">6-month transformation</span>
+            <span className="mx-auto text-center lg:text-start lg:mx-0">
+              Most Hotels Don’t Have a Marketing Problem. They Have a
+              Distribution Problem.
+            </span>
             <h1 className="mx-auto lg:mx-0 lg:!text-5xl lg:!font-medium">
-              What we do
+              STRATEGY
             </h1>
-            <p className="text-center lg:text-start mb-8 lg:text-base/8">
-              We improve how your hotel is found and chosen — across OTAs,
-              metasearch and direct — creating a consistent and predictable
-              stream of revenue.
+            <p className="text-center lg:text-start lg:text-base/8">
+              Many hotels invest in marketing, adjust pricing frequently, and
+              participate in multiple distribution platforms — yet still
+              struggle with visibility, margin pressure, and inconsistent
+              performance.
+            </p>
+            <p className="text-center lg:text-start lg:text-base/8 mb-8">
+              Ranking fluctuates. Competitors outperform you. Commission costs
+              increase. Direct bookings remain unpredictable. 
             </p>
             <ContactBtn className="mx-auto lg:mx-0 bg-gold" />
           </div>
@@ -27,49 +38,40 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 lg:flex-col">
                 <SearchCheck className="shrink-0" />
-                <h2>Visibility Optimization</h2>
+                <h2>Increase Visibility Where It Matters</h2>
               </div>
 
               <p className="text-base/8">
-                Drive visibility and conversions through a targeted OTA ranking
-                strategy, refined content and photo architecture, comprehensive
-                amenity mapping, and the strategic optimization of review impact
-                and search positioning.
+                We optimize your positioning across OTA platforms and
+                distribution channels so your hotel appears higher, captures
+                more demand, and competes strategically — not reactively. Stronger search visibility and better demand capture.
               </p>
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 lg:flex-col">
                 <Calculator className="shrink-0" />
-                <h2>Conversion Architecture</h2>
+                <h2>Convert More Demand Into Revenue</h2>
               </div>
               <p className="text-base/8">
-                Maximize revenue potential by integrating sophisticated pricing
-                logic and room sequencing with USP clarity, emotional content
-                resonance, and the combined efficiency of optimized rate plans
-                and cancellation strategies.
+             We optimize rate architecture, content positioning, and pricing logic across all channels to ensure visitors convert into profitable bookings. Higher conversion, improved ADR, and stronger margin protection.
               </p>
             </div>{" "}
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 lg:flex-col">
                 <Globe className="shrink-0" />
-                <h2>Performance Stability</h2>
+                <h2>Build Structured Pricing & Channel Control</h2>
               </div>
               <p className="text-base/8">
-                Ensure long-term performance stability by synchronizing
-                metasearch data, maintaining strict parity control, and ensuring
-                consistency across all channels while continuously improving the
-                direct-booking pathway.
+         We design and align your pricing strategy across OTAs, direct website, and additional channels — reducing leakage, inconsistencies, and unnecessary discounting. Clear pricing logic and controlled distribution instead of dependency.
               </p>
             </div>{" "}
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 lg:flex-col">
                 <Sliders className="shrink-0" />
-                <h2>Strategic Steering</h2>
+                <h2>Strategic Revenue Growth Steering</h2>
               </div>
               <p className="text-base/8">
-                Drive sustainable growth through monthly performance reviews and
-                tactical adjustments, leveraging competitor intelligence and
-                continuous seasonal playbook optimization.
+ We monitor performance continuously and adjust positioning, pricing, and channel strategy in response to market shifts. Long-term stability and structured revenue growth.
               </p>
             </div>
           </div>

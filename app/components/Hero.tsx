@@ -1,37 +1,33 @@
-
+import { PageParams } from "../types/i18n";
+import { dictionary } from "../utils/dictionary";
 import ContactBtn from "./buttons/ContactBtn";
+import Image from "next/image";
 
-export default function Hero() {
+export default async function Hero({ params }: PageParams) {
+  const { locale } = await params;
+  const data = await dictionary(locale);
   return (
     <div className="h-screen flex flex-col items-center justify-center">
-      <div className="mx-4 md:mx-16 lg:mx-32 text-center max-w-4xl">
-        <h1 className="!font-semibold lg:!text-6xl/18 !font-geistmono">
-          Make your hotel <br /> impossible to ignore.
+      <div className="mt-16 lg:mt-0 mx-4 md:mx-16 lg:mx-32 text-center max-w-4xl">
+        <Image
+          src="/images/logo_bgOffwhite.png"
+          alt="Logo hotelminds"
+          style={{ width: "500px" }}
+          width={500}
+          height={250}
+          className="mx-auto"
+        />
+        <h1 className="!font-semibold !font-geistmono whitespace-pre-line mt-12">
+          {data.hero.subheader}
         </h1>
-        <h2>
-          Hotelminds combines strategic thinking with refined digital execution
-          to help independent and premium hotels stand out in a crowded market
-        </h2>
+
         <div className="mt-12 flex gap-8 items-center justify-center">
           <ContactBtn
-            content="Let's connect"
+            content="Let's Connect"
             className="hover:bg-gold text-charcoalDark"
           />
         </div>
       </div>
-      {/* <div className="hidden lg:grid grid-cols-6 gap-8 px-4 md:px-16 mt-48 text-center">
-        <div className="col-span-2">
-          <p>
-            We improve how your hotel is found and chosen. Six months. Four pillars. One goal: predictable revenue.
-          </p>
-        </div>
-        <div>
-          <p>Visible Optimation</p>
-        </div>
-        <div>Conversion Architecture</div>
-        <div><p>Performance Stability</p></div>
-        <div><p>Strategic Steering</p></div>
-      </div> */}
     </div>
   );
 }

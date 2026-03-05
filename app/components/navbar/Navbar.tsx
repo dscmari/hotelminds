@@ -4,12 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 type Props = {
   className?: string;
+  locale: string;
+  data: any;
 };
 
-export default function Navbar({ className }: Props) {
+export default function Navbar({ className, locale, data }: Props) {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -39,10 +42,11 @@ export default function Navbar({ className }: Props) {
               alt="Logo"
               width={200}
               height={100}
-              className="w-40"
+              className="w-30"
             />
           </Link>
-          <div className="flex items-center">
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher locale={locale} />
             <div className="burgermenu" id="burger-menu" onClick={toggleMenu}>
               <span className="top"></span>
               <span className="middle"></span>
@@ -84,7 +88,7 @@ export default function Navbar({ className }: Props) {
       </div>
       {/* Desktop */}
       <div className="hidden lg:block fixed bg-offwhite w-full">
-        <DesktopNavbar />
+        <DesktopNavbar locale={locale} data={data} />
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+{
+  "de": {
+    "test": "deutsch",
+    "navbar": {
+      "bullets": ["Strategie", "Prozess", "Ergebnisse", "Über uns", "Kontakt"]
+    },
+    "hero": {
+      "headline": "Make your hotel \n impossible to ignore.",
+      "subheader": "Hotelminds verbindet strategisches Denken mit erstklassiger digitaler Umsetzung, um Premium-Hotels dabei zu helfen, sich abzuheben"
+    }
+  },
+  "en": {
+    "test": "englisch",
+    "navbar": {
+      "bullets": ["Strategy", "Process", "Results", "About", "Contact"]
+    },
+    "hero": {
+      "headline": "Make your hotel \n impossible to ignore.",
+      "subheader": "Hotelminds combines strategic thinking with refined digital execution to help premium hotels stand out"
+    }
+  }
+}
