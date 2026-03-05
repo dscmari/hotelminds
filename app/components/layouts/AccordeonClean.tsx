@@ -1,6 +1,4 @@
 "use client"
-import React from "react";
-import { homeEN, homeDE } from "../../data/home";
 import { Cpu, LineChart, Target, Wrench } from "lucide-react";
 
 type Props = {

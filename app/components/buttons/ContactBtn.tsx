@@ -12,7 +12,7 @@ export default function SEOCheckBtn({ className, content }: Props) {
     <Link href={"#"}
       className={`bg-cta px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap ${className}`}
     >
-      {content ? content : "Book a Call"}
+      {content ? content : "Let's Talk"}
     </Link>
   );
 }
