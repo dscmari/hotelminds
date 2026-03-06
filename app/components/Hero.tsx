@@ -7,7 +7,7 @@ export default async function Hero({ params }: PageParams) {
   const { locale } = await params;
   const data = await dictionary(locale);
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div id="home" className="h-screen flex flex-col items-center justify-center">
       <div className="mt-16 lg:mt-0 mx-4 md:mx-16 lg:mx-32 text-center max-w-4xl">
         <Image
           src="/images/logo_bgOffwhite.png"
@@ -17,7 +17,7 @@ export default async function Hero({ params }: PageParams) {
           height={250}
           className="mx-auto"
         />
-        <h1 className="!font-semibold !font-geistmono whitespace-pre-line mt-12">
+        <h1 className="!font-semibold whitespace-pre-line mt-12">
           {data.hero.subheader}
         </h1>
 

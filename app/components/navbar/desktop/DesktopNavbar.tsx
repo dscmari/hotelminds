@@ -4,13 +4,15 @@ import Link from "next/link";
 import ContactBtn from "../../buttons/ContactBtn";
 import LanguageSwitcher from "@/app/components/navbar/LanguageSwitcher";
 
+
 type Props = {
   className?: string;
   locale?: string;
+  pathname: string;
   data: any;
 };
 
-export default function DesktopNavbar({ className, locale, data }: Props) {
+export default function DesktopNavbar({ className, locale, pathname, data }: Props) {
   return (
     <div className={` p-4 px-8 ${className}`}>
       {/* <div className="flex gap-8 justify-end items-center text-sm">
@@ -38,7 +40,7 @@ export default function DesktopNavbar({ className, locale, data }: Props) {
           {/* <ShiftingDropDown /> */}
           <div className="flex items-center gap-8">
             {data.navbar.bullets.map((bullet: string, index: number) => (
-              <Link href={`#${bullet}`} className="font-semibold" key={index}>
+              <Link href={`${pathname}#${bullet.toLowerCase()}`} className="font-semibold" key={index}>
                 {bullet}
               </Link>
             ))}

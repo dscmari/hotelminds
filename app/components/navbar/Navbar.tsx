@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { usePathname } from "next/navigation";
 
 type Props = {
   className?: string;
@@ -14,6 +15,7 @@ type Props = {
 
 export default function Navbar({ className, locale, data }: Props) {
   const [showMenu, setShowMenu] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     toggleX();
@@ -62,33 +64,24 @@ export default function Navbar({ className, locale, data }: Props) {
             onClick={toggleMenu}
           >
             <div className="flex flex-col items-end  gap-4 py-12 font-semibold ">
-              <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
-                <Link className="text-right text-charcoalDark" href="#">
-                  Home
-                </Link>
-              </div>
-              <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
-                <Link className="text-right text-charcoalDark" href="#">
-                  Services
-                </Link>
-              </div>
-              <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
-                <Link className="text-right text-charcoalDark" href="#">
-                  About
-                </Link>
-              </div>
-              <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
-                <Link className="text-right text-charcoalDark" href="#">
-                  Book a Call
-                </Link>
-              </div>
+              {data.navbar.bullets.map((bullet: string, index: number) => (
+                <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
+                  <Link
+                    href={`${pathname}#${bullet.toLowerCase()}`}
+                    className="text-right text-charcoalDark"
+                    key={index}
+                  >
+                    {bullet}
+                  </Link>
+                </div>
+              ))}
             </div>
           </motion.div>
         ) : null}
       </div>
       {/* Desktop */}
       <div className="hidden lg:block fixed bg-offwhite w-full">
-        <DesktopNavbar locale={locale} data={data} />
+        <DesktopNavbar pathname={pathname} locale={locale} data={data} />
       </div>
     </div>
   );

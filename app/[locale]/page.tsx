@@ -12,7 +12,10 @@ export default async function Home({ params }: PageParams) {
   return (
     <div>
       <Hero params={params} />
-      <section id="Strategy" className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
+      <section
+        id={`${locale === 'de' ? "strategie" : "strategy" }`} 
+        className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
+      >
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
             <span className="mx-auto text-center lg:text-start lg:mx-0">
@@ -30,7 +33,7 @@ export default async function Home({ params }: PageParams) {
             </p>
             <p className="text-center lg:text-start lg:text-base/8 mb-8">
               Ranking fluctuates. Competitors outperform you. Commission costs
-              increase. Direct bookings remain unpredictable. 
+              increase. Direct bookings remain unpredictable.
             </p>
             <ContactBtn className="mx-auto lg:mx-0 bg-gold" />
           </div>
@@ -44,7 +47,8 @@ export default async function Home({ params }: PageParams) {
               <p className="text-base/8">
                 We optimize your positioning across OTA platforms and
                 distribution channels so your hotel appears higher, captures
-                more demand, and competes strategically — not reactively. Stronger search visibility and better demand capture.
+                more demand, and competes strategically — not reactively.
+                Stronger search visibility and better demand capture.
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -53,7 +57,10 @@ export default async function Home({ params }: PageParams) {
                 <h2>Convert More Demand Into Revenue</h2>
               </div>
               <p className="text-base/8">
-             We optimize rate architecture, content positioning, and pricing logic across all channels to ensure visitors convert into profitable bookings. Higher conversion, improved ADR, and stronger margin protection.
+                We optimize rate architecture, content positioning, and pricing
+                logic across all channels to ensure visitors convert into
+                profitable bookings. Higher conversion, improved ADR, and
+                stronger margin protection.
               </p>
             </div>{" "}
             <div className="flex flex-col gap-4">
@@ -62,7 +69,10 @@ export default async function Home({ params }: PageParams) {
                 <h2>Build Structured Pricing & Channel Control</h2>
               </div>
               <p className="text-base/8">
-         We design and align your pricing strategy across OTAs, direct website, and additional channels — reducing leakage, inconsistencies, and unnecessary discounting. Clear pricing logic and controlled distribution instead of dependency.
+                We design and align your pricing strategy across OTAs, direct
+                website, and additional channels — reducing leakage,
+                inconsistencies, and unnecessary discounting. Clear pricing
+                logic and controlled distribution instead of dependency.
               </p>
             </div>{" "}
             <div className="flex flex-col gap-4">
@@ -71,7 +81,9 @@ export default async function Home({ params }: PageParams) {
                 <h2>Strategic Revenue Growth Steering</h2>
               </div>
               <p className="text-base/8">
- We monitor performance continuously and adjust positioning, pricing, and channel strategy in response to market shifts. Long-term stability and structured revenue growth.
+                We monitor performance continuously and adjust positioning,
+                pricing, and channel strategy in response to market shifts.
+                Long-term stability and structured revenue growth.
               </p>
             </div>
           </div>
