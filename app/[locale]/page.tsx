@@ -5,6 +5,8 @@ import Hero from "../components/Hero";
 import AccordeonClean from "../components/layouts/AccordeonClean";
 import { dictionary } from "../utils/dictionary";
 import { PageParams } from "../types/i18n";
+import Process from "../components/Process";
+import InfoBtn from "../components/buttons/InfoBtn";
 
 export default async function Home({ params }: PageParams) {
   const { locale } = await params;
@@ -12,18 +14,18 @@ export default async function Home({ params }: PageParams) {
   return (
     <div>
       <Hero params={params} />
+
       <section
-        id={`${locale === 'de' ? "strategie" : "strategy" }`} 
+        id={`${locale === "de" ? "strategie" : "strategy"}`}
         className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
       >
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
             <span className="mx-auto text-center lg:text-start lg:mx-0">
-              Most Hotels Don’t Have a Marketing Problem. They Have a
-              Distribution Problem.
+              How We Work
             </span>
-            <h1 className="mx-auto lg:mx-0 lg:!text-5xl lg:!font-medium">
-              STRATEGY
+            <h1 className="mx-auto lg:mx-0 lg:!text-5xl !tracking-tight">
+              TODO Strategy
             </h1>
             <p className="text-center lg:text-start lg:text-base/8">
               Many hotels invest in marketing, adjust pricing frequently, and
@@ -89,10 +91,28 @@ export default async function Home({ params }: PageParams) {
           </div>
         </div>
       </section>
+      <section className="pt-24 px-4 lg:pt-32 lg:px-32">
+        <div className="flex flex-col gap-4">
+          <span className="mx-auto">How We Work</span>
+          <h1 className="text-center lg:!text-5xl !tracking-tight">PROCESS</h1>
+          <p className="max-w-4xl font-light lg:text-center mx-auto">
+            Our structured approach begins with a comprehensive Audit &
+            Diagnosis to uncover hidden revenue potential. We then translate
+            these insights into a Strategic Roadmap with a clear 6–9 month
+            action plan, ensuring long-term growth through disciplined
+            Implementation & Monitoring.
+          </p>
+        </div>
+        <Process
+          className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
+          circles={data.process}
+        />
+      </section>
+   
       <section className="px-4 py-24 md:p-16 lg:p-32">
         <div className="flex flex-col gap-4">
           <span className="mx-auto">Impact</span>
-          <h1 className="text-center lg:!text-5xl">
+          <h1 className="text-center lg:!text-5xl !tracking-tight">
             Why premium hotels choose hotelminds
           </h1>
           <p className="max-w-4xl font-light lg:text-center mx-auto">

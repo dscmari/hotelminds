@@ -65,11 +65,10 @@ export default function Navbar({ className, locale, data }: Props) {
           >
             <div className="flex flex-col items-end  gap-4 py-12 font-semibold ">
               {data.navbar.bullets.map((bullet: string, index: number) => (
-                <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end">
+                <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end" key={index}>
                   <Link
                     href={`${pathname}#${bullet.toLowerCase()}`}
                     className="text-right text-charcoalDark"
-                    key={index}
                   >
                     {bullet}
                   </Link>

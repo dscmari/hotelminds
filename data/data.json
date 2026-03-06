@@ -1,12 +1,33 @@
 {
   "de": {
     "navbar": {
-      "bullets": ["Home", "Strategie", "Prozess", "Ergebnisse", "Über uns", "Kontakt"]
+      "bullets": [
+        "Home",
+        "Strategie",
+        "Prozess",
+        "Ergebnisse",
+        "Über uns",
+        "Kontakt"
+      ]
     },
     "hero": {
       "headline": "Make your hotel \n impossible to ignore.",
       "subheader": "HotelMinds verbindet Strategie und Umsetzung für den entscheidenden Vorsprung für Premium-Hotels"
-    }
+    },
+    "process": [
+      {
+        "title": "Audit & Diagnosis",
+        "text": "Wir analysieren die Suchbegriffe, die genau Deine Kunden bei Google & ChatGPT eingeben"
+      },
+      {
+        "title": "Optimierung",
+        "text": "Wir optimieren Deine Website und setzen bei Bedarf Deine Google Werbeanzeigen auf"
+      },
+      {
+        "title": "Sichtbarkeit",
+        "text": "Wir verbessern deine Website und Deine Anzeigen laufend, damit du an deinen Wettbewerbern vorbeiziehst"
+      }
+    ]
   },
   "en": {
     "navbar": {
@@ -15,6 +36,20 @@
     "hero": {
       "headline": "Make your hotel \n impossible to ignore.",
       "subheader": "HotelMinds combines strategic thinking with refined digital execution to help premium hotels stand out"
-    }
+    },
+    "process": [
+      {
+        "title": "Audit & Diagnosis",
+        "text": "Comprehensive analysis of pricing, distribution mix, ranking performance and competitive positioning"
+      },
+      {
+        "title": "Strategic Roadmap",
+        "text": "Clear 6–9 month action plan covering ranking improvement, pricing architecture, channel alignment, and direct strategy"
+      },
+      {
+        "title": "Implementation & Monitoring",
+        "text": "Execution, tracking, and continuous refinement to ensure measurable performance improvement"
+      }
+    ]
   }
 }
