@@ -17,15 +17,59 @@
     "process": [
       {
         "title": "Audit & Diagnosis",
-        "text": "Wir analysieren die Suchbegriffe, die genau Deine Kunden bei Google & ChatGPT eingeben"
+        "text": "Comprehensive analysis of pricing, distribution mix, ranking performance and competitive positioning"
       },
       {
-        "title": "Optimierung",
-        "text": "Wir optimieren Deine Website und setzen bei Bedarf Deine Google Werbeanzeigen auf"
+        "title": "Strategic Roadmap",
+        "text": "Clear 6–9 month action plan covering ranking improvement, pricing architecture, channel alignment, and direct strategy"
       },
       {
-        "title": "Sichtbarkeit",
-        "text": "Wir verbessern deine Website und Deine Anzeigen laufend, damit du an deinen Wettbewerbern vorbeiziehst"
+        "title": "Implementation & Monitoring",
+        "text": "Execution, tracking, and continuous refinement to ensure measurable performance improvement"
+      }
+    ],
+    "results": [
+      {
+        "icon": "Problems",
+        "title": "Before Working With Us",
+        "subTitle": "Reactive Market Position",
+        "introText": "Many hotels currently operate in a reactive state, struggling with inconsistent market visibility and a heavy reliance on price-driven competition.",
+        "bulletsHeader": "Challenges",
+        "bullets": [
+          "Dependent on short-term tactical adjustments",
+          "Competing primarily on price",
+          "Limited clarity on competitor positioning",
+          "Inconsistent visibility",
+          "No structured distribution roadmap"
+        ]
+      },
+      {
+        "icon": "Solutions",
+        "title": "The Key Strategic Changes",
+        "subTitle": "Performance Optimization",
+        "introText": "By addressing these gaps, we implement a series of strategic optimizations designed to regain control over your distribution and maximize your visibility",
+        "bulletsHeader": "Solutions",
+        "bullets": [
+          "Improve search visibility across major platforms",
+          "Optimize rate structure across channels",
+          "Clear competitor benchmarking strategy",
+          "Increase direct booking share",
+          "Enhance revenue control and reduce margin pressure"
+        ]
+      },
+      {
+        "icon": "Results",
+        "title": "After Working With Us",
+        "subTitle": "Long-term Growth & Independence",
+        "introText": "Our partnership results in a resilient digital presence where increased visibility translates directly into higher margins and a clearer competitive edge.",
+        "bulletsHeader": "Results",
+        "bullets": [
+          "Higher and more stable visibility",
+          "Clear competitive positioning",
+          "Structured pricing strategy",
+          "Stronger direct booking share",
+          "Controlled distribution instead of dependency"
+        ]
       }
     ]
   },
@@ -49,6 +93,50 @@
       {
         "title": "Implementation & Monitoring",
         "text": "Execution, tracking, and continuous refinement to ensure measurable performance improvement"
+      }
+    ],
+    "results": [
+      {
+        "icon": "Problems",
+        "title": "Before Working With Us",
+        "subTitle": "Reactive Market Position",
+        "introText": "Many hotels currently operate in a reactive state, struggling with inconsistent market visibility and a heavy reliance on price-driven competition.",
+        "bulletsHeader": "Challenges",
+        "bullets": [
+          "Dependent on short-term tactical adjustments",
+          "Competing primarily on price",
+          "Limited clarity on competitor positioning",
+          "Inconsistent visibility",
+          "No structured distribution roadmap"
+        ]
+      },
+      {
+        "icon": "Solutions",
+        "title": "The Key Strategic Changes",
+        "subTitle": "Performance Optimization",
+        "introText": "By addressing these gaps, we implement a series of strategic optimizations designed to regain control over your distribution and maximize your visibility",
+        "bulletsHeader": "Solutions",
+        "bullets": [
+          "Improve search visibility across major platforms",
+          "Optimize rate structure across channels",
+          "Clear competitor benchmarking strategy",
+          "Increase direct booking share",
+          "Enhance revenue control and reduce margin pressure"
+        ]
+      },
+      {
+        "icon": "Results",
+        "title": "After Working With Us",
+        "subTitle": "Long-term Growth & Independence",
+        "introText": "Our partnership results in a resilient digital presence where increased visibility translates directly into higher margins and a clearer competitive edge.",
+        "bulletsHeader": "Results",
+        "bullets": [
+          "Higher and more stable visibility",
+          "Clear competitive positioning",
+          "Structured pricing strategy",
+          "Stronger direct booking share",
+          "Controlled distribution instead of dependency"
+        ]
       }
     ]
   }

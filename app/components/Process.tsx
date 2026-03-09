@@ -17,7 +17,7 @@ export default function Process({ className, circles }: Props) {
             <div
               className={`${index === 2 ? "bg-none" : "bg-offwhite"} lg:relative z-50 h-80 w-80 rounded-full flex flex-col gap-8 items-center border-4 border-gold/40 dark`}
             >
-              <div className="relative mt-12 bg-gold w-12 h-12 rounded-full flex items-center justify-center text-charcoalDark font-semibold ">
+              <div className="text-offwhite relative mt-12 bg-gold w-12 h-12 rounded-full flex items-center justify-center text-charcoalDark font-semibold ">
                 {index === 1 && (
                   <div className="absolute z-[-1] left-1/2 -translate-x-1/2 w-[1px] h-[720px] lg:h-2 lg:w-[720px] border-l-3 lg:border-t-3 border-dashed border-gold"></div>
                 )}

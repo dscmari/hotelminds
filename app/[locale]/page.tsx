@@ -1,12 +1,18 @@
 import Image from "next/image";
-import { Calculator, Globe, SearchCheck, Sliders } from "lucide-react";
+import {
+  Calculator,
+  CircleCheckBig,
+  Globe,
+  SearchCheck,
+  Sliders,
+} from "lucide-react";
 import ContactBtn from "../components/buttons/ContactBtn";
 import Hero from "../components/Hero";
 import AccordeonClean from "../components/layouts/AccordeonClean";
 import { dictionary } from "../utils/dictionary";
 import { PageParams } from "../types/i18n";
 import Process from "../components/Process";
-import InfoBtn from "../components/buttons/InfoBtn";
+import ThreeBoxLayout from "../components/layouts/ThreeBoxLayout";
 
 export default async function Home({ params }: PageParams) {
   const { locale } = await params;
@@ -22,10 +28,11 @@ export default async function Home({ params }: PageParams) {
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
             <span className="mx-auto text-center lg:text-start lg:mx-0">
-              How We Work
+              Most Hotels Don’t Have a Marketing Problem. They Have a
+              Distribution Problem.
             </span>
             <h1 className="mx-auto lg:mx-0 lg:!text-5xl !tracking-tight">
-              TODO Strategy
+              Strategy
             </h1>
             <p className="text-center lg:text-start lg:text-base/8">
               Many hotels invest in marketing, adjust pricing frequently, and
@@ -91,7 +98,10 @@ export default async function Home({ params }: PageParams) {
           </div>
         </div>
       </section>
-      <section className="pt-24 px-4 lg:pt-32 lg:px-32">
+      <section
+        id={`${locale === "de" ? "prozess" : "process"}`}
+        className="pt-24 pb-24 px-4 lg:pt-32 lg:px-32"
+      >
         <div className="flex flex-col gap-4">
           <span className="mx-auto">How We Work</span>
           <h1 className="text-center lg:!text-5xl !tracking-tight">PROCESS</h1>
@@ -108,19 +118,42 @@ export default async function Home({ params }: PageParams) {
           circles={data.process}
         />
       </section>
-   
-      <section className="px-4 py-24 md:p-16 lg:p-32">
+      <section
+        id={`${locale === "de" ? "ergebnisse" : "results"}`}
+        className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
+      >
         <div className="flex flex-col gap-4">
-          <span className="mx-auto">Impact</span>
-          <h1 className="text-center lg:!text-5xl !tracking-tight">
-            Why premium hotels choose hotelminds
-          </h1>
+          <span className="mx-auto">From Reactive to Strategic</span>
+          <h1 className="text-center lg:!text-5xl !tracking-tight">Results</h1>
           <p className="max-w-4xl font-light lg:text-center mx-auto">
-            Hotels lose revenue not because of bad service — but because guests
-            never find them. Visibility, ranking, conversion, content quality,
-            metasearch consistency, rate competitiveness — all these decide
-            whether a hotel gets booked or ignored. Most independent hotels
-            can’t manage this complexity internally. That’s where we step in.
+            Our strategic approach transforms your hotel's market presence from
+            reactive price-matching to proactive revenue leadership. We bridge
+            the gap between inconsistent visibility and a high-performing,
+            direct-booking-driven distribution model.
+          </p>
+        </div>
+        <ThreeBoxLayout
+          className="bg-charcoalDark text-charcoalDark pt-24 lg:pt-32"
+          boxes={data.results}
+        />
+      </section>
+      <section
+        id={`${locale === "de" ? "ueber-uns" : "about"}`}
+        className="px-4 py-24 md:p-16 lg:p-32"
+      >
+        <div className="flex flex-col gap-4">
+          <span className="mx-auto">Why HotelMinds</span>
+          <h1 className="text-center lg:!text-5xl !tracking-tight">ABOUT</h1>
+          <p className="max-w-4xl font-light lg:text-center mx-auto">
+            We bridge the gap between platform-level expertise and independent
+            strategic thinking. Unlike traditional distribution platforms, we
+            operate with complete neutrality, representing your interests across
+            the entire landscape rather than favoring a single ecosystem. Our
+            methodology is inherently structured and data-driven, moving beyond
+            generic consulting to focus exclusively on measurable revenue
+            performance. By building sophisticated distribution systems, we
+            provide our partners with the clarity, control, and foundational
+            stability required for sustainable growth
           </p>
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
@@ -134,6 +167,65 @@ export default async function Home({ params }: PageParams) {
             />
           </div>
           <AccordeonClean className="flex-1" />
+        </div>
+      </section>
+      <section className="px-4 py-24 md:p-16 lg:p-32">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
+          <div className="flex-1 flex flex-col gap-4">
+            <span className="">
+              Partnership
+            </span>
+            <h1 className="lg:!text-5xl !tracking-tight">
+              We partner with hotels that value strategic growth and operational
+              clarity
+            </h1>
+          </div>
+          <p className="flex-1 lg:text-base/8 max-w-xl">
+            We partner with forward-thinking hotels and groups that prioritize
+            long-term independence over short-term fixes. For our clients,
+            strategic growth and a clear competitive edge are not just goals,
+            but the foundation of their operational mindset.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-24 lg:mt-24">
+          <div className="flex-1">
+            <Image
+              src="/images/hotelcouch_stock.jpg"
+              alt="Business environment in the office"
+              width={800}
+              height={600}
+              className="rounded-xl mx-auto"
+            />
+          </div>
+          <div className="flex-1">
+            <h2 className="lg:max-w-sm">
+              Independent properties, premium hotels, resorts, and hotel groups
+              who want to
+            </h2>
+            <div className="flex flex-col gap-4 mt-8">
+              <div className="flex items-start gap-4">
+                <CircleCheckBig className="text-gold shrink-0" />
+                <span>Increase revenue without increasing dependency</span>
+              </div>
+              <div className="flex items-start gap-4">
+                <CircleCheckBig className="text-gold shrink-0" />
+                <span>Strengthen direct performance</span>
+              </div>
+              <div className="flex items-start gap-4">
+                <CircleCheckBig className="text-gold shrink-0" />
+                <span>Gain control over pricing and distribution</span>
+              </div>
+              <div className="flex items-start gap-4">
+                <CircleCheckBig className="text-gold shrink-0" />
+                <span>
+                  Compete strategically instead of reacting to market pressure
+                </span>
+              </div>
+              <p className="font-semibold mt-4">
+                Mindset matters more than size or geography.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <div className="h-40 bg-gold"></div>

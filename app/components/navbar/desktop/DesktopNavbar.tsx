@@ -14,7 +14,7 @@ type Props = {
 
 export default function DesktopNavbar({ className, locale, pathname, data }: Props) {
   return (
-    <div className={` p-4 px-8 ${className}`}>
+    <div className={`z-50 p-4 px-8 ${className}`}>
       {/* <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
           <Phone/>
@@ -40,7 +40,7 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
           {/* <ShiftingDropDown /> */}
           <div className="flex items-center gap-8">
             {data.navbar.bullets.map((bullet: string, index: number) => (
-              <Link href={`${pathname}#${bullet.toLowerCase()}`} className="font-semibold" key={index}>
+              <Link href={`${bullet === "Über uns" ? `${pathname}#ueber-uns` : `${pathname}#${bullet.toLowerCase()}`} `} className="font-semibold" key={index}>
                 {bullet}
               </Link>
             ))}

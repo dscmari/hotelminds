@@ -79,7 +79,7 @@ export default function Navbar({ className, locale, data }: Props) {
         ) : null}
       </div>
       {/* Desktop */}
-      <div className="hidden lg:block fixed bg-offwhite w-full">
+      <div className="hidden lg:block z-100 fixed bg-offwhite w-full">
         <DesktopNavbar pathname={pathname} locale={locale} data={data} />
       </div>
     </div>
