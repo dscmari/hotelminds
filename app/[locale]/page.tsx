@@ -2,6 +2,7 @@ import Image from "next/image";
 import {
   Calculator,
   CircleCheckBig,
+  Diamond,
   Globe,
   SearchCheck,
   Sliders,
@@ -14,6 +15,7 @@ import { PageParams } from "../types/i18n";
 import Process from "../components/Process";
 import ThreeBoxLayout from "../components/layouts/ThreeBoxLayout";
 import { BsListNested } from "react-icons/bs";
+import ThreePhaseLayout from "../components/layouts/ThreePhaseLayout";
 
 export default async function Home({ params }: PageParams) {
   const { locale } = await params;
@@ -21,21 +23,20 @@ export default async function Home({ params }: PageParams) {
   return (
     <div>
       <Hero params={params} />
-
       <section
         id={`${locale === "de" ? "strategie" : "strategy"}`}
         className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
       >
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
-            <span className="mx-auto text-center lg:text-start lg:mx-0 font-thin">
+            <span className="font-thin">
               Most Hotels Don’t Have a Marketing Problem. They Have a
               Distribution Problem.
             </span>
-            <h1 className="mx-auto lg:mx-0 lg:!text-5xl !tracking-tight">
+            <h1 className="lg:!text-5xl !tracking-tight">
               Strategy
             </h1>
-            <p className="text-center lg:text-start lg:text-base/8">
+            <p className="lg:text-base/8">
               Many hotels invest in marketing, adjust pricing frequently, and
               participate in multiple distribution platforms — yet still
               struggle with visibility, margin pressure, and inconsistent
@@ -96,8 +97,8 @@ export default async function Home({ params }: PageParams) {
         className="pt-24 pb-24 px-4 lg:pt-32 lg:px-32"
       >
         <div className="flex flex-col gap-4">
-          <span className="mx-auto">How We Work</span>
-          <h1 className="text-center lg:!text-5xl !tracking-tight">PROCESS</h1>
+          <span className="lg:mx-auto">How We Work</span>
+          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">PROCESS</h1>
           <p className="max-w-4xl font-light lg:text-center mx-auto">
             Our structured approach begins with a comprehensive Audit &
             Diagnosis to uncover hidden revenue potential. We then translate
@@ -112,6 +113,12 @@ export default async function Home({ params }: PageParams) {
         />
       </section>
       <section
+        id={`${locale === "de" ? "ergebnisse" : "results"}`}
+        className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
+      >
+       <ThreePhaseLayout data={data} />
+      </section>
+      {/* <section
         id={`${locale === "de" ? "ergebnisse" : "results"}`}
         className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
       >
@@ -130,14 +137,14 @@ export default async function Home({ params }: PageParams) {
           className="bg-charcoalDark text-charcoalDark pt-24 lg:pt-32"
           boxes={data.results}
         />
-      </section>
+      </section> */}
       <section
         id={`${locale === "de" ? "ueber-uns" : "about"}`}
         className="px-4 pt-24 md:p-16 lg:p-32"
       >
         <div className="flex flex-col gap-4">
-          <span className="mx-auto">Why HotelMinds</span>
-          <h1 className="text-center lg:!text-5xl !tracking-tight">ABOUT</h1>
+          <span className="lg:mx-auto">Why HotelMinds</span>
+          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">ABOUT</h1>
           <p className="max-w-4xl font-light lg:text-center mx-auto">
             We bridge the gap between platform-level expertise and independent
             strategic thinking. Unlike traditional distribution platforms, we
@@ -220,23 +227,27 @@ export default async function Home({ params }: PageParams) {
           </div>
         </div>
       </section>
-      <section         id={`${locale === "de" ? "kontakt" : "contact"}`} className="px-4 pt-24 lg:pt-32 lg:px-32 bg-charcoalDark text-offwhite">
+      <section
+        id={`${locale === "de" ? "kontakt" : "contact"}`}
+        className="px-4 pt-24 lg:pt-32 lg:px-32 bg-charcoalDark text-offwhite"
+      >
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-24 lg:border-b-1 border-slate-300 lg:pb-32">
           <div className="flex-1 flex flex-col gap-4">
-            <span className="font-thin mx-auto lg:mx-0">Let's Connect</span>
-            <h1 className="lg:!text-5xl !tracking-tight text-center lg:text-start">CONTACT US</h1>
-            <p className="max-w-sm text-center lg:text-start">
+            <span className="font-thin">Let's Connect</span>
+            <h1 className="lg:!text-5xl !tracking-tight">
+              CONTACT US
+            </h1>
+            <p className="max-w-sm">
               Distribution is not a side task. It is a strategic growth lever.
               If revenue growth is a priority, let’s build a structure that
               works in your favor.
             </p>
-                   <a
-                className="self-center lg:self-start mt-8 bg-gold px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap"
-                href="mailto:beispiel@email.de"
-              >
-                Let's Talk
-              </a>
-      
+            <a
+              className="self-center lg:self-start mt-8 bg-gold px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap"
+              href="mailto:beispiel@email.de"
+            >
+              Let's Talk
+            </a>
           </div>
           <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-16 pt-8">
             <div className="flex flex-col gap-2 lg:gap-4">
@@ -248,11 +259,11 @@ export default async function Home({ params }: PageParams) {
                 contact@hotelminds.io
               </a>
             </div>
-                <div className="flex flex-col gap-2 lg:gap-4">
+            <div className="flex flex-col gap-2 lg:gap-4">
               <span className="font-thin">Phone</span>
               <span className="font-semibold">+49 1234 4678910</span>
             </div>
-               <div className="hidden lg:flex flex-col gap-2 lg:gap-4">
+            <div className="hidden lg:flex flex-col gap-2 lg:gap-4">
               <span className="font-thin">Colaborations</span>
               <span className="font-semibold">colab@hotelminds.io</span>
             </div>
@@ -266,7 +277,6 @@ export default async function Home({ params }: PageParams) {
           </div>
         </div>
       </section>
-      
     </div>
   );
 }

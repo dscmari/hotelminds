@@ -25,7 +25,6 @@ export default function Footer({ className, data }: Props) {
             {data.navbar.bullets.map((bullet: string, index: number) => (
               <Link
                 href={`${bullet === "Über uns" ? `${pathname}#ueber-uns` : `${pathname}#${bullet.toLowerCase()}`} `}
-                className="font-semibold"
                 key={index}
               >
                 {bullet}
