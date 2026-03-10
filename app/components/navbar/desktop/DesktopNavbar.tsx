@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import ContactBtn from "../../buttons/ContactBtn";
 import LanguageSwitcher from "@/app/components/navbar/LanguageSwitcher";
@@ -7,7 +7,7 @@ import LanguageSwitcher from "@/app/components/navbar/LanguageSwitcher";
 
 type Props = {
   className?: string;
-  locale?: string;
+  locale: string;
   pathname: string;
   data: any;
 };
@@ -26,7 +26,7 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
         </div>
       </div> */}
       <div className="flex items-center gap-8 p-4">
-        {/* <Link href={"/"}>
+      <Link href={"/"}>
           {" "}
           <Image
             src="/images/logo_bgOffwhite.png"
@@ -35,7 +35,7 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
             width={150}
             height={75}
           />
-        </Link> */}
+        </Link> 
         <div className="flex items-center justify-between w-full">
           {/* <ShiftingDropDown /> */}
           <div className="flex items-center gap-8">

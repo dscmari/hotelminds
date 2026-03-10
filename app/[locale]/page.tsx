@@ -13,6 +13,7 @@ import { dictionary } from "../utils/dictionary";
 import { PageParams } from "../types/i18n";
 import Process from "../components/Process";
 import ThreeBoxLayout from "../components/layouts/ThreeBoxLayout";
+import { BsListNested } from "react-icons/bs";
 
 export default async function Home({ params }: PageParams) {
   const { locale } = await params;
@@ -27,7 +28,7 @@ export default async function Home({ params }: PageParams) {
       >
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
-            <span className="mx-auto text-center lg:text-start lg:mx-0">
+            <span className="mx-auto text-center lg:text-start lg:mx-0 font-thin">
               Most Hotels Don’t Have a Marketing Problem. They Have a
               Distribution Problem.
             </span>
@@ -40,11 +41,7 @@ export default async function Home({ params }: PageParams) {
               struggle with visibility, margin pressure, and inconsistent
               performance.
             </p>
-            <p className="text-center lg:text-start lg:text-base/8 mb-8">
-              Ranking fluctuates. Competitors outperform you. Commission costs
-              increase. Direct bookings remain unpredictable.
-            </p>
-            <ContactBtn className="mx-auto lg:mx-0 bg-gold" />
+            <ContactBtn className="mx-auto lg:mx-0 bg-gold mt-8" />
           </div>
           <div className="flex-2 grid grid-cols-1 xl:grid-cols-2 gap-16 mt-4">
             <div className="flex flex-col gap-4">
@@ -57,7 +54,6 @@ export default async function Home({ params }: PageParams) {
                 We optimize your positioning across OTA platforms and
                 distribution channels so your hotel appears higher, captures
                 more demand, and competes strategically — not reactively.
-                Stronger search visibility and better demand capture.
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -68,8 +64,7 @@ export default async function Home({ params }: PageParams) {
               <p className="text-base/8">
                 We optimize rate architecture, content positioning, and pricing
                 logic across all channels to ensure visitors convert into
-                profitable bookings. Higher conversion, improved ADR, and
-                stronger margin protection.
+                profitable bookings.
               </p>
             </div>{" "}
             <div className="flex flex-col gap-4">
@@ -80,8 +75,7 @@ export default async function Home({ params }: PageParams) {
               <p className="text-base/8">
                 We design and align your pricing strategy across OTAs, direct
                 website, and additional channels — reducing leakage,
-                inconsistencies, and unnecessary discounting. Clear pricing
-                logic and controlled distribution instead of dependency.
+                inconsistencies, and unnecessary discounting.
               </p>
             </div>{" "}
             <div className="flex flex-col gap-4">
@@ -92,7 +86,6 @@ export default async function Home({ params }: PageParams) {
               <p className="text-base/8">
                 We monitor performance continuously and adjust positioning,
                 pricing, and channel strategy in response to market shifts.
-                Long-term stability and structured revenue growth.
               </p>
             </div>
           </div>
@@ -133,13 +126,14 @@ export default async function Home({ params }: PageParams) {
           </p>
         </div>
         <ThreeBoxLayout
+        locale={locale}
           className="bg-charcoalDark text-charcoalDark pt-24 lg:pt-32"
           boxes={data.results}
         />
       </section>
       <section
         id={`${locale === "de" ? "ueber-uns" : "about"}`}
-        className="px-4 py-24 md:p-16 lg:p-32"
+        className="px-4 pt-24 md:p-16 lg:p-32"
       >
         <div className="flex flex-col gap-4">
           <span className="mx-auto">Why HotelMinds</span>
@@ -172,9 +166,7 @@ export default async function Home({ params }: PageParams) {
       <section className="px-4 py-24 md:p-16 lg:p-32">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
           <div className="flex-1 flex flex-col gap-4">
-            <span className="">
-              Partnership
-            </span>
+            <span className="">Partnership</span>
             <h1 className="lg:!text-5xl !tracking-tight">
               We partner with hotels that value strategic growth and operational
               clarity
@@ -228,10 +220,53 @@ export default async function Home({ params }: PageParams) {
           </div>
         </div>
       </section>
-      <div className="h-40 bg-gold"></div>
-      <div className="h-40 bg-offwhite"></div>
-      <div className="h-40 bg-charcoalDark"></div>
-      <div className="h-40 bg-charcoalLight"></div>
+      <section         id={`${locale === "de" ? "kontakt" : "contact"}`} className="px-4 pt-24 lg:pt-32 lg:px-32 bg-charcoalDark text-offwhite">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-24 lg:border-b-1 border-slate-300 lg:pb-32">
+          <div className="flex-1 flex flex-col gap-4">
+            <span className="font-thin mx-auto lg:mx-0">Let's Connect</span>
+            <h1 className="lg:!text-5xl !tracking-tight text-center lg:text-start">CONTACT US</h1>
+            <p className="max-w-sm text-center lg:text-start">
+              Distribution is not a side task. It is a strategic growth lever.
+              If revenue growth is a priority, let’s build a structure that
+              works in your favor.
+            </p>
+                   <a
+                className="self-center lg:self-start mt-8 bg-gold px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap"
+                href="mailto:beispiel@email.de"
+              >
+                Let's Talk
+              </a>
+      
+          </div>
+          <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-16 pt-8">
+            <div className="flex flex-col gap-2 lg:gap-4">
+              <span className="font-thin">Email</span>
+              <a
+                className="font-semibold underline underline-offset-3"
+                href="mailto:beispiel@email.de"
+              >
+                contact@hotelminds.io
+              </a>
+            </div>
+                <div className="flex flex-col gap-2 lg:gap-4">
+              <span className="font-thin">Phone</span>
+              <span className="font-semibold">+49 1234 4678910</span>
+            </div>
+               <div className="hidden lg:flex flex-col gap-2 lg:gap-4">
+              <span className="font-thin">Colaborations</span>
+              <span className="font-semibold">colab@hotelminds.io</span>
+            </div>
+            <div className="hidden lg:flex flex-col gap-2 lg:gap-4">
+              <span className="font-thin">Address</span>
+              <div className="flex flex-col gap-2">
+                <span className="font-semibold">82538 Musterstadt</span>
+                <span className="font-semibold">Musterfraustr. 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </div>
   );
 }

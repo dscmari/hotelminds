@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/navbar/Navbar";
 import { dictionary } from "../utils/dictionary";
+import Footer from "../components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default async function RootLayout({
       <body>
         <Navbar locale={locale} data={data} />
         <main>{children}</main>
+        <Footer data={data} />
       </body>
     </html>
   );

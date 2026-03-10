@@ -1,5 +1,4 @@
 import { Diamond } from "lucide-react";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import ContactBtn from "../buttons/ContactBtn";
 
 type Box = {
@@ -16,6 +15,7 @@ type Box = {
 
 type Props = {
   className?: string;
+  locale: string;
   boxes: Box[];
 };
 
