@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
   Calculator,
   CircleCheckBig,
-  Diamond,
   Globe,
   SearchCheck,
   Sliders,
@@ -13,148 +12,90 @@ import AccordeonClean from "../components/layouts/AccordeonClean";
 import { dictionary } from "../utils/dictionary";
 import { PageParams } from "../types/i18n";
 import Process from "../components/Process";
-import ThreeBoxLayout from "../components/layouts/ThreeBoxLayout";
-import { BsListNested } from "react-icons/bs";
 import ThreePhaseLayout from "../components/layouts/ThreePhaseLayout";
 
 export default async function Home({ params }: PageParams) {
   const { locale } = await params;
   const data = await dictionary(locale);
+
+  const icons: Record<string, React.ComponentType> = {
+    SearchCheck,
+    Calculator,
+    Globe,
+    Sliders,
+  };
+
   return (
     <div>
       <Hero params={params} />
+      {/* strategy */}
       <section
         id={`${locale === "de" ? "strategie" : "strategy"}`}
         className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
       >
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
-            <span className="font-thin">
-              Most Hotels Don’t Have a Marketing Problem. They Have a
-              Distribution Problem.
-            </span>
+            <span className="font-thin">{data.strategy.subheader}</span>
             <h1 className="lg:!text-5xl !tracking-tight">
-              Strategy
+              {data.strategy.headline}
             </h1>
-            <p className="lg:text-base/8">
-              Many hotels invest in marketing, adjust pricing frequently, and
-              participate in multiple distribution platforms — yet still
-              struggle with visibility, margin pressure, and inconsistent
-              performance.
-            </p>
+            <p className="lg:text-base/8">{data.strategy.intro}</p>
             <ContactBtn className="mx-auto lg:mx-0 bg-gold mt-8" />
           </div>
           <div className="flex-2 grid grid-cols-1 xl:grid-cols-2 gap-16 mt-4">
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-4 lg:flex-col">
-                <SearchCheck className="shrink-0" />
-                <h2>Increase Visibility Where It Matters</h2>
-              </div>
-
-              <p className="text-base/8">
-                We optimize your positioning across OTA platforms and
-                distribution channels so your hotel appears higher, captures
-                more demand, and competes strategically — not reactively.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-4 lg:flex-col">
-                <Calculator className="shrink-0" />
-                <h2>Convert More Demand Into Revenue</h2>
-              </div>
-              <p className="text-base/8">
-                We optimize rate architecture, content positioning, and pricing
-                logic across all channels to ensure visitors convert into
-                profitable bookings.
-              </p>
-            </div>{" "}
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-4 lg:flex-col">
-                <Globe className="shrink-0" />
-                <h2>Build Structured Pricing & Channel Control</h2>
-              </div>
-              <p className="text-base/8">
-                We design and align your pricing strategy across OTAs, direct
-                website, and additional channels — reducing leakage,
-                inconsistencies, and unnecessary discounting.
-              </p>
-            </div>{" "}
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-4 lg:flex-col">
-                <Sliders className="shrink-0" />
-                <h2>Strategic Revenue Growth Steering</h2>
-              </div>
-              <p className="text-base/8">
-                We monitor performance continuously and adjust positioning,
-                pricing, and channel strategy in response to market shifts.
-              </p>
-            </div>
+            {data.strategy.bullets.map((bullet) => {
+              const Icon = icons[bullet.icon];
+              return (
+                <div key={bullet.header} className="flex flex-col gap-4">
+                  <div className="flex gap-4 lg:flex-col">
+                    {Icon && <Icon />}
+                    <h2>{bullet.header}</h2>
+                  </div>
+                  <p className="text-base/8">{bullet.text}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
+      {/* process */}
       <section
         id={`${locale === "de" ? "prozess" : "process"}`}
         className="pt-24 pb-24 px-4 lg:pt-32 lg:px-32"
       >
         <div className="flex flex-col gap-4">
-          <span className="lg:mx-auto">How We Work</span>
-          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">PROCESS</h1>
+          <span className="lg:mx-auto">{data.process.subheader}</span>
+          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">
+            {data.process.headline}
+          </h1>
           <p className="max-w-4xl font-light lg:text-center mx-auto">
-            Our structured approach begins with a comprehensive Audit &
-            Diagnosis to uncover hidden revenue potential. We then translate
-            these insights into a Strategic Roadmap with a clear 6–9 month
-            action plan, ensuring long-term growth through disciplined
-            Implementation & Monitoring.
+            {data.process.intro}
           </p>
         </div>
         <Process
           className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
-          circles={data.process}
+          circles={data.process.bullets}
         />
       </section>
+      {/* results */}
       <section
         id={`${locale === "de" ? "ergebnisse" : "results"}`}
         className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
       >
-       <ThreePhaseLayout data={data} />
+        <ThreePhaseLayout data={data} />
       </section>
-      {/* <section
-        id={`${locale === "de" ? "ergebnisse" : "results"}`}
-        className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24"
-      >
-        <div className="flex flex-col gap-4">
-          <span className="mx-auto">From Reactive to Strategic</span>
-          <h1 className="text-center lg:!text-5xl !tracking-tight">Results</h1>
-          <p className="max-w-4xl font-light lg:text-center mx-auto">
-            Our strategic approach transforms your hotel's market presence from
-            reactive price-matching to proactive revenue leadership. We bridge
-            the gap between inconsistent visibility and a high-performing,
-            direct-booking-driven distribution model.
-          </p>
-        </div>
-        <ThreeBoxLayout
-        locale={locale}
-          className="bg-charcoalDark text-charcoalDark pt-24 lg:pt-32"
-          boxes={data.results}
-        />
-      </section> */}
+      {/* about*/}
       <section
         id={`${locale === "de" ? "ueber-uns" : "about"}`}
         className="px-4 pt-24 md:p-16 lg:p-32"
       >
         <div className="flex flex-col gap-4">
-          <span className="lg:mx-auto">Why HotelMinds</span>
-          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">ABOUT</h1>
+          <span className="lg:mx-auto">{data.about.sectionOne.subheader}</span>
+          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">
+            {data.about.sectionOne.headline}
+          </h1>
           <p className="max-w-4xl font-light lg:text-center mx-auto">
-            We bridge the gap between platform-level expertise and independent
-            strategic thinking. Unlike traditional distribution platforms, we
-            operate with complete neutrality, representing your interests across
-            the entire landscape rather than favoring a single ecosystem. Our
-            methodology is inherently structured and data-driven, moving beyond
-            generic consulting to focus exclusively on measurable revenue
-            performance. By building sophisticated distribution systems, we
-            provide our partners with the clarity, control, and foundational
-            stability required for sustainable growth
+            {data.about.sectionOne.intro}
           </p>
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
@@ -167,23 +108,19 @@ export default async function Home({ params }: PageParams) {
               className="rounded-xl mx-auto"
             />
           </div>
-          <AccordeonClean className="flex-1" />
+          <AccordeonClean className="flex-1" data={data} />
         </div>
       </section>
       <section className="px-4 py-24 md:p-16 lg:p-32">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
           <div className="flex-1 flex flex-col gap-4">
-            <span className="">Partnership</span>
+            <span className="">{data.about.sectionTwo.subheader}</span>
             <h1 className="lg:!text-5xl !tracking-tight">
-              We partner with hotels that value strategic growth and operational
-              clarity
+              {data.about.sectionTwo.headline}
             </h1>
           </div>
           <p className="flex-1 lg:text-base/8 max-w-xl">
-            We partner with forward-thinking hotels and groups that prioritize
-            long-term independence over short-term fixes. For our clients,
-            strategic growth and a clear competitive edge are not just goals,
-            but the foundation of their operational mindset.
+            {data.about.sectionTwo.intro}
           </p>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-24 lg:mt-24">
@@ -198,49 +135,33 @@ export default async function Home({ params }: PageParams) {
           </div>
           <div className="flex-1">
             <h2 className="lg:max-w-sm">
-              Independent properties, premium hotels, resorts, and hotel groups
-              who want to
+              {data.about.sectionTwo.bulletHeader}
             </h2>
             <div className="flex flex-col gap-4 mt-8">
-              <div className="flex items-start gap-4">
-                <CircleCheckBig className="text-gold shrink-0" />
-                <span>Increase revenue without increasing dependency</span>
-              </div>
-              <div className="flex items-start gap-4">
-                <CircleCheckBig className="text-gold shrink-0" />
-                <span>Strengthen direct performance</span>
-              </div>
-              <div className="flex items-start gap-4">
-                <CircleCheckBig className="text-gold shrink-0" />
-                <span>Gain control over pricing and distribution</span>
-              </div>
-              <div className="flex items-start gap-4">
-                <CircleCheckBig className="text-gold shrink-0" />
-                <span>
-                  Compete strategically instead of reacting to market pressure
-                </span>
-              </div>
+              {data.about.sectionTwo.bullets.map((e: string, index: number) => (
+                <div key={index} className="flex items-start gap-4">
+                  <CircleCheckBig className="text-gold shrink-0" />
+                  <span>{e}</span>
+                </div>
+              ))}
               <p className="font-semibold mt-4">
-                Mindset matters more than size or geography.
+                {data.about.sectionTwo.outro}
               </p>
             </div>
           </div>
         </div>
       </section>
+      {/* contact */}
       <section
         id={`${locale === "de" ? "kontakt" : "contact"}`}
         className="px-4 pt-24 lg:pt-32 lg:px-32 bg-charcoalDark text-offwhite"
       >
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-24 lg:border-b-1 border-slate-300 lg:pb-32">
           <div className="flex-1 flex flex-col gap-4">
-            <span className="font-thin">Let's Connect</span>
-            <h1 className="lg:!text-5xl !tracking-tight">
-              CONTACT US
-            </h1>
+            <span className="font-thin">{data.contact.subheader}</span>
+            <h1 className="lg:!text-5xl !tracking-tight">{data.contact.headline}</h1>
             <p className="max-w-sm">
-              Distribution is not a side task. It is a strategic growth lever.
-              If revenue growth is a priority, let’s build a structure that
-              works in your favor.
+        {data.contact.intro}
             </p>
             <a
               className="self-center lg:self-start mt-8 bg-gold px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap"
@@ -251,7 +172,7 @@ export default async function Home({ params }: PageParams) {
           </div>
           <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-16 pt-8">
             <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="font-thin">Email</span>
+              <span className="font-thin">{data.contact.mail}</span>
               <a
                 className="font-semibold underline underline-offset-3"
                 href="mailto:beispiel@email.de"
@@ -260,15 +181,15 @@ export default async function Home({ params }: PageParams) {
               </a>
             </div>
             <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="font-thin">Phone</span>
+              <span className="font-thin">{data.contact.phone}</span>
               <span className="font-semibold">+49 1234 4678910</span>
             </div>
             <div className="hidden lg:flex flex-col gap-2 lg:gap-4">
-              <span className="font-thin">Colaborations</span>
+              <span className="font-thin">{data.contact.colab}</span>
               <span className="font-semibold">colab@hotelminds.io</span>
             </div>
             <div className="hidden lg:flex flex-col gap-2 lg:gap-4">
-              <span className="font-thin">Address</span>
+              <span className="font-thin">{data.contact.address}</span>
               <div className="flex flex-col gap-2">
                 <span className="font-semibold">82538 Musterstadt</span>
                 <span className="font-semibold">Musterfraustr. 1</span>

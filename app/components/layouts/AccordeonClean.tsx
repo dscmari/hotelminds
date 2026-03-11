@@ -1,36 +1,38 @@
-"use client"
+"use client";
 import { Cpu, LineChart, Target, Wrench } from "lucide-react";
+import { data } from "motion/react-client";
 
 type Props = {
   className?: string;
+  data: any;
 };
 
-export default function AccordeonClean({ className }: Props) {
-
-    const home = [
+export default function AccordeonClean({ className, data }: Props) {
+  const bullets = data.about.sectionOne.accordeonBullets;
+  const home = [
     {
       id: "impact-1",
       icon: <Target />,
-      bullet: "Precision over volume",
-      text: "We intentionally limit our partnerships to a select group of hotels to ensure maximum analytical depth. This approach allows us to focus on high-impact strategies and granular data precision that mass-market providers simply cannot sustain.",
+      bullet: bullets[0].header,
+      text: bullets[0].text,
     },
     {
       id: "impact-2",
       icon: <Wrench />,
-      bullet: "Execution instead of theory",
-      text: "We don’t just deliver strategies; we bring them to life. Every recommendation is fully implemented within your systems — not handed to you as a static PDF. This ensures that expert insights translate directly into live updates, immediate performance gains, and a reduced workload for your internal team.",
+      bullet: bullets[1].header,
+      text: bullets[1].text,
     },
     {
       id: "impact-3",
       icon: <Cpu />,
-      bullet: "OTA-native expertise",
-      text: "Our expertise is built on years of experience inside Booking.com and deep-level PMS/CM consulting. We don’t guess how algorithms work—we understand the internal logic of the platforms. This insider perspective allows us to navigate the complexities of marketplace distribution with a level of precision that external consultants simply can’t match.",
+      bullet: bullets[2].header,
+      text: bullets[2].text,
     },
     {
       id: "impact-4",
       icon: <LineChart />,
-      bullet: "Predictable outcomes",
-      text: "Success shouldn’t be a matter of luck. We utilize a repeatable, structured process specifically designed to generate measurable uplift. By stripping away the guesswork and relying on a battle-tested framework, we transform market volatility into a reliable roadmap for your hotel’s revenue growth.",
+      bullet: bullets[3].header,
+      text: bullets[3].text,
     },
   ];
 
@@ -49,7 +51,9 @@ export default function AccordeonClean({ className }: Props) {
             className="flex items-center gap-4 p-4 cursor-pointer font-semibold select-none"
           >
             {e.icon}
-            <h2 className="pointer-events-none !text-base lg:!text-xl !m-0">{e.bullet}</h2>
+            <h2 className="pointer-events-none !text-base lg:!text-xl !m-0">
+              {e.bullet}
+            </h2>
           </label>
           <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-has-[:checked]:grid-rows-[1fr]">
             <div className="overflow-hidden">

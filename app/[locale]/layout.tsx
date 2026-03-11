@@ -44,7 +44,7 @@ export default async function RootLayout({
       className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body>
-        <Navbar locale={locale} data={data} />
+        <Navbar locale={locale} data={data}/>
         <main>{children}</main>
         <Footer data={data} />
       </body>

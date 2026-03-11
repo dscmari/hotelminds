@@ -24,7 +24,7 @@ export default function LanguageSwitcher({ className, locale }: Props) {
     const newPath = segments.join("/");
 
     // Navigiert zu "/en/route-a"
-    router.push(newPath);
+    router.push(newPath, { scroll: false });
   };
 
   return (
