@@ -29,7 +29,7 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
       <Link href={"/"}>
           {" "}
           <Image
-            src="/images/logo_bgOffwhite.png"
+            src="/images/hotelminds_logo_bg_transparent.png"
             alt="Logo hotelminds"
             style={{ width: "150px" }}
             width={150}

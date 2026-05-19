@@ -167,19 +167,12 @@ export default async function Home({ params }: PageParams) {
               className="self-center lg:self-start mt-8 bg-gold px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap"
               href="mailto:beispiel@email.de"
             >
-              Let's Talk
+              Request an Initial Call
             </a>
+            <p className="text-center lg:text-start">Not obligation. No generic sales pitch.</p>
           </div>
           <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-16 pt-8">
-            <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="font-thin">{data.contact.mail}</span>
-              <a
-                className="font-semibold underline underline-offset-3"
-                href="mailto:beispiel@email.de"
-              >
-                contact@hotelminds.io
-              </a>
-            </div>
+  
             <div className="flex flex-col gap-2 lg:gap-4">
               <span className="font-thin">{data.contact.phone}</span>
               <span className="font-semibold">+49 1234 4678910</span>

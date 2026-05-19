@@ -12,7 +12,8 @@
     },
     "hero": {
       "headline": "Make your hotel \n impossible to ignore.",
-      "subheader": "HotelMinds verbindet Strategie und Umsetzung für den entscheidenden Vorsprung für Premium-Hotels"
+      "subheader": "HotelMinds verbindet Strategie und Umsetzung für den entscheidenden Vorsprung für Premium-Hotels",
+      "btnOutro": "Unverbindliches Kennernlernen."
     },
     "strategy": {
       "headline": "STRATEGIE",
@@ -158,32 +159,33 @@
     },
     "hero": {
       "headline": "Make your hotel \n impossible to ignore.",
-      "subheader": "HotelMinds combines strategic thinking with refined digital execution to help premium hotels stand out"
+      "subheader": "HotelMinds helps independent hotels, aparthotels and boutique accommodation providers improve visibility, conversion and distribution performance across OTAs, direct channels and metasearch",
+      "btnOutro": "No obligation. No generic sales pitch."
     },
     "strategy": {
       "headline": "STRATEGY",
       "subheader": "Most Hotels Don’t Have a Marketing Problem. They Have a Distribution Problem.",
-      "intro": "Many hotels invest in marketing, adjust pricing frequently, and participate in multiple distribution platforms — yet still struggle with visibility, margin pressure, and inconsistent performance.",
+      "intro": "Hotel performance does not come from isolated marketing actions. It comes from aligning visibility, pricing, content and distribution into one commercial system.",
       "bullets": [
         {
           "icon": "SearchCheck",
           "header": "Increase Visibility Where It Matters",
-          "text": "We optimize your positioning across OTA platforms and distribution channels so your hotel appears higher, captures more demand, and competes strategically — not reactively"
+          "text": "We improve how your property is positioned across OTAs, metasearch and key booking channels, capturing demand where guests are already searching."
         },
         {
           "icon": "Calculator",
           "header": "Convert More Demand Into Revenue",
-          "text": "We optimize rate architecture, content positioning, and pricing logic across all channels to ensure visitors convert into profitable bookings."
+          "text": "We improve room presentation, content, rate structure and booking paths to turn more visitors into profitable reservations."
         },
         {
           "icon": "Globe",
-          "header": "Build Structured Pricing & Channel Control",
-          "text": "We design and align your pricing strategy across OTAs, direct website, and additional channels — reducing leakage, inconsistencies, and unnecessary discounting."
+          "header": "Strengthen Pricing & Channel Control",
+          "text": "We align rates across OTAs, direct channels and partners to reduce leakage, inconsistency and unnecessary discounting."
         },
         {
           "icon": "Sliders",
-          "header": "Strategic Revenue Growth Steering",
-          "text": "We monitor performance continuously and adjust positioning, pricing, and channel strategy in response to market shifts."
+          "header": "Steer Performance Continuously",
+          "text": "We monitor market signals, channel performance and booking patterns, then turn them into clear commercial actions."
         }
       ]
     },
@@ -194,15 +196,15 @@
       "bullets": [
         {
           "title": "Audit & Diagnosis",
-          "text": "Comprehensive analysis of pricing, distribution mix, ranking performance and competitive positioning"
+          "text": "Analysis of visibility, pricing, distribution setup, content quality and competitive positioning."
         },
         {
           "title": "Strategic Roadmap",
-          "text": "Clear 6–9 month action plan covering ranking improvement, pricing architecture, channel alignment, and direct strategy"
+          "text": "A focused action plan covering visibility, conversion, pricing structure, channel alignment and direct booking performance."
         },
         {
           "title": "Implementation & Monitoring",
-          "text": "Execution, tracking, and continuous refinement to ensure measurable performance improvement"
+          "text": "Support with execution, performance tracking and continuous refinement as market conditions change."
         }
       ]
     },
@@ -211,33 +213,33 @@
       "subheader": "From Reactive to Strategic",
       "steps": [
         {
-          "title": "Before Working With Us",
+          "title": "Before HotelMinds",
           "bullets": [
-            "Dependent on short-term tactical adjustments",
-            "Competing primarily on price",
-            "Limited clarity on competitor positioning",
-            "Inconsistent visibility",
+            "Reactive commercial decisions",
+            "Overreliance on discounts",
+            "Unclear competitor positioning",
+            "Inconsistent channel visibility",
             "No structured distribution roadmap"
           ]
         },
         {
           "title": "The Key Strategic Changes",
           "bullets": [
-            "Improve search visibility across major platforms",
-            "Optimize rate structure across channels",
-            "Clear competitor benchmarking strategy",
-            "Increase direct booking share",
-            "Enhance revenue control and reduce margin pressure"
+            "Improve visibility across key booking channels",
+            "Optimize room, rate and content structure",
+            "Define clear competitor benchmarks",
+            "Strengthen direct booking performance",
+            "Reduce leakage and margin pressure"
           ]
         },
         {
-          "title": "After Working With Us",
+          "title": "After HotelMinds",
           "bullets": [
-            "Higher and more stable visibility",
-            "Clear competitive positioning",
-            "Structured pricing strategy",
-            "Stronger direct booking share",
-            "Controlled distribution instead of dependency"
+            "Stronger and more stable visibility",
+            "Clearer competitive positioning",
+            "Better pricing and channel control",
+            "Improved direct booking performance",
+            "More control over distribution and margins"
           ]
         }
       ]
@@ -246,35 +248,35 @@
       "sectionOne": {
         "headline": "ABOUT",
         "subheader": "Why HotelMinds",
-        "intro": "We bridge the gap between platform-level expertise and independent strategic thinking. Unlike traditional distribution platforms, we operate with complete neutrality, representing your interests across the entire landscape rather than favoring a single ecosystem. Our methodology is inherently structured and data-driven, moving beyond generic consulting to focus exclusively on measurable revenue performance. By building sophisticated distribution systems, we provide our partners with the clarity, control, and foundational stability required for sustainable growth.",
+        "intro": "HotelMinds combines hands-on OTA and hospitality experience with independent commercial thinking. We help selected accommodation providers improve how their visibility, pricing, content and distribution work together—focusing on clarity, control and measurable commercial progress.",
         "accordeonBullets": [
           {
             "header": "Precision over volume",
-            "text": "We intentionally limit our partnerships to a select group of hotels to ensure maximum analytical depth. This approach allows us to focus on high-impact strategies and granular data precision that mass-market providers simply cannot sustain."
+            "text": "We work with a limited number of partners so each property receives focused attention, deeper analysis and commercially relevant recommendations."
           },
           {
-            "header": "Execution instead of theory",
-            "text": "We don’t just deliver strategies; we bring them to life. Every recommendation is fully implemented within your systems — not handed to you as a static PDF. This ensures that expert insights translate directly into live updates, immediate performance gains, and a reduced workload for your internal team."
+            "header": "Execution over theory",
+            "text": "We do not stop at recommendations. We support the implementation of high-impact changes and help turn strategic insights into concrete updates across the relevant commercial systems."
           },
           {
             "header": "OTA-native expertise",
-            "text": "Our expertise is built on years of experience inside Booking.com and deep-level PMS/CM consulting. We don’t guess how algorithms work—we understand the internal logic of the platforms. This insider perspective allows us to navigate the complexities of marketplace distribution with a level of precision that external consultants simply can’t match."
+            "text": "Our expertise is built on years of hands-on experience with OTA ecosystems, hotel commercial operations and PMS/channel manager environments. We understand how visibility, content quality, pricing structure and conversion signals interact across digital booking platforms."
           },
           {
-            "header": "Predictable outcomes",
-            "text": "Success shouldn’t be a matter of luck. We utilize a repeatable, structured process specifically designed to generate measurable uplift. By stripping away the guesswork and relying on a battle-tested framework, we transform market volatility into a reliable roadmap for your hotel’s revenue growth."
+            "header": "Structured commercial progress",
+            "text": "We use a repeatable process to reduce guesswork, prioritize the right actions and create a clearer path from analysis to measurable commercial progress."
           }
         ]
       },
       "sectionTwo": {
-        "headline": "We partner with hotels that value strategic growth and operational clarity",
+        "headline": "We partner with accommodation providers that want clearer commercial control",
         "subheader": "Partnership",
-        "intro": "We partner with forward-thinking hotels and groups that prioritize long-term independence over short-term fixes. For our clients, strategic growth and a clear competitive edge are not just goals, but the foundation of their operational mindset.",
-        "bulletHeader": "Independent properties, premium hotels, resorts, and hotel groups who want to",
+        "intro": "We work with independent accommodation businesses that want to improve visibility, strengthen direct performance and gain more control over pricing and distribution — without relying on short-term fixes.",
+        "bulletHeader": "For accommodation owners and operators ready to:",
         "bullets": [
-          "Increase revenue without increasing dependency",
-          "Strengthen direct performance",
-          "Gain control over pricing and distribution",
+          "Increase revenue without increasing platform dependency",
+          "Strengthen direct booking performance",
+          "Gain better control over pricing and distribution",
           "Compete strategically instead of reacting to market pressure"
         ],
         "outro": "Mindset matters more than size or geography."
@@ -283,15 +285,15 @@
     "contact": {
       "headline": "CONTACT US",
       "subheader": "Let's Connect",
-      "intro": "Distribution is not a side task. It is a strategic growth lever. If revenue growth is a priority, let’s build a structure that works in your favor.",
+      "intro": "Distribution is not a side task. If commercial performance matters, let’s build a structure that works in your favor.",
       "mail": "Mail",
       "phone": "Phone",
       "colab": "Colaborations",
       "address": "Address"
     },
     "footer": {
-      "headline": "Make your hotel impossible to ignore.",
-      "subheader": "HotelMinds combines strategic thinking with refined digital execution to help premium hotels stand out.",
+      "headline": "HotelMinds",
+      "subheader": "Commercial performance strategy for independent accommodation providers.",
       "agb": "Terms and Conditions",
       "privacy": "Privacy Policy",
       "impressum": "Imprint",

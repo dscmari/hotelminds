@@ -40,7 +40,7 @@ export default function Navbar({ className, locale, data }: Props) {
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
-              src="/images/logo_bgOffwhite.png"
+              src="/images/hotelminds_logo_bg_transparent.png"
               alt="Logo"
               width={200}
               height={100}
