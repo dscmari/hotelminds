@@ -3,16 +3,14 @@
     "navbar": {
       "bullets": [
         "Home",
-        "Strategie",
-        "Prozess",
-        "Ergebnisse",
-        "Über uns",
+        "Angebot",
+        "Über Uns",
         "Kontakt"
       ]
     },
     "hero": {
-      "headline": "Make your hotel \n impossible to ignore.",
-      "subheader": "HotelMinds verbindet Strategie und Umsetzung für den entscheidenden Vorsprung für Premium-Hotels",
+      "headline": "Marge sichern. Kommerzielle Performance stärken.",
+      "subheader": "HotelMinds helps independent hotels, hotel owners and developers strengthen revenue management, pricing, hotel distribution, direct bookings and commercial technology - from optimizing existing properties to building the commercial setup for new openings, major renovations and re-openings.",
       "btnOutro": "Unverbindliches Kennernlernen."
     },
     "strategy": {
@@ -155,12 +153,12 @@
   },
   "en": {
     "navbar": {
-      "bullets": ["Home", "Strategy", "Process", "Results", "About", "Contact"]
+      "bullets": ["Home", "Services", "About", "Contact"]
     },
     "hero": {
-      "headline": "Make your hotel \n impossible to ignore.",
-      "subheader": "HotelMinds helps independent hotels, aparthotels and boutique accommodation providers improve visibility, conversion and distribution performance across OTAs, direct channels and metasearch",
-      "btnOutro": "No obligation. No generic sales pitch."
+      "headline": "Protect Your Margin. Strengthen Your Commercial Performance.",
+      "subheader": "HotelMinds helps independent hotels, hotel owners and developers strengthen revenue management, pricing, hotel distribution, direct bookings and commercial technology - from optimizing existing properties to building the commercial setup for new openings, major renovations and re-openings.",
+      "btnOutro": "We combine strategic guidance with hands-on execution to create stronger, more profitable commercial structures."
     },
     "strategy": {
       "headline": "STRATEGY",

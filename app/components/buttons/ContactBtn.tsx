@@ -8,13 +8,13 @@ type Props = {
 };
 
 export default function ContactBtn({ className, content}: Props) {
-  const pathname = usePathname()
-  const reference = pathname === "/de" ? "kontakt" : "contact"
+  //const pathname = usePathname()
+  //const reference = pathname === "/de" ? "kontakt" : "contact"
   return (
-    <Link href={`${pathname}#${reference}`}
+    <Link href="https://calendly.com/cristian_pop/30min"
       className={`bg-cta px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap ${className}`}
     >
-      {content ? content : "Let's Talk"}
+      {content ? content : "Book a 20-Minute Intro Call"}
     </Link>
   );
 }

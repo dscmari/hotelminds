@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactBtn from "../../buttons/ContactBtn";
 import LanguageSwitcher from "@/app/components/navbar/LanguageSwitcher";
+import { ShiftingDropDown } from "./ShiftingDropDown";
+import { useScrolled } from "@/app/hooks/useScrolled";
 
 
 type Props = {
@@ -13,8 +15,9 @@ type Props = {
 };
 
 export default function DesktopNavbar({ className, locale, pathname, data }: Props) {
+    const isScrolled = useScrolled(50);
   return (
-    <div className={`mx-auto z-50 p-4 px-8 ${className}`}>
+    <div className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "p-0 border-b " : "p-4"} ${className}`}>
       {/* <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
           <Phone/>
@@ -37,14 +40,14 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
           />
         </Link> 
         <div className="flex items-center justify-between w-full">
-          {/* <ShiftingDropDown /> */}
-          <div className="flex items-center gap-8">
+          <ShiftingDropDown />
+          {/* <div className="flex items-center gap-8">
             {data.navbar.bullets.map((bullet: string, index: number) => (
               <Link href={`${bullet === "Über uns" ? `${pathname}#ueber-uns` : `${pathname}#${bullet.toLowerCase()}`} `} className="font-semibold" key={index}>
                 {bullet}
               </Link>
             ))}
-          </div>
+          </div> */}
           <div className="flex items-center gap-8">
             <LanguageSwitcher locale={locale} />
             <ContactBtn className="hover:bg-gold" />

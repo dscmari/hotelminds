@@ -29,12 +29,12 @@ const Tabs = () => {
       Component: NavServices,
     },
     {
-      title: "Results",
+      title: "About",
       Component: NavPricing,
       link: "#",
     },
     {
-      title: "About",
+      title: "Contact",
       Component: NavReferences,
       link: "#",
     },

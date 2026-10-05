@@ -1,45 +1,40 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NavServices = () => {
   return (
     <div>
-      <div className="flex gap-16 p-16">
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl  mb-2 font-semibold text-offwhite">Service 1</h3>
-          <Link href="#" className="text-offwhite">
-            Subservice 1
-          </Link>
-
+      <div className="flex p-8 gap-8">
+        <div className="flex-1 flex flex-col gap-8">
+          <Image
+            src="/vercel.svg"
+            alt="Logo hotelminds"
+            style={{ width: "50px", height: "50px" }}
+            width={50}
+            height={50}
+            className="mx-auto"
+          />
           <Link
             href="#"
-            className="text-offwhite"
+            className="text-offwhite text-center text-lg underline underline-offset-4"
           >
-            Subservice 2
+            Existing Hotel Performance
           </Link>
         </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl  mb-2 font-semibold text-offwhite">Service 2</h3>
-          <Link href="#" className="text-offwhite">
-            Subservice 1
-          </Link>
-
+        <div className="flex-1 flex flex-col gap-8">
+          <Image
+            src="/vercel.svg"
+            alt="Logo hotelminds"
+            style={{ width: "50px", height: "50px" }}
+            width={50}
+            height={50}
+            className="mx-auto"
+          />
           <Link
             href="#"
-            className="text-offwhite"
+            className="text-offwhite text-center text-lg underline underline-offset-4"
           >
-            Subservice 2
-          </Link>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xl  mb-2 font-semibold text-offwhite">Service 1</h3>
-          <Link href="#" className="text-offwhite">
-            Subservice 1
-          </Link>
-          <Link
-            href="#"
-            className="text-offwhite"
-          >
-            Subservice 2
+            Pre-Opening Commercial Setup
           </Link>
         </div>
       </div>
