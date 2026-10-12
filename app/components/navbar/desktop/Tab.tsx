@@ -29,13 +29,13 @@ const Tab = ({
       id={`shift-tab-${tab}`}
       onMouseEnter={() => !hasLink && handleSetSelected(tab)}
       onClick={() => handleClick()}
-      className={`flex items-center gap-1 rounded p-4 transition-colors text-custom-black ${
+      className={`flex items-center gap-1 rounded p-4 transition-colors !font-normal ${
         selected === tab ? "underline cursor-pointer" : ""
       } ${hasLink ? "!cursor-pointer hover:underline" : ""}`}
     >
       {children}
       <ChevronDown
-        className={`transition-transform duration-300 size-6 text-charcoalDark ${
+        className={`transition-transform duration-300 size-4 text-charcoalDark ${
           selected === tab ? "[transform:rotateX(180deg)]" : ""
         } ${hasLink ? "hidden" : ""}`}
       />

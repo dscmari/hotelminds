@@ -4,18 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { usePathname } from "next/navigation";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 type Props = {
   className?: string;
-  locale: string;
-  data: any;
+  data: string[];
 };
 
-export default function Navbar({ className, locale, data }: Props) {
+export default function Navbar({ className, data }: Props) {
   const [showMenu, setShowMenu] = useState(false);
-  const pathname = usePathname();
 
   const toggleMenu = () => {
     toggleX();
@@ -48,7 +45,7 @@ export default function Navbar({ className, locale, data }: Props) {
             />
           </Link>
           <div className="flex items-center gap-4">
-            <LanguageSwitcher locale={locale} />
+            <LanguageSwitcher />
             <div className="burgermenu" id="burger-menu" onClick={toggleMenu}>
               <span className="top"></span>
               <span className="middle"></span>
@@ -64,23 +61,42 @@ export default function Navbar({ className, locale, data }: Props) {
             onClick={toggleMenu}
           >
             <div className="flex flex-col items-end  gap-4 py-12 font-semibold ">
-              {data.navbar.bullets.map((bullet: string, index: number) => (
-                <div className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end" key={index}>
+              <Link href={`/`} className="text-right text-charcoalDark">
+                Home
+              </Link>
+              <Link href={`#`} className="text-right text-charcoalDark">
+                bestehende-hotels
+              </Link>
+              <Link href={`#`} className="text-right text-charcoalDark">
+                pre-opening/
+              </Link>
+              <Link href={`#`} className="text-right text-charcoalDark">
+                Über Uns
+              </Link>
+              <Link href={`#`} className="text-right text-charcoalDark">
+                Kontakt
+              </Link>
+
+              {/* {data.map((bullet: string, index: number) => (
+                <div
+                  className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end"
+                  key={index}
+                >
                   <Link
-                    href={`${pathname}#${bullet.toLowerCase()}`}
+                    href={`${bullet === "Über Uns" ? "/about/" : `/${bullet.toLowerCase()}/`}`}
                     className="text-right text-charcoalDark"
                   >
                     {bullet}
                   </Link>
                 </div>
-              ))}
+              ))} */}
             </div>
           </motion.div>
         ) : null}
       </div>
       {/* Desktop */}
       <div className="hidden lg:block z-100 fixed bg-offwhite w-full max-w-[2048px]">
-        <DesktopNavbar pathname={pathname} locale={locale} data={data} />
+        <DesktopNavbar data={data} />
       </div>
     </div>
   );

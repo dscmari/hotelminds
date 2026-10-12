@@ -3,14 +3,15 @@ import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Tab from "./Tab";
 import NavPricing from "./NavPricing";
-import NavVideos from "./NavVideos";
 import NavReferences from "./NavReferences";
 import NavContent from "./NavContent";
 import NavServices from "./NavServices";
-import NavKITracker from "./NavKITracker";
-import NavWorkshops from "./NavWorkshops";
 
-const Tabs = () => {
+type Props = {
+  data: string[];
+};
+
+const Tabs = ({ data }: Props) => {
   const [selected, setSelected] = useState<number | null>(null);
   const [dir, setDir] = useState<null | "l" | "r">(null);
 
@@ -25,18 +26,18 @@ const Tabs = () => {
 
   const TABS = [
     {
-      title: "Services",
+      title: data[0],
       Component: NavServices,
     },
     {
-      title: "About",
+      title: data[1],
       Component: NavPricing,
-      link: "#",
+      link: `${data[1] === "Über Uns" ? "/about/" : `/${data[1].toLowerCase()}/`}`,
     },
     {
-      title: "Contact",
+      title: data[2],
       Component: NavReferences,
-      link: "#",
+      link: `/${data[2].toLowerCase()}/`,
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 

@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "bullets": ["Services", "About", "Contact"]
+  },
+
+
+        "footer": {
+      "headline": "HotelMinds",
+      "subheader": "Commercial performance strategy for independent accommodation providers.",
+      "agb": "Terms and Conditions",
+      "privacy": "Privacy Policy",
+      "imprint": "Imprint",
+      "credit": "Design & Development by"
+    }
+
+}

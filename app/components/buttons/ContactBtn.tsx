@@ -8,10 +8,8 @@ type Props = {
 };
 
 export default function ContactBtn({ className, content}: Props) {
-  //const pathname = usePathname()
-  //const reference = pathname === "/de" ? "kontakt" : "contact"
   return (
-    <Link href="https://calendly.com/cristian_pop/30min"
+    <Link href="https://calendly.com/cristian_pop/30min" target="_blank"
       className={`bg-cta px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap ${className}`}
     >
       {content ? content : "Book a 20-Minute Intro Call"}

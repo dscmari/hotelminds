@@ -1,0 +1,33 @@
+{
+  "headline": "HotelMinds - Impressum",
+  "sections": [
+    {
+      "header": "Angaben gemäß § 5 DDG",
+      "lines": [
+        "HotelMinds UG (haftungsbeschränkt)",
+        "Leopoldstraße 31",
+        "80802 München",
+        "Deutschland"
+      ]
+    },
+    {
+      "header": "Vertreten durch den Geschäftsführer",
+      "lines": ["Cristian Pop"]
+    },
+    {
+      "header": "Kontakt",
+      "lines": ["E-Mail: hello@hotelminds.io", "Telefon: [deutsche Nummer folgt]"]
+    },
+    {
+      "header": "Registereintrag",
+      "lines": [
+        "Registergericht: Amtsgericht München",
+        "Handelsregister: HRB 315040"
+      ]
+    },
+    {
+      "header": "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG",
+      "lines": ["DE465045560"]
+    }
+  ]
+}

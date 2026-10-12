@@ -1,14 +1,15 @@
 "use client";
+import { AboutSectionOne, AboutSectionTwo } from "@/app/utils/types";
 import { Cpu, LineChart, Target, Wrench } from "lucide-react";
 import { data } from "motion/react-client";
 
 type Props = {
   className?: string;
-  data: any;
+  data: AboutSectionOne;
 };
 
 export default function AccordeonClean({ className, data }: Props) {
-  const bullets = data.about.sectionOne.accordeonBullets;
+  const bullets = data.accordeonBullets
   const home = [
     {
       id: "impact-1",

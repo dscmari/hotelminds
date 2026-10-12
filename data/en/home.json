@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Hotel Consulting for Independent Hotels | HotelMinds",
+    "description": "HotelMinds helps independent hotels improve revenue management, pricing, booking platforms, direct sales and pre-opening commercial setup.",
+    "alternates": "https://hotelminds/en/"
+  },
+  
+  "hero": {
+    "headline": "Protect Your Margin. Strengthen Your Commercial Performance.",
+    "subheader": "HotelMinds helps independent hotels, hotel owners and developers strengthen revenue management, pricing, hotel distribution, direct bookings and commercial technology - from optimizing existing properties to building the commercial setup for new openings, major renovations and re-openings.",
+    "btnOutro": "We combine strategic guidance with hands-on execution to create stronger, more profitable commercial structures."
+  },
+  "services": {
+    "headline": "SERVICES",
+    "subheader": "Existing Hotel Performance",
+    "intro": "For operating independent hotels looking to improve revenue performance, strengthen hotel distribution and gain greater control over pricing, direct bookings and commercial decision-making.",
+    "bullets": [
+      {
+        "icon": "SearchCheck",
+        "header": "Increase Visibility Where It Matters",
+        "text": "Improve how your property is positioned across OTAs, direct channels and relevant booking platforms so demand is captured where guests are already searching."
+      },
+      {
+        "icon": "Calculator",
+        "header": "Convert More Demand Into Revenue",
+        "text": "Strengthen hotel revenue management, room presentation, rate structure and booking paths to turn more existing demand into profitable reservations."
+      },
+      {
+        "icon": "Globe",
+        "header": "Strengthen Pricing & Channel Control",
+        "text": "Align pricing, availability and channel strategy across OTAs and direct channels to reduce inconsistency, unnecessary discounting and margin leakage."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Steer Performance Continuously",
+        "text": "Use booking patterns, market signals, channel performance and commercial reporting to turn data into clear, ongoing actions."
+      }
+    ]
+  },
+  "process": {
+    "headline": "PROCESS",
+    "subheader": "How We Work",
+    "intro": "Our structured approach begins with a comprehensive Audit & Diagnosis to uncover hidden revenue potential. We then translate these insights into a Strategic Roadmap with a clear 6–9 month action plan, ensuring long-term growth through disciplined Implementation & Monitoring.",
+    "bullets": [
+      {
+        "title": "Audit & Diagnosis",
+        "text": "Analysis of visibility, pricing, distribution setup, content quality and competitive positioning."
+      },
+      {
+        "title": "Strategic Roadmap",
+        "text": "A focused action plan covering visibility, conversion, pricing structure, channel alignment and direct booking performance."
+      },
+      {
+        "title": "Implementation & Monitoring",
+        "text": "Support with execution, performance tracking and continuous refinement as market conditions change."
+      }
+    ]
+  },
+  "about": {
+    "sectionOne": {
+      "headline": "ABOUT",
+      "subheader": "Why HotelMinds",
+      "intro": "HotelMinds combines hands-on OTA and hospitality experience with independent commercial thinking. We help selected accommodation providers improve how their visibility, pricing, content and distribution work together—focusing on clarity, control and measurable commercial progress.",
+      "accordeonBullets": [
+        {
+          "header": "Precision over volume",
+          "text": "We work with a limited number of partners so each property receives focused attention, deeper analysis and commercially relevant recommendations."
+        },
+        {
+          "header": "Execution over theory",
+          "text": "We do not stop at recommendations. We support the implementation of high-impact changes and help turn strategic insights into concrete updates across the relevant commercial systems."
+        },
+        {
+          "header": "OTA-native expertise",
+          "text": "Our expertise is built on years of hands-on experience with OTA ecosystems, hotel commercial operations and PMS/channel manager environments. We understand how visibility, content quality, pricing structure and conversion signals interact across digital booking platforms."
+        },
+        {
+          "header": "Structured commercial progress",
+          "text": "We use a repeatable process to reduce guesswork, prioritize the right actions and create a clearer path from analysis to measurable commercial progress."
+        }
+      ]
+    },
+    "sectionTwo": {
+      "headline": "We partner with accommodation providers that want clearer commercial control",
+      "subheader": "Partnership",
+      "intro": "We work with independent accommodation businesses that want to improve visibility, strengthen direct performance and gain more control over pricing and distribution — without relying on short-term fixes.",
+      "bulletHeader": "For accommodation owners and operators ready to:",
+      "bullets": [
+        "Increase revenue without increasing platform dependency",
+        "Strengthen direct booking performance",
+        "Gain better control over pricing and distribution",
+        "Compete strategically instead of reacting to market pressure"
+      ],
+      "outro": "Mindset matters more than size or geography."
+    }
+  },
+  "contact": {
+    "headline": "CONTACT US",
+    "subheader": "Let's Connect",
+    "intro": "Distribution is not a side task. If commercial performance matters, let’s build a structure that works in your favor.",
+    "mail": "Mail",
+    "phone": "Phone",
+    "colab": "Colaborations",
+    "address": "Address"
+  },
+  "results": {
+    "headline": "RESULTS",
+    "subheader": "From Reactive to Strategic",
+    "steps": [
+      {
+        "title": "Before HotelMinds",
+        "bullets": [
+          "Reactive commercial decisions",
+          "Overreliance on discounts",
+          "Unclear competitor positioning",
+          "Inconsistent channel visibility",
+          "No structured distribution roadmap"
+        ]
+      },
+      {
+        "title": "The Key Strategic Changes",
+        "bullets": [
+          "Improve visibility across key booking channels",
+          "Optimize room, rate and content structure",
+          "Define clear competitor benchmarks",
+          "Strengthen direct booking performance",
+          "Reduce leakage and margin pressure"
+        ]
+      },
+      {
+        "title": "After HotelMinds",
+        "bullets": [
+          "Stronger and more stable visibility",
+          "Clearer competitive positioning",
+          "Better pricing and channel control",
+          "Improved direct booking performance",
+          "More control over distribution and margins"
+        ]
+      }
+    ]
+  }
+}

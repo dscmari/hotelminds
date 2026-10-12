@@ -1,0 +1,141 @@
+{
+    "meta": {
+    "title": "SEO Title: Hotelberatung für unabhängige Hotels | HotelMinds",
+    "description": "HotelMinds berät unabhängige Hotels zu Revenue Management, Preisstrategie, Buchungsplattformen, Direktvertrieb und Pre-Opening.",
+    "alternates": "https://hotelminds/de/"
+  },
+  "hero": {
+    "headline": "Marge sichern. Kommerzielle Performance stärken.",
+    "subheader": "HotelMinds unterstützt unabhängige Hotels, Hoteleigentümer und Projektentwickler dabei, Revenue Management, Preisstrategie, Distribution, Direktbuchungen und kommerzielle Systeme zu optimieren – von der Weiterentwicklung bestehender Hotels bis zum kommerziellen Setup für Neueröffnungen, umfassende Renovierungen und Re-Openings.",
+    "btnOutro": "Wir verbinden strategische Beratung mit praxisnaher Umsetzung und schaffen so stärkere, profitablere kommerzielle Strukturen."
+  },
+  "services": {
+    "headline": "STRATEGIE",
+    "subheader": "Die meisten Hotels haben kein Marketingproblem. Sie haben ein Distributionsproblem.",
+    "intro": "Viele Hotels investieren in Marketing, passen ihre Preise regelmäßig an und sind auf mehreren Vertriebsplattformen aktiv – und kämpfen dennoch mit mangelnder Sichtbarkeit, Margendruck und inkonsistenter Performance.",
+    "bullets": [
+      {
+        "icon": "SearchCheck",
+        "header": "Sichtbarkeit dort erhöhen, wo es zählt",
+        "text": "Wir optimieren Ihre Positionierung auf OTA-Plattformen und Vertriebskanälen, damit Ihr Hotel höher rankt, mehr Nachfrage abschöpft und strategisch – nicht reaktiv – im Wettbewerb agiert."
+      },
+      {
+        "icon": "Calculator",
+        "header": "Mehr Nachfrage in Umsatz umwandeln",
+        "text": "Wir optimieren Preisarchitektur, Content-Positionierung und Preislogik über alle Kanäle hinweg, damit Besucher zu profitablen Buchungen werden."
+      },
+      {
+        "icon": "Globe",
+        "header": "Strukturierte Preis- und Kanalsteuerung aufbauen",
+        "text": "Wir entwickeln und harmonisieren Ihre Preisstrategie über OTAs, direkte Website und weitere Kanäle – und reduzieren dabei Verluste, Inkonsistenzen und unnötige Rabatte."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Strategische Umsatzwachstumssteuerung",
+        "text": "Wir beobachten die Performance kontinuierlich und passen Positionierung, Preisgestaltung und Kanalstrategie an Marktveränderungen an."
+      }
+    ]
+  },
+  "process": {
+    "headline": "PROZESS",
+    "subheader": "Unser Vorgehen",
+    "intro": "Unser strukturierter Ansatz beginnt mit einer umfassenden Analyse & Diagnose, um verborgenes Umsatzpotenzial aufzudecken. Diese Erkenntnisse überführen wir anschließend in einen strategischen Fahrplan mit einem klaren 6–9 Monats-Aktionsplan — und sichern nachhaltiges Wachstum durch konsequente Umsetzung & Monitoring",
+    "bullets": [
+      {
+        "title": "Analyse & Diagnose",
+        "text": "Umfassende Analyse von Preisgestaltung, Vertriebsmix, Ranking-Performance und Wettbewerbspositionierung"
+      },
+      {
+        "title": "Strategischer Fahrplan",
+        "text": "Klarer 6–9 Monats-Aktionsplan mit den Schwerpunkten Ranking-Verbesserung, Preisarchitektur, Kanalausrichtung und Direktstrategie"
+      },
+      {
+        "title": "Umsetzung & Monitoring",
+        "text": "Ausführung, Tracking und kontinuierliche Optimierung zur Sicherstellung messbarer Leistungsverbesserungen"
+      }
+    ]
+  },
+  "about": {
+    "sectionOne": {
+      "headline": "ÜBER UNS",
+      "subheader": "Warum HotelMinds",
+      "intro": "Wir schließen die Lücke zwischen plattformseitiger Expertise und unabhängigem strategischem Denken. Anders als traditionelle Distributionsplattformen agieren wir mit vollständiger Neutralität — wir vertreten Ihre Interessen über die gesamte Plattformlandschaft hinweg, ohne ein einzelnes Ökosystem zu bevorzugen. Unsere Methodik ist konsequent strukturiert und datengetrieben, geht über generische Beratung hinaus und konzentriert sich ausschließlich auf messbare Umsatzperformance. Durch den Aufbau ausgereifter Distributionssysteme verschaffen wir unseren Partnern die Klarheit, Kontrolle und strukturelle Stabilität, die für nachhaltiges Wachstum erforderlich sind.",
+      "accordeonBullets": [
+        {
+          "header": "Präzision statt Volumen",
+          "text": "Wir beschränken unsere Partnerschaften bewusst auf eine ausgewählte Gruppe von Hotels, um maximale Analysetiefe zu gewährleisten. Dieser Ansatz ermöglicht es uns, uns auf wirkungsstarke Strategien und granulare Datenpräzision zu konzentrieren, die Massenanbieter schlicht nicht leisten können."
+        },
+        {
+          "header": "Umsetzung statt Theorie",
+          "text": "Wir liefern nicht nur Strategien — wir setzen sie um. Jede Empfehlung wird vollständig in Ihren Systemen implementiert, nicht als statisches PDF übergeben. So werden Expertenerkenntnisse direkt in Live-Updates, unmittelbare Performance-Verbesserungen und eine spürbare Entlastung Ihres internen Teams übersetzt."
+        },
+        {
+          "header": "OTA-native Expertise",
+          "text": "Unsere Expertise basiert auf jahrelanger Erfahrung innerhalb von Booking.com sowie tiefgreifender PMS/CM-Beratung. Wir raten nicht, wie Algorithmen funktionieren — wir verstehen die interne Logik der Plattformen. Diese Innenperspektive ermöglicht es uns, die Komplexität der Marketplace-Distribution mit einer Präzision zu navigieren, die externe Berater schlicht nicht erreichen können."
+        },
+        {
+          "header": "Planbare Ergebnisse",
+          "text": "Erfolg sollte keine Frage des Zufalls sein. Wir nutzen einen wiederholbaren, strukturierten Prozess, der gezielt auf messbare Leistungssteigerungen ausgelegt ist. Indem wir das Rätselraten eliminieren und auf ein bewährtes Framework setzen, verwandeln wir Marktvolatilität in einen verlässlichen Wachstumspfad für den Umsatz Ihres Hotels."
+        }
+      ]
+    },
+    "sectionTwo": {
+      "headline": "Wir arbeiten mit Hotels zusammen, die strategisches Wachstum und operative Klarheit schätzen",
+      "subheader": "Partnerschaft",
+      "intro": "Wir arbeiten mit zukunftsorientierten Hotels und Gruppen zusammen, die langfristige Unabhängigkeit über kurzfristige Lösungen stellen. Für unsere Kunden sind strategisches Wachstum und ein klarer Wettbewerbsvorteil keine bloßen Ziele, sondern die Grundlage ihrer unternehmerischen Denkweise.",
+      "bulletHeader": "Unabhängige Häuser, Premium-Hotels, Resorts und Hotelgruppen, die",
+      "bullets": [
+        "den Umsatz steigern möchten, ohne Abhängigkeiten zu erhöhen",
+        "die Direktperformance stärken möchten",
+        "die Kontrolle über Preisgestaltung und Distribution gewinnen wollen",
+        "strategisch agieren statt auf Marktdruck zu reagieren"
+      ],
+      "outro": "Das Mindset zählt mehr als Größe oder Standort."
+    }
+  },
+  "contact": {
+    "headline": "KONTAKT",
+    "subheader": "Sprechen wir miteinander",
+    "intro": "Distribution ist keine Nebenaufgabe. Sie ist ein strategischer Wachstumshebel. Wenn Umsatzwachstum Priorität hat, lassen Sie uns eine Struktur aufbauen, die für Sie arbeitet.",
+    "mail": "E-Mail",
+    "phone": "Telefon",
+    "colab": "Kooperationen",
+    "address": "Adresse"
+  },
+  "results": {
+    "headline": "ERGEBNISSE",
+    "subheader": "Strategisch Planen statt Reagieren",
+    "steps": [
+      {
+        "title": "Vor der Zusammenarbeit",
+        "bullets": [
+          "Abhängigkeit von kurzfristigen taktischen Anpassungen",
+          "Wettbewerb primär über den Preis",
+          "Geringe Transparenz über die Positionierung der Mitbewerber",
+          "Inkonsistente Sichtbarkeit",
+          "Kein strukturierter Distributions-Fahrplan"
+        ]
+      },
+      {
+        "title": "Strategische Veränderungen",
+        "bullets": [
+          "Verbesserung der Suchsichtbarkeit auf den wichtigsten Plattformen",
+          "Optimierung der Preisstruktur über alle Kanäle",
+          "Klare Strategie für den Wettbewerber-Benchmarking",
+          "Steigerung des Direktbuchungsanteils",
+          "Verbesserung der Umsatzkontrolle und Reduzierung des Margendrucks"
+        ]
+      },
+      {
+        "title": "Nach der Zusammenarbeit",
+        "bullets": [
+          "Höhere und stabilere Sichtbarkeit",
+          "Klare Wettbewerbspositionierung",
+          "Strukturierte Preisstrategie",
+          "Stärkerer Direktbuchungsanteil",
+          "Kontrollierte Distribution statt Abhängigkeit"
+        ]
+      }
+    ]
+  }
+}

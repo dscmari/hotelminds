@@ -2,22 +2,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactBtn from "../../buttons/ContactBtn";
-import LanguageSwitcher from "@/app/components/navbar/LanguageSwitcher";
+import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 import { ShiftingDropDown } from "./ShiftingDropDown";
 import { useScrolled } from "@/app/hooks/useScrolled";
 
-
 type Props = {
   className?: string;
-  locale: string;
-  pathname: string;
-  data: any;
+  data: string[]
 };
 
-export default function DesktopNavbar({ className, locale, pathname, data }: Props) {
-    const isScrolled = useScrolled(50);
+export default function DesktopNavbar({
+  className,
+  data
+}: Props) {
+  const isScrolled = useScrolled(50);
   return (
-    <div className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "p-0 border-b " : "p-4"} ${className}`}>
+    <div
+      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "p-0 border-b " : "p-4"} ${className}`}
+    >
       {/* <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
           <Phone/>
@@ -29,7 +31,7 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
         </div>
       </div> */}
       <div className="flex items-center gap-8 p-4">
-      <Link href={"/"}>
+        <Link href={"/"}>
           {" "}
           <Image
             src="/images/hotelminds_logo_bg_transparent.png"
@@ -38,9 +40,9 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
             width={150}
             height={75}
           />
-        </Link> 
+        </Link>
         <div className="flex items-center justify-between w-full">
-          <ShiftingDropDown />
+          <ShiftingDropDown data={data} />
           {/* <div className="flex items-center gap-8">
             {data.navbar.bullets.map((bullet: string, index: number) => (
               <Link href={`${bullet === "Über uns" ? `${pathname}#ueber-uns` : `${pathname}#${bullet.toLowerCase()}`} `} className="font-semibold" key={index}>
@@ -49,7 +51,7 @@ export default function DesktopNavbar({ className, locale, pathname, data }: Pro
             ))}
           </div> */}
           <div className="flex items-center gap-8">
-            <LanguageSwitcher locale={locale} />
+             <LanguageSwitcher /> 
             <ContactBtn className="hover:bg-gold" />
           </div>
         </div>
