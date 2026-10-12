@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+
 import { Inter, Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/navbar/Navbar";
-import { dictionary } from "../utils/dictionary";
+
 import Footer from "../components/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { locale } from "next/root-params";
