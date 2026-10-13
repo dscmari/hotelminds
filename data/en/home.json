@@ -2,7 +2,7 @@
   "meta": {
     "title": "Hotel Consulting for Independent Hotels | HotelMinds",
     "description": "HotelMinds helps independent hotels improve revenue management, pricing, booking platforms, direct sales and pre-opening commercial setup.",
-    "alternates": "https://hotelminds/en/"
+    "alternates": "https://hotelminds.io/en/"
   },
   
   "hero": {
@@ -11,8 +11,9 @@
     "btnOutro": "We combine strategic guidance with hands-on execution to create stronger, more profitable commercial structures."
   },
   "services": {
-    "headline": "SERVICES",
-    "subheader": "Existing Hotel Performance",
+    "headlineExistingHotels": "Existing Hotel Performance",
+    "headlinePreOpening": "Pre Opening",
+    "subheader": "SERVICES",
     "intro": "For operating independent hotels looking to improve revenue performance, strengthen hotel distribution and gain greater control over pricing, direct bookings and commercial decision-making.",
     "bullets": [
       {
@@ -34,6 +35,31 @@
         "icon": "Sliders",
         "header": "Steer Performance Continuously",
         "text": "Use booking patterns, market signals, channel performance and commercial reporting to turn data into clear, ongoing actions."
+      },
+      {
+        "icon": "Rocket",
+        "header": "Pre-Opening Commercial Setup",
+        "text": "For new hotel openings, major renovations and re-openings that need the right commercial structure in place before entering the market."
+      },
+      {
+        "icon": "Compass",
+        "header": "Build the Commercial Strategy Early",
+        "text": "Define positioning, target segments, pricing logic and distribution priorities before commercial decisions become rushed or expensive to change."
+      },
+      {
+        "icon": "Cpu",
+        "header": "Put the Right Technology in Place",
+        "text": "Select and implement the PMS, channel manager, booking engine, revenue tools and payment infrastructure required for an efficient launch."
+      },
+      {
+        "icon": "Network",
+        "header": "Build Distribution Before Opening",
+        "text": "Set up room and rate structures, OTA connectivity, direct booking channels, policies and inventory so the property is commercially ready before doors open."
+      },
+      {
+        "icon": "Flag",
+        "header": "Prepare for a Stronger Launch",
+        "text": "Establish reporting, workflows and commercial priorities early so the hotel can build demand before opening and enter the market with greater control."
       }
     ]
   },
@@ -58,9 +84,9 @@
   },
   "about": {
     "sectionOne": {
-      "headline": "ABOUT",
+      "headline": "ABOUT HOTELMINDS",
       "subheader": "Why HotelMinds",
-      "intro": "HotelMinds combines hands-on OTA and hospitality experience with independent commercial thinking. We help selected accommodation providers improve how their visibility, pricing, content and distribution work together—focusing on clarity, control and measurable commercial progress.",
+      "intro": "HotelMinds is a hotel consulting company focused on revenue, profitability and sales for independent hotels.",
       "accordeonBullets": [
         {
           "header": "Precision over volume",
@@ -81,15 +107,23 @@
       ]
     },
     "sectionTwo": {
-      "headline": "We partner with accommodation providers that want clearer commercial control",
-      "subheader": "Partnership",
-      "intro": "We work with independent accommodation businesses that want to improve visibility, strengthen direct performance and gain more control over pricing and distribution — without relying on short-term fixes.",
-      "bulletHeader": "For accommodation owners and operators ready to:",
+      "headline": "ABOUT HOTELMINDS",
+      "subheader": "The HotelMinds Edge",
+      "intro": "HotelMinds is a hotel consulting company focused on revenue, profitability and sales for independent hotels.",
+      "bulletHeadline": "Our international team brings together three perspectives that are rarely found in one place:",
       "bullets": [
-        "Increase revenue without increasing platform dependency",
-        "Strengthen direct booking performance",
-        "Gain better control over pricing and distribution",
-        "Compete strategically instead of reacting to market pressure"
+        {
+          "header": "Hotel Operations",
+          "text": "Hands-on experience from inside hotels and day-to-day hospitality operations."
+        },
+             {
+          "header": "Booking Platforms (OTAs)",
+          "text":     "Experience from leading booking platforms including Booking.com, Expedia and Airbnb."
+        },
+             {
+          "header": "AI & Hospitality Technology",
+          "text": "Strategic partnerships that bring additional expertise in AI and emerging hotel technology when it adds value."
+        }
       ],
       "outro": "Mindset matters more than size or geography."
     }

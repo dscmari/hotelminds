@@ -1,6 +1,6 @@
 {
   "navbar": {
-     "bullets": [
+    "bullets": [
       "Home",
       "Bestehende Hotels",
       "Pre Opening",
@@ -17,5 +17,20 @@
     "privacy": "Datenschutzerklärung",
     "imprint": "Impressum",
     "credit": "Design & Development by"
+  },
+  "existingHotelBtn": {
+    "text": "Mehr erfahren",
+    "link": "/bestehende-hotels/"
+  },
+  "preOpeningBtn": {
+    "text": "Mehr erfahren",
+    "link": "/pre-opening/"
+  },
+  "aboutBtn": {
+    "text": "Mehr erfahren",
+    "link": "/about"
+  },
+  "contactBtn": {
+    "text": "Erstgespräch buchen"
   }
 }

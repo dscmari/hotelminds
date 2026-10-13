@@ -9,6 +9,7 @@ import {
   Sliders,
 } from "lucide-react";
 import {
+  AboutBullet,
   AboutSectionOne,
   AboutSectionTwo,
   HeroData,
@@ -17,12 +18,9 @@ import {
 } from "../utils/types";
 import Hero from "../components/Hero";
 import AccordeonClean from "../components/layouts/AccordeonClean";
-import Process from "../components/Process";
-import ThreePhaseLayout from "../components/layouts/ThreePhaseLayout";
-import ExistingHotelBtn from "../components/buttons/ExistingHotelBtn";
+import ServiceBtn from "../components/buttons/ServiceBtn";
 import { Metadata } from "next";
 
-/*
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home.meta");
   const currentLocale = await locale();
@@ -39,20 +37,32 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
   };
-}*/
+}
 
 export default async function Home() {
   const heroHome = await getTranslations("home");
   const hero = heroHome.raw("hero") as HeroData;
-  const services = await getTranslations("home.services")
+  const services = await getTranslations("home.services");
   const serviceBullets = services.raw("bullets") as ServiceBullet[];
-  const process = await getTranslations("home.process");
-  const processBullets = process.raw("bullets") as ProcessBullet[];
-  const results = await getTranslations("home.results");
   const about = await getTranslations("home.about");
-  const aboutSectionOne = about.raw("sectionOne") as AboutSectionOne;
   const aboutSectionTwo = about.raw("sectionTwo") as AboutSectionTwo;
   const contact = await getTranslations("home.contact");
+  const contactBtn = await getTranslations("components.contactBtn");
+  const existingHotelBtn = await getTranslations("components.existingHotelBtn");
+  const preOpeningBtn = await getTranslations("components.preOpeningBtn");
+  const aboutBtn = await getTranslations("components.aboutBtn")
+
+  const contactBtnData = {
+    text: contactBtn("text"),
+  };
+  const preOpeningBtnData = {
+    text: preOpeningBtn("text"),
+    link: preOpeningBtn("link"),
+  };
+  const aboutBtnData = {
+    text: aboutBtn("text"),
+    link: aboutBtn("link")
+  }
 
   const icons: Record<string, React.ComponentType> = {
     SearchCheck,
@@ -63,20 +73,24 @@ export default async function Home() {
 
   return (
     <div>
-       <Hero data={hero} />
-      {/* services */}
+      <Hero data={hero} contactBtn={contactBtnData} />
+      {/* services 1 */}
       <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
             <h2 className="!mb-0">{services("subheader")}</h2>
-            <h1 className="lg:!text-5xl !tracking-tight">
-              {services("headline")}
+            <h1 className="lg:!text-5xl/14 !tracking-tight">
+              {services("headlineExistingHotels")}
             </h1>
             <p className="lg:text-base/8">{services("intro")}</p>
-            <ExistingHotelBtn className="mx-auto lg:mx-0 bg-gold mt-8" />
+            <ServiceBtn
+              className="mx-auto lg:mx-0 bg-gold mt-8"
+              text={existingHotelBtn("text")}
+              link={existingHotelBtn("link")}
+            />
           </div>
           <div className="flex-2 grid grid-cols-1 xl:grid-cols-2 gap-16 mt-4">
-            {serviceBullets.map((bullet) => {
+            {serviceBullets.slice(0, 4).map((bullet) => {
               const Icon = icons[bullet.icon];
               return (
                 <div key={bullet.header} className="flex flex-col gap-4">
@@ -91,8 +105,38 @@ export default async function Home() {
           </div>
         </div>
       </section>
+      {/* services 2*/}
+      <section className="px-4 pt-24 md:p-16 lg:p-32">
+        <div className="flex flex-col gap-4">
+          <h2 className="!mb-0 lg:text-center !font-light">
+            {services("subheader")}
+          </h2>
+          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">
+            {services("headlinePreOpening")}
+          </h1>
+          <p className="max-w-2xl font-light lg:text-center mx-auto">
+            {serviceBullets[4].text}
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
+          <div className="flex-1">
+            <Image
+              src="/images/consulting_stock.jpg"
+              alt="Business environment in the office"
+              width={800}
+              height={600}
+              className="rounded-xl mx-auto"
+            />
+          </div>
+          <AccordeonClean
+            className="flex-1"
+            data={serviceBullets.slice(5)}
+            preOpeningBtn={preOpeningBtnData}
+          />
+        </div>
+      </section>
       {/* process */}
-      <section
+      {/* <section
         className="pt-24 pb-24 px-4 lg:pt-32 lg:px-32"
       >
         <div className="flex flex-col gap-4">
@@ -108,13 +152,13 @@ export default async function Home() {
           className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
           circles={processBullets}
         />
-      </section>
+      </section> */}
       {/* results */}
-      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
+      {/* <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
         <ThreePhaseLayout results={results} />
-      </section>
+      </section> */}
       {/* about*/}
-      <section className="px-4 pt-24 md:p-16 lg:p-32">
+      {/* <section className="px-4 pt-24 md:p-16 lg:p-32">
         <div className="flex flex-col gap-4">
           <span className="lg:mx-auto">{aboutSectionOne.subheader}</span>
           <h1 className="lg:text-center lg:!text-5xl !tracking-tight">
@@ -136,11 +180,11 @@ export default async function Home() {
           </div>
           <AccordeonClean className="flex-1" data={aboutSectionOne} />
         </div>
-      </section>
+      </section> */}
       <section className="px-4 py-24 md:p-16 lg:p-32">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
           <div className="flex-1 flex flex-col gap-4">
-            <span className="">{aboutSectionTwo.subheader}</span>
+            <span className="font-light">{aboutSectionTwo.subheader}</span>
             <h1 className="lg:!text-5xl !tracking-tight">
               {aboutSectionTwo.headline}
             </h1>
@@ -160,15 +204,18 @@ export default async function Home() {
             />
           </div>
           <div className="flex-1">
-            <h2 className="lg:max-w-sm">{aboutSectionTwo.bulletHeader}</h2>
+            <h2 className="lg:max-w-xl">{aboutSectionTwo.bulletHeadline}</h2>
             <div className="flex flex-col gap-4 mt-8">
-              {aboutSectionTwo.bullets.map((e: string, index: number) => (
+              {aboutSectionTwo.bullets.map((e: AboutBullet, index: number) => (
                 <div key={index} className="flex items-start gap-4">
-                  <CircleCheckBig className="text-gold shrink-0" />
-                  <span>{e}</span>
+                  <CircleCheckBig className="text-gold shrink-0 mt-0.5" />
+                  <div>
+                    <h2>{e.header}</h2>
+                    <span>{e.text}</span>
+                  </div>
                 </div>
               ))}
-              <p className="font-semibold mt-4">{aboutSectionTwo.outro}</p>
+              <ServiceBtn text={aboutBtn("text")} link={aboutBtn("link")} className="bg-gold text-center mt-8" />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
   "navbar": {
     "bullets": [
       "Home",
-      "Existing Hotels Performance",
+      "Existing Hotel Performance",
       "Pre Opening",
       "About",
       "Contact",
@@ -17,5 +17,20 @@
     "privacy": "Privacy Policy",
     "imprint": "Imprint",
     "credit": "Design & Development by"
+  },
+  "existingHotelBtn": {
+    "text": "Learn more",
+    "link": "/existing-hotel-performance/"
+  },
+  "preOpeningBtn": {
+    "text": "Learn more",
+    "link": "/pre-opening/"
+  },
+  "aboutBtn": {
+    "text": "Learn more",
+    "link": "/about"
+  },
+  "contactBtn": {
+    "text": "Book an intro call"
   }
 }

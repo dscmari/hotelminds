@@ -5,13 +5,15 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
 import LanguageSwitcher from "../LanguageSwitcher";
+import { CustomBtn } from "@/app/utils/types";
 
 type Props = {
   className?: string;
   data: string[];
+  contactBtn: CustomBtn
 };
 
-export default function Navbar({ className, data }: Props) {
+export default function Navbar({ className, data, contactBtn }: Props) {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -86,7 +88,7 @@ export default function Navbar({ className, data }: Props) {
       </div>
       {/* Desktop */}
       <div className="hidden lg:block z-100 fixed bg-offwhite w-full max-w-[2048px]">
-        <DesktopNavbar data={data} />
+        <DesktopNavbar data={data} contactBtn={contactBtn} />
       </div>
     </div>
   );

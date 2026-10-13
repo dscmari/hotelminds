@@ -6,7 +6,7 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/pre-opening": {de: "/pre-opening/", en: "/pre-opening/"},
-    "/existing-hotels-performance": {de: "/bestehende-hotels/", en: "/existing-hotels-performance/"},
+    "/existing-hotel-performance": {de: "/bestehende-hotels/", en: "/existing-hotel-performance/"},
     "/about": {de: "/about/", en: "/about/"},
     "/contact": {de: "/kontakt/", en: "/contact/"},
     "/imprint": { de: "/impressum/", en: "/imprint/" },

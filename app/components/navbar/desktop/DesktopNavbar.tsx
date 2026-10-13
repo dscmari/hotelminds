@@ -5,15 +5,18 @@ import ContactBtn from "../../buttons/ContactBtn";
 import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 import { ShiftingDropDown } from "./ShiftingDropDown";
 import { useScrolled } from "@/app/hooks/useScrolled";
+import { CustomBtn } from "@/app/utils/types";
 
 type Props = {
   className?: string;
   data: string[]
+  contactBtn: CustomBtn
 };
 
 export default function DesktopNavbar({
   className,
-  data
+  data,
+  contactBtn
 }: Props) {
   const isScrolled = useScrolled(50);
   return (
@@ -52,7 +55,7 @@ export default function DesktopNavbar({
           </div> */}
           <div className="flex items-center gap-8">
              <LanguageSwitcher /> 
-            <ContactBtn className="hover:bg-gold" />
+            <ContactBtn className="hover:bg-gold" text={contactBtn.text} />
           </div>
         </div>
       </div>

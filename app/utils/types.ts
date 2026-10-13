@@ -29,11 +29,23 @@ export type AboutSectionOne = {
   accordeonBullets: { header: string; text: string }[];
 };
 
+export type AboutBullet = {
+  header: string;
+  text: string;
+};
+
 export type AboutSectionTwo = {
-  bullets: string[];
   headline: string;
   subheader: string;
   intro: string;
-  bulletHeader: string;
+  bulletHeadline: string;
+  bullets: AboutBullet[];
   outro: string;
 };
+
+//btns
+export type CustomBtn = {
+  className?: string
+  text: string
+  link?: string
+}

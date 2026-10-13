@@ -1,41 +1,55 @@
 "use client";
-import { AboutSectionOne, AboutSectionTwo } from "@/app/utils/types";
-import { Cpu, LineChart, Target, Wrench } from "lucide-react";
-import { data } from "motion/react-client";
+import { CustomBtn, ServiceBullet } from "@/app/utils/types";
+import {
+  Calculator,
+  Compass,
+  Cpu,
+  Flag,
+  Globe,
+  Network,
+  Rocket,
+  SearchCheck,
+  Sliders,
+  Target,
+  Wrench,
+} from "lucide-react";
+import ServiceBtn from "../buttons/ServiceBtn";
 
 type Props = {
   className?: string;
-  data: AboutSectionOne;
+  data: ServiceBullet[];
+  preOpeningBtn: CustomBtn;
 };
 
-export default function AccordeonClean({ className, data }: Props) {
-  const bullets = data.accordeonBullets
-  const home = [
-    {
-      id: "impact-1",
-      icon: <Target />,
-      bullet: bullets[0].header,
-      text: bullets[0].text,
-    },
-    {
-      id: "impact-2",
-      icon: <Wrench />,
-      bullet: bullets[1].header,
-      text: bullets[1].text,
-    },
-    {
-      id: "impact-3",
-      icon: <Cpu />,
-      bullet: bullets[2].header,
-      text: bullets[2].text,
-    },
-    {
-      id: "impact-4",
-      icon: <LineChart />,
-      bullet: bullets[3].header,
-      text: bullets[3].text,
-    },
-  ];
+// Alle potenziell verwendeten Icons in einem Record registrieren
+const icons: Record<string, React.ComponentType<{ className?: string }>> = {
+  SearchCheck,
+  Calculator,
+  Globe,
+  Sliders,
+  Rocket,
+  Compass,
+  Cpu,
+  Network,
+  Target,
+  Wrench,
+  Flag,
+};
+
+export default function AccordeonClean({
+  className,
+  data,
+  preOpeningBtn,
+}: Props) {
+  const home = data.map((bullet, index) => {
+    const IconComponent = icons[bullet.icon];
+    return {
+      id: `impact-${index + 1}`,
+      icon: IconComponent ? <IconComponent /> : null,
+      bullet: bullet.header,
+      text: bullet.text,
+    };
+  });
 
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
@@ -65,6 +79,11 @@ export default function AccordeonClean({ className, data }: Props) {
           </div>
         </div>
       ))}
+      <ServiceBtn
+        className="mx-auto lg:mx-0 bg-gold mt-8 text-center"
+        text={preOpeningBtn.text}
+        link={preOpeningBtn.link}
+      />
     </div>
   );
 }

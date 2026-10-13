@@ -9,6 +9,7 @@ import { locale } from "next/root-params";
 import { notFound } from "next/navigation";
 import { routing } from "@/app/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,9 +27,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   metadataBase: new URL("https://hotelminds.io"),
-// };
+export const metadata: Metadata = {
+  metadataBase: new URL("https://hotelminds.io"),
+  title: "hotelminds | Make your hotel impossible to ignore",
+  description: "hotel minds supports hotel to make them visible",
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -41,6 +44,10 @@ export default async function RootLayout({
 }) {
   const navbar = await getTranslations("components.navbar");
   const bullets = navbar.raw("bullets") as string[];
+  const contactBtn = await getTranslations("components.contactBtn")
+  const contactBtnData = {
+    text: contactBtn("text")
+  };
 
   return (
     <html
@@ -49,7 +56,7 @@ export default async function RootLayout({
     >
       <body>
         <NextIntlClientProvider>
-          <Navbar data={bullets} />
+          <Navbar data={bullets} contactBtn={contactBtnData} />
           <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>

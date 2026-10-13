@@ -1,8 +1,8 @@
 {
-    "meta": {
+  "meta": {
     "title": "SEO Title: Hotelberatung für unabhängige Hotels | HotelMinds",
     "description": "HotelMinds berät unabhängige Hotels zu Revenue Management, Preisstrategie, Buchungsplattformen, Direktvertrieb und Pre-Opening.",
-    "alternates": "https://hotelminds/de/"
+    "alternates": "https://hotelminds.io/de/"
   },
   "hero": {
     "headline": "Marge sichern. Kommerzielle Performance stärken.",
@@ -10,29 +10,55 @@
     "btnOutro": "Wir verbinden strategische Beratung mit praxisnaher Umsetzung und schaffen so stärkere, profitablere kommerzielle Strukturen."
   },
   "services": {
-    "headline": "STRATEGIE",
-    "subheader": "Die meisten Hotels haben kein Marketingproblem. Sie haben ein Distributionsproblem.",
-    "intro": "Viele Hotels investieren in Marketing, passen ihre Preise regelmäßig an und sind auf mehreren Vertriebsplattformen aktiv – und kämpfen dennoch mit mangelnder Sichtbarkeit, Margendruck und inkonsistenter Performance.",
+    "headlineExistingHotels": "Bestehende Hotels",
+     "headlinePreOpening": "Pre Opening",
+    "subheader": "LEISTUNGEN ",
+    "intro": "Wir unterstützen unabhängige Hotels dabei, ihre Zimmer profitabler zu verkaufen – mit einer klaren Preisstrategie, einem starken Online-Vertrieb und mehr Direktbuchungen.",
     "bullets": [
       {
         "icon": "SearchCheck",
-        "header": "Sichtbarkeit dort erhöhen, wo es zählt",
-        "text": "Wir optimieren Ihre Positionierung auf OTA-Plattformen und Vertriebskanälen, damit Ihr Hotel höher rankt, mehr Nachfrage abschöpft und strategisch – nicht reaktiv – im Wettbewerb agiert."
+        "header": "Sichtbarkeit dort stärken, wo Gäste suchen",
+        "text": "Wir verbessern die Präsenz Ihres Hotels auf OTAs, der eigenen Website und relevanten Buchungsplattformen, damit mehr Nachfrage erreicht wird."
       },
       {
         "icon": "Calculator",
-        "header": "Mehr Nachfrage in Umsatz umwandeln",
-        "text": "Wir optimieren Preisarchitektur, Content-Positionierung und Preislogik über alle Kanäle hinweg, damit Besucher zu profitablen Buchungen werden."
+        "header": "Mehr Nachfrage in profitable Buchungen umwandeln",
+        "text": "Wir optimieren Zimmerdarstellung, Inhalte, Ratenstruktur und Buchungswege, damit aus bestehender Nachfrage mehr Umsatz entsteht"
       },
       {
         "icon": "Globe",
-        "header": "Strukturierte Preis- und Kanalsteuerung aufbauen",
+        "header": "Preise und Vertrieb besser steuern",
         "text": "Wir entwickeln und harmonisieren Ihre Preisstrategie über OTAs, direkte Website und weitere Kanäle – und reduzieren dabei Verluste, Inkonsistenzen und unnötige Rabatte."
       },
       {
         "icon": "Sliders",
-        "header": "Strategische Umsatzwachstumssteuerung",
-        "text": "Wir beobachten die Performance kontinuierlich und passen Positionierung, Preisgestaltung und Kanalstrategie an Marktveränderungen an."
+        "header": "Performance kontinuierlich verbessern",
+        "text": "Wir analysieren Buchungsverhalten, Markt eränderungen und die Entwicklung der einzelnen Kanäle und leiten daraus konkrete Maßnahmen ab."
+      },
+        {
+        "icon": "Rocket",
+        "header": "Pre-Opening Commercial Setup",
+        "text": "For new hotel openings, major renovations and re-openings that need the right commercial structure in place before entering the market."
+      },
+      {
+        "icon": "Compass",
+        "header": "Build the Commercial Strategy Early",
+        "text": "Define positioning, target segments, pricing logic and distribution priorities before commercial decisions become rushed or expensive to change."
+      },
+      {
+        "icon": "Cpu",
+        "header": "Put the Right Technology in Place",
+        "text": "Select and implement the PMS, channel manager, booking engine, revenue tools and payment infrastructure required for an efficient launch."
+      },
+      {
+        "icon": "Network",
+        "header": "Build Distribution Before Opening",
+        "text": "Set up room and rate structures, OTA connectivity, direct booking channels, policies and inventory so the property is commercially ready before doors open."
+      },
+      {
+        "icon": "Flag",
+        "header": "Prepare for a Stronger Launch",
+        "text": "Establish reporting, workflows and commercial priorities early so the hotel can build demand before opening and enter the market with greater control."
       }
     ]
   },
@@ -80,17 +106,25 @@
       ]
     },
     "sectionTwo": {
-      "headline": "Wir arbeiten mit Hotels zusammen, die strategisches Wachstum und operative Klarheit schätzen",
-      "subheader": "Partnerschaft",
-      "intro": "Wir arbeiten mit zukunftsorientierten Hotels und Gruppen zusammen, die langfristige Unabhängigkeit über kurzfristige Lösungen stellen. Für unsere Kunden sind strategisches Wachstum und ein klarer Wettbewerbsvorteil keine bloßen Ziele, sondern die Grundlage ihrer unternehmerischen Denkweise.",
-      "bulletHeader": "Unabhängige Häuser, Premium-Hotels, Resorts und Hotelgruppen, die",
+      "headline": "ÜBER HOTELMINDS",
+      "subheader": "Was uns ausmacht",
+      "intro": "HotelMinds ist eine Hotelberatungsagentur für unabhängige Hotels mit Fokus auf Umsatz, Profitabilität und Vertrieb.",
+      "bulletHeadline": "Unser internationales Team vereint drei Perspektiven, die nur selten an einem Ort zusammenkommen:",
       "bullets": [
-        "den Umsatz steigern möchten, ohne Abhängigkeiten zu erhöhen",
-        "die Direktperformance stärken möchten",
-        "die Kontrolle über Preisgestaltung und Distribution gewinnen wollen",
-        "strategisch agieren statt auf Marktdruck zu reagieren"
+        {
+          "header": "Hotellerie",
+          "text": "Praktische Erfahrung aus dem Hotelbetrieb und dem täglichen Umgang mit Gästen, Abläufen und Verkauf."
+        },
+             {
+          "header": "Buchungsplattformen (OTAs)",
+          "text":     "Erfahrung aus führenden Buchungsplattformen wie Booking.com, Expedia und Airbnb."
+        },
+             {
+          "header": "KI & Hoteltechnologie",
+          "text": "Strategische Partnerschaften bringen zusätzliches Know-how in den Bereichen KI und moderne Hoteltechnologie ein – dort, wo es Mehrwert schafft."
+        }
       ],
-      "outro": "Das Mindset zählt mehr als Größe oder Standort."
+      "outro": "Mindset matters more than size or geography."
     }
   },
   "contact": {

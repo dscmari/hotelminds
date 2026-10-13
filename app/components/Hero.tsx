@@ -1,13 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import ContactBtn from "./buttons/ContactBtn";
 import Image from "next/image";
-import { HeroData } from "../utils/types";
+import { CustomBtn, HeroData } from "../utils/types";
 
 type Props = {
   data: HeroData
+  contactBtn: CustomBtn
 }
 
-export default async function Hero({data} : Props) {
+export default async function Hero({data, contactBtn} : Props) {
   return (
     <div
       id="home"
@@ -29,8 +30,8 @@ export default async function Hero({data} : Props) {
 
         <div className="mt-12 flex flex-col gap-8 items-center justify-center">
           <ContactBtn
-            content="Book an Intro Call"
             className="hover:bg-gold text-charcoalDark"
+            text = {contactBtn.text}
           />
           <p className="font-semibold max-w-2xl mx-auto">
             {data.btnOutro}
