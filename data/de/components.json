@@ -1,15 +1,21 @@
 {
   "navbar": {
-    "bullets": ["Angebot", "Über Uns", "Kontakt"]
+     "bullets": [
+      "Home",
+      "Bestehende Hotels",
+      "Pre Opening",
+      "Über Uns",
+      "Kontakt",
+      "Angebot"
+    ]
   },
 
-            "footer": {
-      "headline": "Machen Sie Ihr Hotel unmöglich zu übersehen.",
-      "subheader": "HotelMinds verbindet strategisches Denken mit präziser digitaler Umsetzung, um Premium-Hotels unverwechselbar zu machen.",
-      "agb": "Allgemeine Geschäftsbedingungen",
-      "privacy": "Datenschutzerklärung",
-      "imprint": "Impressum",
-      "credit": "Design & Development by"
-    }
-
+  "footer": {
+    "headline": "Machen Sie Ihr Hotel unmöglich zu übersehen.",
+    "subheader": "HotelMinds verbindet strategisches Denken mit präziser digitaler Umsetzung, um Premium-Hotels unverwechselbar zu machen.",
+    "agb": "Allgemeine Geschäftsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "imprint": "Impressum",
+    "credit": "Design & Development by"
+  }
 }

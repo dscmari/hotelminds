@@ -12,6 +12,7 @@ type Props = {
 };
 
 const Tabs = ({ data }: Props) => {
+  console.log(data);
   const [selected, setSelected] = useState<number | null>(null);
   const [dir, setDir] = useState<null | "l" | "r">(null);
 
@@ -26,18 +27,18 @@ const Tabs = ({ data }: Props) => {
 
   const TABS = [
     {
-      title: data[0],
+      title: data[5],
       Component: NavServices,
     },
     {
-      title: data[1],
-      Component: NavPricing,
-      link: `${data[1] === "Über Uns" ? "/about/" : `/${data[1].toLowerCase()}/`}`,
+      title: data[3],
+      Component: NavReferences,
+      link: `/${data[3].toLowerCase()}/`,
     },
     {
-      title: data[2],
-      Component: NavReferences,
-      link: `/${data[2].toLowerCase()}/`,
+      title: data[4],
+      Component: NavPricing,
+      link: `${data[4] === "Über Uns" ? "/about/" : `/${data[4].toLowerCase()}/`}`,
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
@@ -61,7 +62,7 @@ const Tabs = ({ data }: Props) => {
       })}
 
       <AnimatePresence>
-        {selected && <NavContent dir={dir} selected={selected} />}
+        {selected && <NavContent dir={dir} selected={selected} data={data} />}
       </AnimatePresence>
     </div>
   );

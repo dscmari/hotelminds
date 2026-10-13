@@ -61,35 +61,25 @@ export default function Navbar({ className, data }: Props) {
             onClick={toggleMenu}
           >
             <div className="flex flex-col items-end  gap-4 py-12 font-semibold ">
-              <Link href={`/`} className="text-right text-charcoalDark">
-                Home
-              </Link>
-              <Link href={`#`} className="text-right text-charcoalDark">
-                bestehende-hotels
-              </Link>
-              <Link href={`#`} className="text-right text-charcoalDark">
-                pre-opening/
-              </Link>
-              <Link href={`#`} className="text-right text-charcoalDark">
-                Über Uns
-              </Link>
-              <Link href={`#`} className="text-right text-charcoalDark">
-                Kontakt
-              </Link>
-
-              {/* {data.map((bullet: string, index: number) => (
+              {data.map((bullet: string, index: number) => (
                 <div
                   className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end"
                   key={index}
                 >
                   <Link
-                    href={`${bullet === "Über Uns" ? "/about/" : `/${bullet.toLowerCase()}/`}`}
+                    href={
+                      bullet === "Home"
+                        ? "/"
+                        : bullet === "Über Uns"
+                          ? "/about/"
+                          : `/${bullet.toLowerCase().replace(/\s+/g, "-")}/`
+                    }
                     className="text-right text-charcoalDark"
                   >
                     {bullet}
                   </Link>
                 </div>
-              ))} */}
+              ))}
             </div>
           </motion.div>
         ) : null}

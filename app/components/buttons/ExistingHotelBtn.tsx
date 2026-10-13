@@ -7,11 +7,9 @@ type Props = {
   content?: string
 };
 
-export default function ContactBtn({ className, content}: Props) {
-    console.log("contact btn is called")
+export default function ExistingHotelBtn({ className, content}: Props) {
   const pathname = usePathname()
   const isEnglish = pathname === "/de"
-  console.log(isEnglish)
   const reference = pathname === "/de" ? "#" : "#"
   const text = pathname === "/de" ? "#" : "#"
   return (

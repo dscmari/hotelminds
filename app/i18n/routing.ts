@@ -5,9 +5,11 @@ export const routing = defineRouting({
   defaultLocale: "de",
   pathnames: {
     "/": "/",
-    "/about": {de: "/about", en: "/about"},
-    "/contact": {de: "/kontakt", en: "/contact"},
-    "/imprint": { de: "/impressum", en: "/imprint" },
-    "/datenschutz": { de: "/datenschutz", en: "/privacy" },
+    "/pre-opening": {de: "/pre-opening/", en: "/pre-opening/"},
+    "/existing-hotels-performance": {de: "/bestehende-hotels/", en: "/existing-hotels-performance/"},
+    "/about": {de: "/about/", en: "/about/"},
+    "/contact": {de: "/kontakt/", en: "/contact/"},
+    "/imprint": { de: "/impressum/", en: "/imprint/" },
+    "/datenschutz": { de: "/datenschutz/", en: "/privacy/" },
   },
 });

@@ -10,14 +10,17 @@ import NavKITracker from "./NavKITracker";
 const NavContent = ({
   selected,
   dir,
+  data,
 }: {
   selected: number | null;
   dir: null | "l" | "r";
+  data: string[]
 }) => {
     const TABS = [
          {
     title: "Leistungen",
     Component: NavServices,
+    data: data
   },
   {
     title: "Preispakete",
@@ -68,7 +71,7 @@ const NavContent = ({
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.25, ease: "easeInOut" }}
               >
-                <t.Component />
+                <t.Component data={t.data} />
               </motion.div>
             )}
           </div>
