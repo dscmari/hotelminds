@@ -22,7 +22,7 @@ type Props = {
 export default function ThreeBoxLayout({ className, boxes }: Props) {
   return (
     <section className={`${className}`}>
-      <div className="flex flex-col xl:flex-row gap-8 xl:gap-4 xl:justify-around">
+      {/* <div className="flex flex-col xl:flex-row gap-8 xl:gap-4 xl:justify-around">
         {boxes.map((e, index) => (
           <div
             key={index}
@@ -59,7 +59,7 @@ export default function ThreeBoxLayout({ className, boxes }: Props) {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
