@@ -10,6 +10,31 @@
     "subheader": "HotelMinds helps independent hotels strengthen revenue management, pricing, online sales and direct bookings — with clear strategy and hands-on execution.",
     "btnOutro": ""
   },
+  "areas": {
+    "headline": "The areas that directly influence revenue, conversion and margin.",
+    "bullets": [
+      {
+        "icon": "Eye",
+        "header": "Increase Visibility Where It Matters",
+        "text": "Improve how your hotel is positioned across major booking platforms such as Booking.com and Expedia, metasearch platforms including Google, Trivago and Tripadvisor, and increase its chances of being discovered through ChatGPT, Gemini or Claude."
+      },
+      {
+        "icon": "TrendingUp",
+        "header": "Convert More Demand Into Revenue",
+        "text": "Strengthen revenue management, room and rate structures and the booking journey to turn more existing demand into profitable reservations."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Strengthen Pricing & Channel Control",
+        "text": "Align pricing, availability and sales channels to reduce unnecessary discounting, inconsistencies and margin leakage."
+      },
+      {
+        "icon": "BarChart3",
+        "header": "Steer Performance Continuously",
+        "text": "Use booking patterns, market developments, channel performance and reporting to turn data into clear commercial actions."
+      }
+    ]
+  },
   "services": {
     "headline": "Commercial performance is rarely lost in one place.",
     "bullets": [

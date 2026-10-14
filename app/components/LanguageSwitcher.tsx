@@ -24,7 +24,7 @@ export default function LanguageSwitcher({ className }: Props) {
           key={l}
           onClick={() => switchLanguage(l)}
           className={`p-1 lg:p-2 !font-normal rounded-xl ${
-            locale === l ? "bg-slate-200" : "cursor-pointer hover:underline"
+            locale === l ? "bg-cta/10" : "cursor-pointer hover:underline"
           }`}
         >
           {l.toUpperCase()}

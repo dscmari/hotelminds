@@ -4,11 +4,36 @@
     "description": "HotelMinds optimiert Revenue Management, Preisstrategie, Buchungsplattformen und Direktvertrieb für unabhängige Hotels im DACH-Markt.",
     "alternates": "https://hotelminds.io/de/bestehende-hotels/"
   },
-
   "hero": {
     "headline": "Mehr Umsatz. Stärkere Margen. Mehr Kontrolle im Verkauf.",
     "subheader": "HotelMinds unterstützt unabhängige Hotels dabei, Revenue Management, Preisstrategie,  Online-Vertrieb und Direktbuchungen gezielt zu verbessern – mit klarer Strategie und praxisnaher Umsetzung.",
     "btnOutro": ""
+  },
+  "areas": {
+    "headline": "Die Bereiche, die Umsatz, Conversion und Marge direkt beeinflussen.",
+    "bullets": [
+      {
+        "icon": "Eye",
+        "header": "Sichtbarkeit dort stärken, wo sie zählt",
+        "text": "Wir verbessern die Positionierung Ihres Hotels auf den wichtigsten Buchungsplattformen wie Booking.com und Expedia, auf Metasearch-Plattformen wie Google, Trivago und Tripadvisor und erhöhen die Chance, auch über ChatGPT, Gemini oder Claude gefunden zu werden."
+      },
+      {
+        "icon": "TrendingUp",
+        "header": "Mehr Nachfrage in Umsatz umwandeln",
+        "text": "Wir verbessern die Positionierung Ihres Hotels auf den wichtigsten Buchungsplattformen wie Booking.com und Expedia, auf Metasearch-Plattformen wie Google, Trivago und Tripadvisor und erhöhen die Chance, auch über ChatGPT, Gemini oder Claude gefunden zu werden."
+      },
+
+      {
+        "icon": "BarChart3",
+        "header": "Preise und Vertrieb besser steuern",
+        "text": "Wir stimmen Preise, Verfügbarkeiten und Verkaufskanäle besser aufeinander ab, um unnötige Rabatte, Inkonsistenzen und Margenverluste zu reduzieren."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Performance kontinuierlich steuern",
+        "text": "Wir nutzen Buchungsmuster, Marktentwicklungen, Channel Performance und Reporting, um Daten in klare Maßnahmen zu übersetzen."
+      }
+    ]
   },
   "services": {
     "headline": "Umsatz und Marge gehen selten nur an einer Stelle verloren.",
