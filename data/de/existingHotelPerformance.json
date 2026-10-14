@@ -1,3 +1,48 @@
 {
-    "test": "de bestehende hotels"
+  "meta": {
+    "title": "Revenue Management & Hotelvertrieb | HotelMinds",
+    "description": "HotelMinds optimiert Revenue Management, Preisstrategie, Buchungsplattformen und Direktvertrieb für unabhängige Hotels im DACH-Markt.",
+    "alternates": "https://hotelminds.io/de/bestehende-hotels/"
+  },
+
+  "hero": {
+    "headline": "Mehr Umsatz. Stärkere Margen. Mehr Kontrolle im Verkauf.",
+    "subheader": "HotelMinds unterstützt unabhängige Hotels dabei, Revenue Management, Preisstrategie,  Online-Vertrieb und Direktbuchungen gezielt zu verbessern – mit klarer Strategie und praxisnaher Umsetzung.",
+    "btnOutro": ""
+  },
+  "services": {
+    "headline": "Umsatz und Marge gehen selten nur an einer Stelle verloren.",
+    "bullets": [
+      {
+        "icon": "",
+        "header": "",
+        "text": "Kleine Schwächen bei Preisstrategie, Vertrieb, Direktbuchungen und Systemen können sich schnell summieren – und Umsatz sowie Marge spürbar belasten."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Reaktive Preisgestaltung",
+        "text": "Preise werden angepasst, ohne einer klaren Revenue-Strategie zu folgen."
+      },
+      {
+        "icon": "Network",
+        "header": "Zu starke OTA-Abhängigkeit",
+        "text": "Rabatte und Promotions werden zum Standardinstrument, um Buchungen zu generieren."
+      },
+      {
+        "icon": "Globe",
+        "header": "Schwacher Direktvertrieb",
+        "text": "Zu wenig Nachfrage wird über die eigene Website in Buchungen umgewandelt."
+      },
+      {
+        "icon": "Wrench",
+        "header": "Unstrukturierter kommerzieller Aufbau",
+        "text": "Preise, Verfügbarkeiten, Inhalte und Systeme greifen nicht sauber ineinander."
+      },
+      {
+        "icon": "LineChart",
+        "header": "Fehlende Transparenz",
+        "text": "Reporting zeigt, was passiert ist – aber nicht klar genug, was als Nächstes zu tun ist."
+      }
+    ]
+  }
 }

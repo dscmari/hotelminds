@@ -16,7 +16,7 @@ export default async function Footer({ className }: Props) {
           <p className="mb-2">{footer("subheader")}</p>
         </div>
       </div>
-      <div className="px-4 lg:px-32 pt-4 lg:pt-8 flex flex-col lg:flex-row items-center lg:justify-end gap-2 lg:gap-8">
+      <div className="px-4 lg:px-32 pt-4 lg:pt-8 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8">
         <Link href={"#"} className="underline">
           {footer("agb")}
         </Link>

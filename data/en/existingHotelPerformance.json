@@ -1,3 +1,48 @@
 {
-    "test": "en existing hotels performance"
+  "meta": {
+    "title": "Hotel Revenue Management & Distribution | HotelMinds",
+    "description": "Improve hotel revenue management, pricing, booking platforms and direct sales with hands-on strategy and implementation from HotelMinds.",
+    "alternates": "https://hotelminds.io/en/existing-hotel-performance/"
+  },
+
+  "hero": {
+    "headline": "Improve Revenue. Protect Margin. Gain Commercial Control.",
+    "subheader": "HotelMinds helps independent hotels strengthen revenue management, pricing, online sales and direct bookings — with clear strategy and hands-on execution.",
+    "btnOutro": ""
+  },
+  "services": {
+    "headline": "Commercial performance is rarely lost in one place.",
+    "bullets": [
+      {
+        "icon": "",
+        "header": "",
+        "text": "Small weaknesses across pricing, distribution, direct sales and commercial systems can gradually reduce revenue and margin."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Reactive Pricing",
+        "text": "Rates are adjusted without a clear revenue strategy."
+      },
+      {
+        "icon": "Network",
+        "header": "OTA Dependency",
+        "text": "Promotions and discounts become the default way to generate bookings."
+      },
+      {
+        "icon": "Globe",
+        "header": "Weak Direct Sales",
+        "text": "Too little demand converts through the hotel’s own website."
+      },
+      {
+        "icon": "Wrench",
+        "header": "Fragmented Commercial Setup",
+        "text": "Pricing, availability, content and technology are not aligned."
+      },
+      {
+        "icon": "LineChart",
+        "header": "Limited Commercial Visibility",
+        "text": "Reporting shows what happened, but not what should happen next."
+      }
+    ]
+  }
 }

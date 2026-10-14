@@ -129,12 +129,12 @@
     }
   },
   "contact": {
-    "headline": "CONTACT US",
-    "subheader": "Let's Connect",
-    "intro": "Distribution is not a side task. If commercial performance matters, let’s build a structure that works in your favor.",
+    "headline": "Let’s Talk About Your Hotel.",
+    "subheader": "Contact",
+    "intro": "Whether you are looking to improve an existing property or preparing for a new opening, the first step is a short conversation about where you are today and what you want to achieve.",
     "mail": "Mail",
     "phone": "Phone",
-    "colab": "Colaborations",
+    "whatsApp": "WhatsApp",
     "address": "Address"
   },
   "results": {
@@ -172,5 +172,9 @@
         ]
       }
     ]
+  },
+    "finalCta" : {
+    "headline" : "Ready to Strengthen Your Hotel’s Performance?",
+    "text": "Whether you are improving an existing hotel or preparing for a new opening, we help you identify the right commercial priorities and put them into action."
   }
 }

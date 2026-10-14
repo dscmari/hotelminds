@@ -128,12 +128,12 @@
     }
   },
   "contact": {
-    "headline": "KONTAKT",
-    "subheader": "Sprechen wir miteinander",
+    "headline": "Lassen Sie uns über Ihr Hotel sprechen.",
+    "subheader": "Kontakt",
     "intro": "Distribution ist keine Nebenaufgabe. Sie ist ein strategischer Wachstumshebel. Wenn Umsatzwachstum Priorität hat, lassen Sie uns eine Struktur aufbauen, die für Sie arbeitet.",
     "mail": "E-Mail",
     "phone": "Telefon",
-    "colab": "Kooperationen",
+        "whatsApp": "WhatsApp",
     "address": "Adresse"
   },
   "results": {
@@ -171,5 +171,10 @@
         ]
       }
     ]
+  },
+  "finalCta" : {
+    "headline" : "Bereit für mehr Umsatz und einen stärkeren Vertrieb?",
+    "text": "Ob Sie ein bestehendes Hotel weiterentwickeln oder eine Neueröffnung vorbereiten - wir helfen Ihnen, die richtigen Prioritäten zu setzen und konsequent umzusetzen."
   }
+
 }
