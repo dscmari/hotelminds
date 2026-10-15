@@ -7,7 +7,7 @@
 
   "hero": {
     "headline": "Improve Revenue. Protect Margin. Gain Commercial Control.",
-    "subheader": "HotelMinds helps independent hotels strengthen revenue management, pricing, online sales and direct bookings — with clear strategy and hands-on execution.",
+    "subheader": "HotelMinds helps independent hotels strengthen revenue management, pricing, online sales and direct bookings - with clear strategy and hands-on execution.",
     "btnOutro": ""
   },
   "areas": {
@@ -69,5 +69,64 @@
         "text": "Reporting shows what happened, but not what should happen next."
       }
     ]
+  },
+  "results": {
+    "headline": "Move from reactive decisions to a more controlled commercial setup.",
+    "subheader": "From Reactive to Strategic",
+    "steps": [
+      {
+        "title": "Typical Starting Point",
+        "bullets": [
+          "Reactive pricing",
+          "Frequent discounting",
+          "Weak direct sales",
+          "Inconsistent channel performance",
+          "Limited visibility on what actually drives results"
+        ]
+      },
+      {
+        "title": "What We Change",
+        "bullets": [
+          "Review pricing and revenue management",
+          "Improve positioning across booking channels",
+          "Optimize room and rate structures",
+          "Strengthen direct sales",
+          "Improve reporting and commercial routines"
+        ]
+      },
+      {
+        "title": "Target Setup",
+        "bullets": [
+          "More structured pricing decisions",
+          "Stronger market positioning",
+          "Better control over rates and availability",
+          "More effective direct sales",
+          "Clear commercial priorities"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "headline": "From diagnosis to implementation.",
+    "subheader": "How We Work",
+    "intro": "Our structured approach begins with a comprehensive Audit & Diagnosis to uncover hidden revenue potential. We then translate these insights into a Strategic Roadmap with a clear 6–9 month action plan, ensuring long-term growth through disciplined Implementation & Monitoring.",
+    "bullets": [
+      {
+        "title": "Audit & Diagnosis",
+        "text": "We review pricing, revenue management, booking channels, direct sales and commercial systems to identify the most important gaps and opportunities."
+      },
+      {
+        "title": "Strategic Roadmap",
+        "text": "We turn the findings into a clear, prioritized action plan focused on the changes that matter most."
+      },
+      {
+        "title": "Implementation & Monitoring",
+        "text": "We support execution, monitor performance and adjust the approach as demand and market conditions change."
+      }
+    ]
+  },
+    "finalCta": {
+    "headline": "Take Control of Your Revenue and Profitability.",
+    "text": "Let’s identify where revenue, margin or booking potential is being lost - and what should change first."
   }
 }

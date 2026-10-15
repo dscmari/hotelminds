@@ -4,7 +4,7 @@
     "description": "HotelMinds helps independent hotels improve revenue management, pricing, booking platforms, direct sales and pre-opening commercial setup.",
     "alternates": "https://hotelminds.io/en/"
   },
-  
+
   "hero": {
     "headline": "Protect Your Margin. Strengthen Your Commercial Performance.",
     "subheader": "HotelMinds helps independent hotels, hotel owners and developers strengthen revenue management, pricing, hotel distribution, direct bookings and commercial technology - from optimizing existing properties to building the commercial setup for new openings, major renovations and re-openings.",
@@ -13,7 +13,7 @@
   "services": {
     "headlineExistingHotels": "Existing Hotel Performance",
     "headlinePreOpening": "Pre Opening",
-    "subheader": "SERVICES",
+    "subheader": "Services",
     "intro": "For operating independent hotels looking to improve revenue performance, strengthen hotel distribution and gain greater control over pricing, direct bookings and commercial decision-making.",
     "bullets": [
       {
@@ -63,25 +63,6 @@
       }
     ]
   },
-  "process": {
-    "headline": "PROCESS",
-    "subheader": "How We Work",
-    "intro": "Our structured approach begins with a comprehensive Audit & Diagnosis to uncover hidden revenue potential. We then translate these insights into a Strategic Roadmap with a clear 6–9 month action plan, ensuring long-term growth through disciplined Implementation & Monitoring.",
-    "bullets": [
-      {
-        "title": "Audit & Diagnosis",
-        "text": "Analysis of visibility, pricing, distribution setup, content quality and competitive positioning."
-      },
-      {
-        "title": "Strategic Roadmap",
-        "text": "A focused action plan covering visibility, conversion, pricing structure, channel alignment and direct booking performance."
-      },
-      {
-        "title": "Implementation & Monitoring",
-        "text": "Support with execution, performance tracking and continuous refinement as market conditions change."
-      }
-    ]
-  },
   "about": {
     "sectionOne": {
       "headline": "ABOUT HOTELMINDS",
@@ -116,11 +97,11 @@
           "header": "Hotel Operations",
           "text": "Hands-on experience from inside hotels and day-to-day hospitality operations."
         },
-             {
+        {
           "header": "Booking Platforms (OTAs)",
-          "text":     "Experience from leading booking platforms including Booking.com, Expedia and Airbnb."
+          "text": "Experience from leading booking platforms including Booking.com, Expedia and Airbnb."
         },
-             {
+        {
           "header": "AI & Hospitality Technology",
           "text": "Strategic partnerships that bring additional expertise in AI and emerging hotel technology when it adds value."
         }
@@ -137,44 +118,9 @@
     "whatsApp": "WhatsApp",
     "address": "Address"
   },
-  "results": {
-    "headline": "RESULTS",
-    "subheader": "From Reactive to Strategic",
-    "steps": [
-      {
-        "title": "Before HotelMinds",
-        "bullets": [
-          "Reactive commercial decisions",
-          "Overreliance on discounts",
-          "Unclear competitor positioning",
-          "Inconsistent channel visibility",
-          "No structured distribution roadmap"
-        ]
-      },
-      {
-        "title": "The Key Strategic Changes",
-        "bullets": [
-          "Improve visibility across key booking channels",
-          "Optimize room, rate and content structure",
-          "Define clear competitor benchmarks",
-          "Strengthen direct booking performance",
-          "Reduce leakage and margin pressure"
-        ]
-      },
-      {
-        "title": "After HotelMinds",
-        "bullets": [
-          "Stronger and more stable visibility",
-          "Clearer competitive positioning",
-          "Better pricing and channel control",
-          "Improved direct booking performance",
-          "More control over distribution and margins"
-        ]
-      }
-    ]
-  },
-    "finalCta" : {
-    "headline" : "Ready to Strengthen Your Hotel’s Performance?",
+
+  "finalCta": {
+    "headline": "Ready to Strengthen Your Hotel’s Performance?",
     "text": "Whether you are improving an existing hotel or preparing for a new opening, we help you identify the right commercial priorities and put them into action."
   }
 }

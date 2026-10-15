@@ -118,52 +118,6 @@ export default async function Home() {
           />
         </div>
       </section>
-      {/* process */}
-      {/* <section
-        className="pt-24 pb-24 px-4 lg:pt-32 lg:px-32"
-      >
-        <div className="flex flex-col gap-4">
-          <span className="lg:mx-auto">{process("subheader")}</span>
-          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">
-            {process("headline")}
-          </h1>
-          <p className="max-w-4xl font-light lg:text-center mx-auto">
-            {process("intro")}
-          </p>
-        </div>
-        <Process
-          className="lg:pt-12 px-4 lg:px-32 lg:pb-48"
-          circles={processBullets}
-        />
-      </section> */}
-      {/* results */}
-      {/* <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
-        <ThreePhaseLayout results={results} />
-      </section> */}
-      {/* about*/}
-      {/* <section className="px-4 pt-24 md:p-16 lg:p-32">
-        <div className="flex flex-col gap-4">
-          <span className="lg:mx-auto">{aboutSectionOne.subheader}</span>
-          <h1 className="lg:text-center lg:!text-5xl !tracking-tight">
-            {aboutSectionOne.headline}
-          </h1>
-          <p className="max-w-4xl font-light lg:text-center mx-auto">
-            {aboutSectionOne.intro}
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
-          <div className="flex-1">
-            <Image
-              src="/images/consulting_stock.jpg"
-              alt="Business environment in the office"
-              width={800}
-              height={600}
-              className="rounded-xl mx-auto"
-            />
-          </div>
-          <AccordeonClean className="flex-1" data={aboutSectionOne} />
-        </div>
-      </section> */}
       {/* about */}
       <section className="px-4 py-24 md:p-16 lg:p-32">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">

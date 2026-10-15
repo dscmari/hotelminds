@@ -12,7 +12,6 @@ type Props = {
 };
 
 const Tabs = ({ data }: Props) => {
-  console.log(data);
   const [selected, setSelected] = useState<number | null>(null);
   const [dir, setDir] = useState<null | "l" | "r">(null);
 

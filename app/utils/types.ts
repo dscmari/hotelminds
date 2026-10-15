@@ -12,16 +12,6 @@ export type ServiceBullet = {
   text: string;
 };
 
-export type ProcessBullet = {
-  title: string;
-  text: string;
-};
-
-export type ResultStep = {
-  title: string;
-  bullets: string[];
-};
-
 export type AboutSectionOne = {
   headline: string;
   subheader: string;
@@ -43,9 +33,39 @@ export type AboutSectionTwo = {
   outro: string;
 };
 
+export type FinalCtaData = {
+  headline: string
+  text: string
+}
+
 //btns
 export type CustomBtn = {
   className?: string
   text: string
   link?: string
 }
+
+//threePhaseLayout
+export type ResultStep = {
+  title: string;
+  bullets: string[];
+};
+
+export type ResultsData = {
+  headline: string;
+  subheader: string;
+  steps: ResultStep[];
+}
+
+//process
+export type ProcessBullet = {
+  title: string;
+  text: string;
+};
+
+export type ProcessData = {
+  headline: string;
+  subheader: string;
+  intro: string;
+  bullets: ProcessBullet[];
+};

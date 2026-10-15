@@ -1,22 +1,21 @@
-import { ResultStep } from "@/app/utils/types";
+import { ResultsData, ResultStep } from "@/app/utils/types";
 import { Diamond, SquarePen, Trophy, Zap } from "lucide-react";
 
 type Props = {
   className?: string;
-  results: any;
+  data: ResultsData;
 };
 
 
-export default function ThreePhaseLayout({ className, results }: Props) {
-    const steps = results.raw("steps") as ResultStep[];
-
+export default function ThreePhaseLayout({ className, data }: Props) {
+  const {headline, subheader, steps} = data
 
   return (
     <div className={`${className}`}>
       <div className="flex flex-col gap-4">
-        <span className="font-thin">{results.subheader}</span>
-        <h1 className="lg:!text-5xl !tracking-tight">
-          {results.headline}
+        <h2 className="!mb-0">{subheader}</h2>
+        <h1 className="max-w-2xl">
+          {headline}
         </h1>
       </div>
       <div className="grid lg:grid-cols-3 gap-y-4 lg:gap-y-0 lg:gap-x-16 lg:-mt-16">
@@ -83,7 +82,7 @@ export default function ThreePhaseLayout({ className, results }: Props) {
         </div>
         <div></div>
         <div></div>
-      </div>
+      </div> 
     </div>
   );
 }

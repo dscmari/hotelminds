@@ -27,21 +27,24 @@ type Props = {
     headline: string;
     services: ServiceBullet[];
   };
-  contactBtn?: CustomBtn
+  contactBtn?: CustomBtn;
 };
 
-
-export default function ServicesOverview({ className, data, contactBtn }: Props) {
+export default function ServicesOverview({
+  className,
+  data,
+  contactBtn,
+}: Props) {
   return (
     <div className={` ${className}`}>
-        <div className="flex items-start justify-between">
-   <h1 className="md:!text-5xl/14 !tracking-tight max-w-2xl">
-        {data.headline}
-      </h1>
-      {/* <ContactBtn text={contactBtn.text} className="md:w-64" /> */}
-        </div>
-   
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 pt-4 pb-12 md:py-12 border-b-1 border-slate-300">
+      <div className="flex items-start justify-between">
+        <h1 className="md:!text-5xl/14 !tracking-tight max-w-2xl">
+          {data.headline}
+        </h1>
+       {contactBtn && <ContactBtn text={contactBtn.text} className="hidden md:flex md:w-64" />} 
+      </div>
+
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 pt-4 pb-8 lg:pb-12">
         {data.services.map((service, index) => (
           <div key={index} className={`md:p-4`}>
             <h2 className="">{service.header}</h2>
@@ -49,6 +52,7 @@ export default function ServicesOverview({ className, data, contactBtn }: Props)
           </div>
         ))}
       </div>
+        {contactBtn && <ContactBtn text={contactBtn.text} className="md:hidden" />} 
     </div>
   );
 }

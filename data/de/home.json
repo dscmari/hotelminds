@@ -12,7 +12,7 @@
   "services": {
     "headlineExistingHotels": "Bestehende Hotels",
      "headlinePreOpening": "Pre Opening",
-    "subheader": "LEISTUNGEN ",
+    "subheader": "Leistungen",
     "intro": "Wir unterstützen unabhängige Hotels dabei, ihre Zimmer profitabler zu verkaufen – mit einer klaren Preisstrategie, einem starken Online-Vertrieb und mehr Direktbuchungen.",
     "bullets": [
       {
@@ -62,25 +62,7 @@
       }
     ]
   },
-  "process": {
-    "headline": "PROZESS",
-    "subheader": "Unser Vorgehen",
-    "intro": "Unser strukturierter Ansatz beginnt mit einer umfassenden Analyse & Diagnose, um verborgenes Umsatzpotenzial aufzudecken. Diese Erkenntnisse überführen wir anschließend in einen strategischen Fahrplan mit einem klaren 6–9 Monats-Aktionsplan — und sichern nachhaltiges Wachstum durch konsequente Umsetzung & Monitoring",
-    "bullets": [
-      {
-        "title": "Analyse & Diagnose",
-        "text": "Umfassende Analyse von Preisgestaltung, Vertriebsmix, Ranking-Performance und Wettbewerbspositionierung"
-      },
-      {
-        "title": "Strategischer Fahrplan",
-        "text": "Klarer 6–9 Monats-Aktionsplan mit den Schwerpunkten Ranking-Verbesserung, Preisarchitektur, Kanalausrichtung und Direktstrategie"
-      },
-      {
-        "title": "Umsetzung & Monitoring",
-        "text": "Ausführung, Tracking und kontinuierliche Optimierung zur Sicherstellung messbarer Leistungsverbesserungen"
-      }
-    ]
-  },
+
   "about": {
     "sectionOne": {
       "headline": "ÜBER UNS",
@@ -135,42 +117,6 @@
     "phone": "Telefon",
         "whatsApp": "WhatsApp",
     "address": "Adresse"
-  },
-  "results": {
-    "headline": "ERGEBNISSE",
-    "subheader": "Strategisch Planen statt Reagieren",
-    "steps": [
-      {
-        "title": "Vor der Zusammenarbeit",
-        "bullets": [
-          "Abhängigkeit von kurzfristigen taktischen Anpassungen",
-          "Wettbewerb primär über den Preis",
-          "Geringe Transparenz über die Positionierung der Mitbewerber",
-          "Inkonsistente Sichtbarkeit",
-          "Kein strukturierter Distributions-Fahrplan"
-        ]
-      },
-      {
-        "title": "Strategische Veränderungen",
-        "bullets": [
-          "Verbesserung der Suchsichtbarkeit auf den wichtigsten Plattformen",
-          "Optimierung der Preisstruktur über alle Kanäle",
-          "Klare Strategie für den Wettbewerber-Benchmarking",
-          "Steigerung des Direktbuchungsanteils",
-          "Verbesserung der Umsatzkontrolle und Reduzierung des Margendrucks"
-        ]
-      },
-      {
-        "title": "Nach der Zusammenarbeit",
-        "bullets": [
-          "Höhere und stabilere Sichtbarkeit",
-          "Klare Wettbewerbspositionierung",
-          "Strukturierte Preisstrategie",
-          "Stärkerer Direktbuchungsanteil",
-          "Kontrollierte Distribution statt Abhängigkeit"
-        ]
-      }
-    ]
   },
   "finalCta" : {
     "headline" : "Bereit für mehr Umsatz und einen stärkeren Vertrieb?",

@@ -6,7 +6,7 @@
   },
   "hero": {
     "headline": "Mehr Umsatz. Stärkere Margen. Mehr Kontrolle im Verkauf.",
-    "subheader": "HotelMinds unterstützt unabhängige Hotels dabei, Revenue Management, Preisstrategie,  Online-Vertrieb und Direktbuchungen gezielt zu verbessern – mit klarer Strategie und praxisnaher Umsetzung.",
+    "subheader": "HotelMinds unterstützt unabhängige Hotels dabei, Revenue Management, Preisstrategie,  Online-Vertrieb und Direktbuchungen gezielt zu verbessern - mit klarer Strategie und praxisnaher Umsetzung.",
     "btnOutro": ""
   },
   "areas": {
@@ -69,5 +69,64 @@
         "text": "Reporting zeigt, was passiert ist – aber nicht klar genug, was als Nächstes zu tun ist."
       }
     ]
+  },
+  "results": {
+    "headline": "Von reaktiven Entscheidungen zu einer klar gesteuerten Verkaufsstrategie.",
+    "subheader": "Strategisch Planen statt Reagieren",
+    "steps": [
+      {
+        "title": "Die typische Ausgangssituation",
+        "bullets": [
+          "Reaktive Preisgestaltung",
+          "Häufige Rabatte und Promotions",
+          "Schwacher Direktvertrieb",
+          "Unterschiedliche Performance der Verkaufskanäle",
+          "Wenig Klarheit darüber, was tatsächlich Ergebnisse bringt"
+        ]
+      },
+      {
+        "title": "Was wir verändern",
+        "bullets": [
+          "Preisstrategie und Revenue Management überprüfen",
+          "Positionierung auf Buchungsplattformen verbessern",
+          "Zimmer- und Ratenstruktur optimieren",
+          "Direktvertrieb stärken",
+          "Reporting und Verkaufsprozesse verbessern"
+        ]
+      },
+      {
+        "title": "Das Ziel",
+        "bullets": [
+          "Strukturiertere Preisentscheidungen",
+          "Stärkere Marktpositionierung",
+          "Mehr Kontrolle über Preise und Verfügbarkeiten",
+          "Effektiverer Direktvertrieb",
+          "Klare Prioritäten im Verkauf"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "headline": "Von der Analyse bis zur Umsetzung.",
+    "subheader": "So arbeiten wir",
+    "intro": "Unser strukturierter Ansatz beginnt mit einer umfassenden Analyse & Diagnose, um verborgenes Umsatzpotenzial aufzudecken. Diese Erkenntnisse überführen wir anschließend in einen strategischen Fahrplan mit einem klaren 6–9 Monats-Aktionsplan — und sichern nachhaltiges Wachstum durch konsequente Umsetzung & Monitoring",
+    "bullets": [
+      {
+        "title": "Analyse & Diagnose",
+        "text": "Wir prüfen Preisstrategie, Revenue Management, Buchungskanäle, Direktvertrieb und Systeme und identifizieren die wichtigsten Schwachstellen und Potenziale."
+      },
+      {
+        "title": "Strategischer Fahrplan",
+        "text": "Aus den Erkenntnissen entsteht ein klar priorisierter Maßnahmenplan mit Fokus auf die Veränderungen, die den größten Unterschied machen."
+      },
+      {
+        "title": "Umsetzung & Monitoring",
+        "text": "Wir begleiten die Umsetzung, beobachten die Entwicklung und passen das Vorgehen an, wenn sich Nachfrage und Marktbedingungen verändern."
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Übernehmen Sie die Kontrolle über Umsatz und Profitabilität.",
+    "text": "Lassen Sie uns gemeinsam herausfinden, wo Umsatz, Marge oder Buchungspotenzial verloren gehen - und was zuerst verändert werden sollte."
   }
 }

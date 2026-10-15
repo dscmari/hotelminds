@@ -1,21 +1,19 @@
-type ProcessItem = {
-  title: string;
-  text: string;
-};
+import { ProcessData } from "../utils/types";
 
 type Props = {
   className?: string;
-  circles: ProcessItem[];
+  data: ProcessData
 };
 
-export default function Process({ className, circles }: Props) {
+export default function Process({ className, data }: Props) {
+  const {headline, subheader, intro, bullets} = data
   return (
     <section className={`${className}`}>
-      <div className="mt-16 flex flex-col lg:flex-row justify-center gap-12 items-center ">
-        {circles.map((e, index) => (
+      <div className="mt-16 flex flex-col lg:flex-row justify-center gap-8 lg:gap-4 xl:gap-8 items-center ">
+        {bullets.map((e, index) => (
           <div key={index}>
             <div
-              className={`${index === 2 ? "bg-none" : "bg-offwhite"} lg:relative z-50 h-80 w-80 rounded-full flex flex-col gap-8 items-center border-4 border-gold/40 dark`}
+              className={`${index === 2 ? "bg-none" : "bg-offwhite"} lg:relative z-50 h-82 w-82 rounded-full flex flex-col gap-8 items-center border-4 border-gold/40 dark`}
             >
               <div className="text-offwhite relative mt-12 bg-gold w-12 h-12 rounded-full flex items-center justify-center text-charcoalDark font-semibold ">
                 {index === 1 && (
