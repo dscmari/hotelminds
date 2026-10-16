@@ -3,6 +3,8 @@
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/app/i18n/navigation";
 import { routing } from "@/app/i18n/routing";
+import Image from "next/image";
+import { div } from "motion/react-client";
 
 type Props = {
   className?: string;
@@ -18,17 +20,18 @@ export default function LanguageSwitcher({ className }: Props) {
   };
 
   return (
-    <div className={`text-base flex items-center gap-1 lg:gap-4 ${className}`}>
-      {routing.locales.map((l) => (
-        <button
-          key={l}
-          onClick={() => switchLanguage(l)}
-          className={`p-1 lg:p-2 !font-normal rounded-xl ${
-            locale === l ? "bg-cta/10" : "cursor-pointer hover:underline"
-          }`}
-        >
-          {l.toUpperCase()}
-        </button>
+    <div className={`text-base flex items-center gap-2 ${className}`}>
+      {routing.locales.map((l, index) => (
+        <div className="cursor-pointer p-1 hover:shadow" onClick={() => switchLanguage(l)}>
+          <Image
+            key={l}
+            src={`${index === 0 ? "/images/deutschland.png" : "/images/vereinigtes-konigreich.png"}`}
+            alt="WhatsApp Logo"
+            width={32}
+            height={32}
+            className="text-white min-w-8"
+          />
+        </div>
       ))}
     </div>
   );
