@@ -1,3 +1,92 @@
 {
-    "test": "en pre opening"
+  "meta": {
+    "title": "Hotel Pre-Opening Consulting | HotelMinds",
+    "description": "Commercial pre-opening consulting for hotels: pricing, revenue management, PMS, booking channels, direct sales and technology setup before launch.",
+    "alternates": "https://hotelminds.io/en/pre-opening/"
+  },
+  "hero": {
+    "headline": "Launch with the Right Commercial Setup from Day One.",
+    "subheader": "HotelMinds helps new hotel openings, major renovations and re-openings build revenue management, pricing, booking channels, direct sales and commercial technology before entering the market.",
+    "btnOutro": "We combine strategic planning with hands-on setup and implementation."
+  },
+  "services": {
+    "headline": "Strong openings are built long before opening day.",
+    "subheadline": "Where Pre-Opening Projects Go Wrong",
+    "bullets": [
+      {
+        "icon": "Zap",
+        "header": "",
+        "text": "Commercial problems often start early — when pricing, systems, distribution and responsibilities are decided too late or without a clear plan."
+      },
+      {
+        "icon": "Clock",
+        "header": "Late Commercial Decisions",
+        "text": "Key pricing and sales decisions are made under time pressure."
+      },
+      {
+        "icon": "Cpu",
+        "header": "Wrong Technology Setup",
+        "text": "Systems are selected without considering how they need to work together."
+      },
+      {
+        "icon": "MoonStar",
+        "header": "Distribution Starts Too Late",
+        "text": "Booking channels are opened only shortly before launch, leaving little time to build demand."
+      },
+      {
+        "icon": "Tag",
+        "header": "Unclear Pricing Strategy",
+        "text": "Rates, room types and restrictions are set without a clear market logic."
+      },
+      {
+        "icon": "UserX",
+        "header": "Missing Commercial Ownership",
+        "text": "Too many parties are involved, but no one clearly owns the full commercial setup."
+      }
+    ]
+  },
+    "subServices": {
+    "headline": "The commercial foundations that need to be in place before launch.",
+    "subheadline": "What We Build Before Opening",
+    "intro": "Build the Commercial Strategy Early: Define positioning, target segments, pricing logic and sales priorities before key decisions become rushed or expensive to change.",
+    "bullets": [
+      {
+        "icon": "Eye",
+        "header": "Put the Right Technology in Place",
+        "text": "Select and implement the PMS, Channel Manager, Booking Engine, Revenue Management tools and payment setup required for an efficient launch."
+      },
+      {
+        "icon": "TrendingUp",
+        "header": "Build Distribution Before Opening",
+        "text": "Set up room and rate structures, Booking.com, Expedia, direct booking channels, policies and availability early enough to start building demand before opening."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Prepare for a Stronger Launch",
+        "text": "Establish reporting, workflows and clear commercial responsibilities so the hotel can open with structure rather than react after launch."
+      }
+    ]
+  },
+    "process": {
+    "headline": "From planning to launch.",
+    "subheader": "How We Work",
+ "bullets": [
+  {
+    "title": "Strategy & Setup",
+    "text": "We define the sales strategy, pricing logic, systems and responsibilities required before opening."
+  },
+  {
+    "title": "Build & Connect",
+    "text": "We set up the PMS, Channel Manager, Booking Engine, room and rate structures, booking channels and direct sales."
+  },
+  {
+    "title": "Launch & Support",
+    "text": "We make sure the setup is ready before opening, support the go-live and adjust where needed once real demand starts coming in."
+  }
+]
+  },
+  "finalCta": {
+    "headline": "Open with the Right Commercial Setup from Day One.",
+    "text": "Let’s make sure pricing, systems, booking channels and direct sales are ready before opening."
+  }
 }

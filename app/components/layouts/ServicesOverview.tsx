@@ -13,6 +13,7 @@ import {
   SearchCheck,
   Sliders,
   Target,
+  TrendingDown,
   Wrench,
 } from "lucide-react";
 import ServiceBtn from "../buttons/ServiceBtn";
@@ -34,28 +35,22 @@ export default function ServicesOverview({
   contactBtn,
 }: Props) {
   return (
-    <div className={`flex flex-col xl:flex-row  md:py-16 border-b-1 border-slate-300 ${className}`}>
-      <div className="xl:flex-1 md:flex items-start xl:flex-col justify-between">
-        <h1 className="md:!text-5xl/14 !tracking-tight max-w-lg">
-          {data.headline}
-        </h1>
+    <div
+      className={`flex flex-col xl:flex-row gap-8 xl:gap-16 2xl:gap-32  md:py-16 border-b-1 border-slate-300 ${className}`}
+    >
+      <div className="xl:flex-1">
+        <h1 className="max-w-lg">{data.headline}</h1>
+        <p className="max-w-xl">{data.services[0].text}</p>
         {/* <ContactBtn text={contactBtn.text} className="md:w-64 hidden md:flex" /> */}
       </div>
-      <div className="xl:flex-1 grid md:pt-4 lg:pt-0 md:grid-cols-2 gap-1">
-        {data.services.map((service, index) => (
-          <div
-            key={index}
-            className={`md:min-h-28 ${index === 0 ? "flex items-end pb-4 md:pb-0" : "bg-charcoalDark text-offwhite p-4 "}`}
-          >
+      <div className="xl:flex-1 flex flex-col gap-4">
+        {data.services.slice(1).map((service, index) => (
+          <div key={index} className={``}>
             <div key={index} className="flex items-start gap-2">
-              {index !== 0 ? (
-                <Diamond className="shrink-0 text-gold mt-1.5" size={12} />
-              ) : (
-                ""
-              )}
-              <h2>{service.header}</h2>
+              <TrendingDown className="shrink-0 text-gold mt-1.5" size={16} />
+              <h2 className="!mb-0">{service.header}</h2>
             </div>
-            <p className={`${index === 0 ? "" : "ml-5"}`}>{service.text}</p>
+            <p className={`ml-6.5`}>{service.text}</p>
           </div>
         ))}
       </div>

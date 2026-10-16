@@ -69,3 +69,17 @@ export type ProcessData = {
   intro: string;
   bullets: ProcessBullet[];
 };
+
+//areas and services
+export type AreasData = {
+  headline: string,
+  subheadline: string,
+  bullets: ServiceBullet[]
+}
+
+export type SubserviceData = {
+  headline: string,
+  subheadline: string,
+  intro: string,
+  bullets: ServiceBullet[]
+}

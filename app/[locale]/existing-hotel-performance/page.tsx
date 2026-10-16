@@ -40,13 +40,12 @@ export default async function page() {
   return (
     <div>
       <Hero data={hero} contactBtn={contactBtnData} />
-         <section className="px-4 md:px-16 lg:px-32 py-12 lg:py-16">
+      <section className="px-4 md:px-16 lg:px-32 py-12 lg:py-16">
         <ServicesOverview
           data={{
             headline: serviceHeadline,
             services: serviceBullets,
           }}
-         
         />
       </section>
       <section className="px-4 md:px-16 lg:px-32 pb-12 lg:pb-32 xl:pb-48">
@@ -58,23 +57,19 @@ export default async function page() {
           contactBtn={contactBtnData}
         />
       </section>
-   
+
       {/* threePhaseLayout */}
       <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32">
         <ThreePhaseLayout data={resultsData} />
       </section>
       {/* process */}
-      <section className="pt-12 px-4 lg:pt-32 lg:px-32">
-        <div className="flex flex-col gap-4">
-          <h2 className="!mb-0">{processData.subheader}</h2>
-          <h1 className="">{processData.headline}</h1>
-        </div>
-        <Process
-          data={processData}
-        />
+      <section className="pt-12 px-4 md:px-16 lg:pt-32 xl:pt-48 lg:px-32">
+        <h2>{processData.subheader}</h2>
+        <h1 className="">{processData.headline}</h1>
+        <Process data={processData} />
       </section>
       {/* final cta */}
-      <div className="px-4 lg:px-32 pb-32 py-16 lg:py-32 xl:pt-48 xl:pb-64 flex flex-col">
+      <section className="px-4 lg:px-32 pb-32 py-16 lg:py-32 xl:pt-48 xl:pb-64 flex flex-col">
         <h1 className="lg:!text-5xl/14 !tracking-tight md:max-w-3xl">
           {finalCtaData.headline}
         </h1>
@@ -82,7 +77,7 @@ export default async function page() {
           <p className="max-w-xl">{finalCtaData.text}</p>
           <ContactBtn text={contactBtn("text")} className="md:w-64" />
         </div>
-      </div>
+      </section>
     </div>
   );
 }

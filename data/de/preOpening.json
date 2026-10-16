@@ -1,3 +1,92 @@
 {
-    "test": "deutsche pre opening"
+  "meta": {
+    "title": "Pre-Opening Beratung für Hotels | HotelMinds",
+    "description": "HotelMinds begleitet Hotel-Neueröffnungen und Re-Openings bei Preisstrategie, Revenue Management, Systemen, Buchungsplattformen und Direktvertrieb.",
+    "alternates": "https://hotelminds.io/de/pre-opening/"
+  },
+  "hero": {
+    "headline": "Von Anfang an richtig aufgestellt.",
+    "subheader": "HotelMinds unterstützt Neueröffnungen, umfassende Renovierungen und Re-Openings beim Aufbau von Revenue Management, Preisstrategie, Buchungskanälen, Direktvertrieb und den passenden Systemen – noch bevor das Hotel eröffnet.",
+    "btnOutro": "Wir verbinden strategische Planung mit konkreter Umsetzung."
+  },
+  "services": {
+    "headline": "Eine starke Eröffnung beginnt lange vor dem ersten Gast.",
+    "subheadline": "Wo Pre-Opening-Projekte scheitern können",
+    "bullets": [
+      {
+        "icon": "Zap",
+        "header": "Kommerzielle Probleme",
+        "text": "Viele Probleme entstehen früh – wenn Preisstrategie, Systeme, Vertrieb und Verantwortlichkeiten zu spät oder ohne klaren Plan festgelegt werden."
+      },
+      {
+        "icon": "Clock",
+        "header": "Zu späte Entscheidungen",
+        "text": "Wichtige Entscheidungen zu Preisen und Verkauf werden unter Zeitdruck getroffen."
+      },
+      {
+        "icon": "Cpu",
+        "header": "Falsches Technologie-Setup",
+        "text": "Systeme werden ausgewählt, ohne darauf zu achten, wie gut sie später zusammenspielen."
+      },
+      {
+        "icon": "MoonStar",
+        "header": "Vertrieb startet zu spät",
+        "text": "Buchungskanäle gehen erst kurz vor der Eröffnung live und es bleibt wenig Zeit, Nachfrage aufzubauen."
+      },
+      {
+        "icon": "Tag",
+        "header": "Unklare Preisstrategie",
+        "text": "Preise, Zimmertypen und Buchungsbedingungen werden ohne klare Marktlogik festgelegt."
+      },
+      {
+        "icon": "UserX",
+        "header": "Unklare Verantwortung",
+        "text": "Viele Parteien sind beteiligt, aber niemand steuert das gesamte kommerzielle Setup."
+      }
+    ]
+  },
+  "subServices": {
+    "headline": "Die Basis, die vor der Eröffnung stehen muss.",
+    "subheadline": "What We Build Before Opening",
+    "intro": "Verkaufsstrategie früh festlegen: Positionierung, Zielgruppen, Preislogik und Verkaufsprioritäten definieren, bevor wichtige Entscheidungen unter Zeitdruck getroffen werden.",
+    "bullets": [
+      {
+        "icon": "Eye",
+        "header": "Die richtigen Systeme aufsetzen",
+        "text": "PMS, Channel Manager, Booking Engine, Revenue-Management-Tools und Zahlungslösungen auswählen und sauber implementieren."
+      },
+      {
+        "icon": "TrendingUp",
+        "header": "Vertrieb vor der Eröffnung aufbauen",
+        "text": "Zimmer- und Ratenstrukturen, Booking.com, Expedia, Direktbuchung, Richtlinien und Verfügbarkeiten rechtzeitig einrichten, damit bereits vor der Eröffnung Nachfrage aufgebaut werden kann."
+      },
+      {
+        "icon": "Sliders",
+        "header": "Einen stärkeren Start vorbereiten",
+        "text": "Reporting, Abläufe und klare Verantwortlichkeiten früh festlegen, damit das Hotel strukturiert eröffnet und nicht erst nach dem Start reagieren muss."
+      }
+    ]
+  },
+  "process": {
+    "headline": "Von der Planung bis zur Eröffnung.",
+    "subheader": "So arbeiten wir",
+    "bullets": [
+      {
+        "title": "Strategie & Setup",
+        "text": "Wir definieren Verkaufsstrategie, Preislogik, Systeme und Verantwortlichkeiten, die vor der Eröffnung stehen müssen."
+      },
+      {
+        "title": "Aufbauen & Verbinden",
+        "text": "Wir richten PMS, Channel Manager, Booking Engine, Zimmer- und Ratenstrukturen, Buchungsplattformen und Direktvertrieb ein."
+      },
+      {
+        "title": "Launch & Begleitung",
+        "text": "Wir stellen sicher, dass alles rechtzeitig vor der Eröffnung bereit ist, begleiten den Go-Live und passen nach dem Start dort an, wo es nötig ist."
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Von Anfang an richtig aufgestellt.",
+    "text": "Stellen wir sicher, dass Preise, Systeme, Buchungsplattformen und Direktvertrieb vor der Eröffnung vollständig eingerichtet sind."
+  }
 }
