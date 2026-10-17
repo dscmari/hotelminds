@@ -6,6 +6,8 @@ import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
 import LanguageSwitcher from "../LanguageSwitcher";
 import { CustomBtn } from "@/app/utils/types";
+import { useScrolled } from "@/app/hooks/useScrolled";
+import ContactBtn from "../buttons/ContactBtn";
 
 type Props = {
   className?: string;
@@ -14,6 +16,8 @@ type Props = {
 };
 
 export default function Navbar({ className, data, contactBtn }: Props) {
+  const mobileNavlinks = data.slice(0,5)
+  const isScrolled = useScrolled(50);
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -35,7 +39,7 @@ export default function Navbar({ className, data, contactBtn }: Props) {
   return (
     <div className={`${className}`}>
       {/* Mobile */}
-      <div className="lg:hidden p-4 md:p-12 fixed bg-offwhite w-full">
+      <div className={`lg:hidden p-4 fixed  w-full ${isScrolled || showMenu ? "bg-offwhite" : ""}`}>
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
@@ -62,8 +66,8 @@ export default function Navbar({ className, data, contactBtn }: Props) {
             transition={{ ease: "easeOut", duration: 1 }}
             onClick={toggleMenu}
           >
-            <div className="flex flex-col items-end  gap-4 py-12 font-semibold ">
-              {data.map((bullet: string, index: number) => (
+            <div className="flex flex-col items-end  gap-4 pt-12 pb-4 font-semibold ">
+              {mobileNavlinks?.map((bullet: string, index: number) => (
                 <div
                   className="pb-1 text-neutral-400 border-b-2 border-slate-200 w-full flex justify-end"
                   key={index}
@@ -87,8 +91,8 @@ export default function Navbar({ className, data, contactBtn }: Props) {
         ) : null}
       </div>
       {/* Desktop */}
-      <div className="hidden lg:block z-100 fixed bg-offwhite w-full max-w-[2048px]">
-        <DesktopNavbar data={data} contactBtn={contactBtn} />
+      <div className="hidden lg:block z-100 fixed w-full max-w-[2048px]">
+        <DesktopNavbar data={data} contactBtn={contactBtn} isScrolled={isScrolled} />
       </div>
     </div>
   );

@@ -11,17 +11,19 @@ type Props = {
   className?: string;
   data: string[]
   contactBtn: CustomBtn
+  isScrolled: boolean
 };
 
 export default function DesktopNavbar({
   className,
   data,
-  contactBtn
+  contactBtn,
+  isScrolled
 }: Props) {
-  const isScrolled = useScrolled(50);
+
   return (
     <div
-      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "p-0 border-b " : "p-4"} ${className}`}
+      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "bg-offwhite p-0 border-b " : "p-4"} ${className}`}
     >
       {/* <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
@@ -33,7 +35,7 @@ export default function DesktopNavbar({
           <a href="#">info@mail.io</a>
         </div>
       </div> */}
-      <div className="flex items-center gap-8 p-4">
+      <div className="flex items-center gap-8 p-4 pb-0">
         <Link href={"/"}>
           {" "}
           <Image

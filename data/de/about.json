@@ -1,3 +1,40 @@
 {
-    "test": "deutsche about"
+  "hero": {
+    "headline": "Über HotelMinds",
+    "intro_1": "HotelMinds ist eine Hotelberatungsagentur für unabhängige Hotels – im laufenden Betrieb ebenso wie vor Neueröffnungen oder Re-Openings – mit Fokus auf Umsatz, Profitabilität und Vertrieb.",
+    "intro_2": "Unser internationales Team vereint unterschiedliche Perspektiven aus der Hotellerie und der Reisebranche. Einige unserer Experten bringen praktische Erfahrung aus dem Hotelbetrieb mit, andere haben bei führenden Buchungsplattformen (OTAs) wie Booking.com, Expedia und Airbnb gearbeitet.",
+    "intro_3": "Über strategische Partnerschaften erweitern wir unser Know-how gezielt um aktuelle Entwicklungen in den Bereichen KI und Hoteltechnologie – immer dann, wenn sie für das jeweilige Projekt Mehrwert schaffen."
+  },
+
+  "services": {
+    "headline": "So arbeiten wir",
+    "bullets": [
+      {
+        "header": "Fokus statt Aktionismus",
+        "text": "Wir konzentrieren uns auf die Bereiche, die den größten Einfluss auf Umsatz und Profitabilität haben. Statt möglichst viele Maßnahmen gleichzeitig anzustoßen, setzen wir klare Prioritäten und arbeiten diese konsequent ab."
+      },
+      {
+        "header": "Umsetzung statt Theorie",
+        "text": "Wir bleiben nicht bei Empfehlungen stehen. Gemeinsam mit dem Hotel setzen wir die vereinbarten Maßnahmen um und übertragen die Strategie in den operativen Alltag."
+      },
+      {
+        "header": "Klare Prioritäten",
+        "text": "Wir bringen Struktur in Verkaufs- und Revenue-Aktivitäten und setzen Prioritäten. So ist jederzeit klar, was jetzt wichtig ist und was als Nächstes angegangen werden sollte."
+      },
+      {
+        "header": "Strukturiertes Vorgehen",
+        "text": "Wir arbeiten Schritt für Schritt nach einem Plan und klar definierten Prioritäten. Fortschritte werden regelmäßig überprüft und bei Bedarf angepasst."
+      }
+    ]
+  },
+  "founder": {
+    "headline": "Cristian Pop — Gründer von HotelMinds",
+    "text_1": "Cristian bringt 10 Jahre Erfahrung in Hotellerie und Travel Tech mit, darunter mehr als sieben Jahre bei Booking.com, wo er eng mit Hotels in den Bereichen Distribution, Preisstrategie und Online-Vertrieb gearbeitet hat.",
+    "text_2": "Anschließend wechselte er in die Hotelberatung und beriet unabhängige Hotels zu Verkaufsstrategie, Revenue Performance und Distribution.",
+    "text_3": "Heute verbinden er und sein Team Plattform-Know-how mit praxisnaher Beratung und unterstützen Hoteliers, Betreiber von Ferienunterkünften, Asset Manager, Investoren und Projektentwickler dabei, stärkere und profitablere Verkaufsstrukturen aufzubauen – sowohl im laufenden Betrieb als auch im Pre-Opening."
+  },
+      "finalCta": {
+    "headline": "Bereit für mehr Umsatz und einen stärkeren Vertrieb?",
+    "text": "Ob Sie ein bestehendes Hotel weiterentwickeln oder eine Neueröffnung vorbereiten – wir helfen Ihnen, die richtigen Prioritäten zu setzen und konsequent umzusetzen."
+  }
 }

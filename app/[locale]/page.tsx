@@ -60,9 +60,9 @@ export default async function Home() {
 
   return (
     <div>
-      <Hero data={hero} contactBtn={contactBtnData} />
+      <Hero data={hero} contactBtn={contactBtnData} className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-offwhite)] to-[var(--color-gold)]" />
       {/* services 1 */}
-      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32 scroll-mt-24">
+      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 md:py-32 lg:p-32 scroll-mt-24">
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
             <h2 className="!mb-0">{services("subheader")}</h2>
@@ -93,7 +93,7 @@ export default async function Home() {
         </div>
       </section>
       {/* services 2*/}
-      <section className="px-4 pt-24 md:p-16 lg:p-32">
+      <section className="px-4 md:px-16 lg:px-32 pt-12 md:pt-32 xl:pt-48">
         <div className="flex flex-col gap-4">
           <h2 className="!mb-0">{services("subheader")}</h2>
           <h1 className="lg:!text-5xl/14 !tracking-tight">
@@ -119,7 +119,7 @@ export default async function Home() {
         </div>
       </section>
       {/* about */}
-      <section className="px-4 py-24 md:p-16 lg:p-32">
+      <section className="px-4 md:px-16 lg:px32 pt-12 md:pt-32 xl:pt-48">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
           <div className="flex-1 flex flex-col gap-4">
             <h1 className="lg:!text-5xl/14 !tracking-tight">
@@ -162,7 +162,7 @@ export default async function Home() {
         </div>
       </section>
       {/* final cta */}
-      <div className="px-4 lg:px-32 pb-32 md:py-16 lg:py-32 xl:pt-32 xl:pb-48 flex flex-col">
+      <div className="px-4 md:px-16 lg:px-32 pb-32 md:py-32 xl:py-48flex flex-col">
         <h1 className="lg:!text-5xl/14 !tracking-tight md:max-w-3xl">
           {finalCta("headline")}
         </h1>
@@ -172,8 +172,8 @@ export default async function Home() {
         </div>
       </div>
       {/* contact */}
-      <section className="px-4 pt-24 lg:pt-32 lg:px-32 bg-charcoalDark text-offwhite">
-        <div className="flex flex-col md:flex-row gap-8 lg:gap-16 xl:gap-24 lg:border-b-1 border-slate-300 lg:pb-32">
+      <section className="px-4 md:px-16 lg:px-32 pt-24 md:pt-32 bg-charcoalDark text-offwhite">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-24 xl:gap-32 lg:border-b-1 border-slate-300 lg:pb-32">
           <div className="flex-1 flex flex-col gap-4">
             <h2 className="!mb-0">{contact("subheader")}</h2>
             <h1 className="lg:!text-5xl !tracking-tight">

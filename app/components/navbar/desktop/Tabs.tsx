@@ -32,12 +32,12 @@ const Tabs = ({ data }: Props) => {
     {
       title: data[3],
       Component: NavReferences,
-      link: `/${data[3].toLowerCase()}/`,
+      link: `${data[3] === "Über Uns" ? "/about/" : `/${data[3].toLowerCase()}/`}`,
     },
     {
       title: data[4],
       Component: NavPricing,
-      link: `${data[4] === "Über Uns" ? "/about/" : `/${data[4].toLowerCase()}/`}`,
+      link: `/${data[4].toLowerCase()}/`,
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 

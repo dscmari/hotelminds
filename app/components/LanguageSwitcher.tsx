@@ -1,10 +1,8 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/app/i18n/navigation";
 import { routing } from "@/app/i18n/routing";
 import Image from "next/image";
-import { div } from "motion/react-client";
 
 type Props = {
   className?: string;
@@ -13,7 +11,6 @@ type Props = {
 export default function LanguageSwitcher({ className }: Props) {
   const pathname = usePathname(); // z.B. "/impressum" (ohne Locale)
   const router = useRouter();
-  const locale = useLocale();
 
   const switchLanguage = (newLocale: (typeof routing.locales)[number]) => {
     router.replace(pathname, { locale: newLocale, scroll: false });
@@ -22,9 +19,8 @@ export default function LanguageSwitcher({ className }: Props) {
   return (
     <div className={`text-base flex items-center gap-2 ${className}`}>
       {routing.locales.map((l, index) => (
-        <div className="cursor-pointer p-1 hover:shadow" onClick={() => switchLanguage(l)}>
+        <div  key={index} className="cursor-pointer p-1 hover:shadow" onClick={() => switchLanguage(l)}>
           <Image
-            key={l}
             src={`${index === 0 ? "/images/deutschland.png" : "/images/vereinigtes-konigreich.png"}`}
             alt="WhatsApp Logo"
             width={32}

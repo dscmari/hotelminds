@@ -1,10 +1,9 @@
-
 //home
 export type HeroData = {
-  headline: string
-  subheader: string
-  btnOutro: string
-}
+  headline: string;
+  subheader: string;
+  btnOutro: string;
+};
 
 export type ServiceBullet = {
   icon: string;
@@ -34,16 +33,16 @@ export type AboutSectionTwo = {
 };
 
 export type FinalCtaData = {
-  headline: string
-  text: string
-}
+  headline: string;
+  text: string;
+};
 
 //btns
 export type CustomBtn = {
-  className?: string
-  text: string
-  link?: string
-}
+  className?: string;
+  text: string;
+  link?: string;
+};
 
 //threePhaseLayout
 export type ResultStep = {
@@ -55,7 +54,7 @@ export type ResultsData = {
   headline: string;
   subheader: string;
   steps: ResultStep[];
-}
+};
 
 //process
 export type ProcessBullet = {
@@ -72,14 +71,22 @@ export type ProcessData = {
 
 //areas and services
 export type AreasData = {
-  headline: string,
-  subheadline: string,
-  bullets: ServiceBullet[]
-}
+  headline: string;
+  subheadline: string;
+  bullets: ServiceBullet[];
+};
 
 export type SubserviceData = {
-  headline: string,
-  subheadline: string,
-  intro: string,
-  bullets: ServiceBullet[]
-}
+  headline: string;
+  subheadline: string;
+  intro: string;
+  bullets: ServiceBullet[];
+};
+
+//about
+export type FounderData = {
+  headline: string;
+  text_1: string;
+  text_2: string;
+  text_3: string;
+};

@@ -5,6 +5,7 @@ import {
   Calculator,
   Compass,
   Cpu,
+  Diamond,
   Eye,
   Flag,
   Globe,
@@ -41,18 +42,29 @@ export default function ServicesOverview({
         <h1 className="md:!text-5xl/14 !tracking-tight max-w-2xl">
           {data.headline}
         </h1>
-       {contactBtn && <ContactBtn text={contactBtn.text} className="hidden md:flex md:w-64" />} 
+        {contactBtn && (
+          <ContactBtn
+            text={contactBtn.text}
+            className="hidden md:flex md:w-64"
+          />
+        )}
       </div>
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 pt-4 pb-8 lg:pb-12">
+      <div className="grid md:grid-cols-2  md:gap-8 pt-8 pb-8 lg:pb-12 max-w-6xl">
         {data.services.map((service, index) => (
-          <div key={index} className={`md:p-4`}>
-            <h2 className="">{service.header}</h2>
-            <p>{service.text}</p>
+          <div key={index} className={``}>
+            <div className="flex items-start gap-2">
+              <Diamond className="shrink-0 text-gold mt-1" size={16} />
+              <h2 className="">{service.header}</h2>
+            </div>
+
+            <p className="max-w-md ml-6">{service.text}</p>
           </div>
         ))}
       </div>
-        {contactBtn && <ContactBtn text={contactBtn.text} className="md:hidden" />} 
+      {contactBtn && (
+        <ContactBtn text={contactBtn.text} className="md:hidden" />
+      )}
     </div>
   );
 }

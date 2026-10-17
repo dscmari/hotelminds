@@ -39,8 +39,8 @@ export default async function page() {
   };
   return (
     <div>
-      <Hero data={hero} contactBtn={contactBtnData} />
-      <section className="px-4 md:px-16 lg:px-32 py-12 lg:py-16">
+      <Hero data={hero} contactBtn={contactBtnData} className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-gold)] to-[var(--color-offwhite)]" />
+      <section className="px-4 md:px-16 lg:px-32 pt-12 md:pt-32 md:py-24">
         <ServicesOverview
           data={{
             headline: serviceHeadline,
@@ -48,7 +48,7 @@ export default async function page() {
           }}
         />
       </section>
-      <section className="px-4 md:px-16 lg:px-32 pb-12 lg:pb-32 xl:pb-48">
+      <section className="px-4 md:px-16 lg:px-32 pb-12 md:pb-32 xl:pb-48">
         <Areas
           data={{
             headline: areasHeadline,
@@ -59,17 +59,17 @@ export default async function page() {
       </section>
 
       {/* threePhaseLayout */}
-      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 lg:p-32">
+      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:px-16 md:py-32 lg:p-32">
         <ThreePhaseLayout data={resultsData} />
       </section>
       {/* process */}
-      <section className="pt-12 px-4 md:px-16 lg:pt-32 xl:pt-48 lg:px-32">
+      <section className="pt-12 px-4 md:px-16 md:pt-32 xl:pt-48 lg:px-32">
         <h2>{processData.subheader}</h2>
         <h1 className="">{processData.headline}</h1>
         <Process data={processData} />
       </section>
       {/* final cta */}
-      <section className="px-4 lg:px-32 pb-32 py-16 lg:py-32 xl:pt-48 xl:pb-64 flex flex-col">
+      <section className="px-4 md:px-16 lg:px-32 pb-32 py-16 md:py-32 xl:pt-48 xl:pb-64 flex flex-col">
         <h1 className="lg:!text-5xl/14 !tracking-tight md:max-w-3xl">
           {finalCtaData.headline}
         </h1>

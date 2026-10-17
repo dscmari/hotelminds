@@ -58,7 +58,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Navbar data={bullets} contactBtn={contactBtnData} />
           <main>{children}</main>
-          <Footer />
+          <Footer data={bullets} />
         </NextIntlClientProvider>
       </body>
     </html>

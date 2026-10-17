@@ -29,7 +29,7 @@ const Tab = ({
       id={`shift-tab-${tab}`}
       onMouseEnter={() => !hasLink && handleSetSelected(tab)}
       onClick={() => handleClick()}
-      className={`flex items-center gap-1 rounded p-4 transition-colors !font-normal ${
+      className={`flex items-center gap-1 rounded px-1 transition-colors !font-normal ${
         selected === tab ? "underline cursor-pointer" : ""
       } ${hasLink ? "!cursor-pointer hover:underline" : ""}`}
     >

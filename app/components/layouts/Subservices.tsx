@@ -1,5 +1,6 @@
 import { CustomBtn, ServiceBullet, SubserviceData } from "@/app/utils/types";
 import ContactBtn from "../buttons/ContactBtn";
+import { Diamond } from "lucide-react";
 
 type Props = {
   className?: string;
@@ -27,13 +28,20 @@ export default function ServicesOverview({
       <div className="grid md:grid-cols-3 gap-8 pt-8">
         {data.bullets.map((bullet, index) => (
           <div key={index} className={`max-w-lg`}>
-            <h2 className="">{bullet.header}</h2>
-            <p>{bullet.text}</p>
+            <div className="flex items-start gap-2">
+              <Diamond className="shrink-0 text-gold mt-1" size={16} />
+              <h2 className="">{bullet.header}</h2>
+            </div>
+
+            <p className="ml-6">{bullet.text}</p>
           </div>
         ))}
       </div>
       {contactBtn && (
-        <ContactBtn text={contactBtn.text} className="lg:hidden mt-8" />
+        <ContactBtn
+          text={contactBtn.text}
+          className="lg:hidden mt-8 md:mt-16"
+        />
       )}
     </div>
   );
