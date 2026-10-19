@@ -30,7 +30,7 @@ export default async function Footer({ className, data }: Props) {
         </div>
       </div>
       <div>
-        <div className="pt8 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8">
+        <div className="pt-8 lg:pt-0 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8">
           {bullets.map((e, index) => (
             <Link
               key={index}
