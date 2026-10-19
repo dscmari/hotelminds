@@ -51,7 +51,7 @@ export default async function Footer({ className, data }: Props) {
           <Link href={"#"} className="underline">
             {footerData.agb}
           </Link>
-          <Link href={"#"} className="underline">
+          <Link href={footerData.privacyLink} className="underline">
             {footerData.privacy}
           </Link>
           <Link

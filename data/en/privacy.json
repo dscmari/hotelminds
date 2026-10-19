@@ -1,0 +1,93 @@
+{
+  "headline": "Privacy",
+  "controller": {
+    "headline": "1. Controller",
+    "intro": "The controller responsible for the processing of personal data on this website is:",
+    "infos": [
+      
+        "HotelMinds UG (haftungsbeschränkt)",
+        "Leopoldstraße 31",
+        "80802 Munich",
+        "Germany",
+        "Represented by Managing Director Cristian Pop",
+        "Email: hello@hotelminds.io",
+        "Phone: [German number to come]"
+      
+    ]
+  },
+  "hosting": {
+    "headline": "2. Hosting and Server Log Files",
+    "text": [
+      "This website is provided using Cloudflare services. The provider is Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA.",
+      "When you access the website, technically necessary data may be processed. This may include your IP address, date and time of access, requested pages or files, browser type and version, operating system and referrer URL.",
+      "Where required for the secure and reliable provision of the website, processing is based on our legitimate interest pursuant to Art. 6(1)(f) GDPR.",
+      "Cloudflare may also process personal data outside the European Economic Area. For transfers to the United States, Cloudflare relies, among other mechanisms, on the EU-U.S. Data Privacy Framework and, where required, Standard Contractual Clauses."
+    ]
+  },
+  "contact": {
+    "headline": "3. Contacting Us by Email or Telephone",
+    "text": [
+      "If you contact us by email or telephone, we process the personal data you provide in order to handle your enquiry.",
+      "Where your enquiry relates to the preparation or performance of a contract, processing is based on Art. 6(1)(b) GDPR. In other cases, processing is based on our legitimate interest in handling business enquiries pursuant to Art. 6(1)(f) GDPR.",
+      "The data will be deleted once it is no longer required to process your enquiry and no statutory retention obligations apply."
+    ]
+  },
+  "whatsapp": {
+    "headline": "4. Contact via WhatsApp",
+    "text": [
+      "You can also contact us through WhatsApp Business. If you send us a message via WhatsApp, we process the data you provide, including in particular your telephone number, your name - where this is included in your WhatsApp profile - and the content of your message.",
+      "We use this data to handle your enquiry and to communicate with prospective and existing clients.",
+      "Where the communication serves to initiate or perform a contract, processing is based on Art. 6(1)(b) GDPR. In other cases, processing is based on our legitimate interest in providing simple and efficient communication pursuant to Art. 6(1)(f) GDPR.",
+      "For users in the European Economic Area, WhatsApp Business is provided by WhatsApp Ireland Limited. When using the service, data may also be processed in the United States and other countries. WhatsApp relies, among other mechanisms, on the EU-U.S. Data Privacy Framework and, where required, Standard Contractual Clauses for such transfers.",
+      "The WhatsApp button on our website is an external link only. A connection to WhatsApp is established only when you actively click the link."
+    ]
+  },
+  "calendly": {
+    "headline": "5. Appointment Booking via Calendly",
+    "text": [
+      "We link to Calendly for booking an introductory call. Calendly is not embedded directly into our website. A connection to Calendly is therefore established only when you click the relevant link.",
+      "When booking an appointment, data such as your name, email address, appointment details and any additional information you enter may be processed.",
+      "Where the appointment serves to initiate or perform a business relationship, processing is based on Art. 6(1)(b) GDPR.",
+      "Calendly may process personal data outside the European Economic Area, including in the United States. Calendly relies, among other mechanisms, on the EU-U.S. Data Privacy Framework and Standard Contractual Clauses for international data transfers."
+    ]
+  },
+  "cookies": {
+    "headline": "6. Cookies and Consent Management",
+    "text": [
+      "We use technically necessary technologies required to operate the website and store your privacy preferences.",
+      "Where these technologies are strictly necessary, consent is not required under Section 25(2) TDDDG.",
+      "Non-essential technologies, in particular analytics services, are activated only after you have given your consent.",
+      "Consent is based on Section 25(1) TDDDG in conjunction with Art. 6(1)(a) GDPR.",
+      "You can change your selection or withdraw your consent at any time with effect for the future via the \"Cookie Settings\" link in the footer."
+    ]
+  },
+  "analytics": {
+    "headline": "7. Google Analytics",
+    "text": [
+      "If you have given your consent, we use Google Analytics 4, an analytics service provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.",
+      "Google Analytics helps us understand how our website is used. Information processed may include page views, session duration, device and browser information, approximate location and interactions with the website.",
+      "Google Analytics is activated only after your explicit consent. The legal basis is Art. 6(1)(a) GDPR in conjunction with Section 25(1) TDDDG.",
+      "According to Google, Google Analytics 4 does not log or store individual IP addresses of users in the EU, Switzerland or the United Kingdom. IP addresses are used to derive coarse location information and are then discarded.",
+      "Google may also process data outside the European Economic Area using the applicable data-transfer safeguards.",
+      "You can withdraw your consent at any time via \"Cookie Settings\"."
+    ]
+  },
+  "storage": {
+    "headline": "8. Storage Period",
+    "text": [
+      "We retain personal data only for as long as necessary for the relevant purpose. Statutory retention and documentation obligations remain unaffected."
+    ]
+  },
+  "rights": {
+    "headline": "9. Your Rights",
+    "text": [
+      "Subject to the applicable legal requirements, you have rights including access, rectification, erasure, restriction of processing, data portability and objection. You may withdraw consent at any time with effect for the future.",
+      "To exercise your rights, contact us at hello@hotelminds.io.",
+      "You also have the right to lodge a complaint with a data protection supervisory authority. The authority generally responsible for HotelMinds is:",
+      "Bavarian State Office for Data Protection Supervision (BayLDA)",
+      "Promenade 18",
+      "91522 Ansbach",
+      "Germany"
+    ]
+  }
+}

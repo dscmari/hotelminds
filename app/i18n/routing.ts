@@ -10,6 +10,6 @@ export const routing = defineRouting({
     "/about": {de: "/about/", en: "/about/"},
     "/contact": {de: "/kontakt/", en: "/contact/"},
     "/imprint": { de: "/impressum/", en: "/imprint/" },
-    "/datenschutz": { de: "/datenschutz/", en: "/privacy/" },
+    "/privacy": { de: "/datenschutz/", en: "/privacy/" },
   },
 });
