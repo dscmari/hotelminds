@@ -37,7 +37,7 @@ export default async function page() {
         className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-gold)]/30 to-[var(--color-offwhite)] dark:!bg-offwhite"
       />
       {/* services */}
-      <section className="px-4 md:px-16 lg:pl-32 lg:pr-8 xl:px-32 pt-12 md:pt-32 flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-8 xl:gap-16 2xl:gap-32">
+      <section className="px-4 md:px-16 lg:pl-32 lg:pr-8 xl:px-32 pt-16 md:pt-32 flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-8 xl:gap-16 2xl:gap-32">
         <article className="max-w-xl flex flex-col justify-between">
           <div>
             <h2>{servicesData.subheadline}</h2>
@@ -60,7 +60,7 @@ export default async function page() {
         />
       </section>
       {/* process */}
-      <section className="px-4 md:px-16 lg:px-32 pt-12 md:pt-32 xl:pt-48">
+      <section className="px-4 md:px-16 lg:px-32 pt-16 md:pt-32 xl:pt-48">
         <h2>{processData.subheader}</h2>
         <h1 className="">{processData.headline}</h1>
         <Process data={processData} />

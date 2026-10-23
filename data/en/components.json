@@ -43,5 +43,10 @@
   },
   "contactBtn": {
     "text": "Book an intro call"
+  },
+  "notFound": {
+    "headline": "Page not found",
+    "text": "The page you are looking for doesn't exist or has been moved. Go back to ",
+    "link": "/"
   }
 }

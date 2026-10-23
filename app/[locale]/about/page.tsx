@@ -16,21 +16,20 @@ export default async function page() {
   };
   return (
     <div>
-      <section className="px-4 md:px-16 lg:px-32 min-h-screen flex flex-col items-center justify-end bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-offwhite)] to-[var(--color-gold)]">
-        <div className="flex flex-col lg:flex-row lg:gap-32 pb-16 lg:pb-24">
+      <section className="px-4 md:px-16 lg:px-32 pt-32 lg:pt-48 min-h-screen flex flex-col items-center justify-end bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-offwhite)] to-[var(--color-gold)]">
+        <div className="flex flex-col xl:flex-row xl:gap-32 pb-16 lg::pb-24">
           <div className="flex flex-col justify-between">
             <div>
               <h1 className="!text-4xl/10 md:!text-5xl/14 lg:!text-6xl/16 dark:!text-charcoalDark">
                 {hero.headline}
               </h1>
             </div>
-
             <ContactBtn
               text={contactBtnData.text}
-              className="hidden lg:flex md:max-w-64 mt-8 lg:mt-32"
+              className="hidden xl:flex md:max-w-64 mt-8 lg:mt-32"
             />
           </div>
-          <article className="flex flex-col gap-8 max-w-xl">
+          <article className="flex flex-col lg:pt-8 xl:pt-0 gap-4 xl:gap-8 max-w-xl">
             <p className="dark:!text-charcoalDark">{hero.intro_1}</p>
             <p className="dark:!text-charcoalDark">{hero.intro_2}</p>
             <p className="dark:!text-charcoalDark">{hero.intro_3}</p>

@@ -42,5 +42,10 @@
   },
   "contactBtn": {
     "text": "Erstgespräch buchen"
+  },
+    "notFound": {
+    "headline": "Seite nicht gefunden",
+    "text": "Entschuldigung, die von dir aufgerufene Seite existiert leider nicht oder wurde verschoben. Zurück zur ",
+    "link": "/"
   }
 }

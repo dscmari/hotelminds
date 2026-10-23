@@ -40,7 +40,7 @@ export default async function page() {
   return (
     <div>
       <Hero data={hero} contactBtn={contactBtnData} className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-gold)] to-[var(--color-offwhite)]" />
-      <section className="px-4 md:px-16 lg:px-32 pt-12 md:pt-32 md:py-24">
+      <section className="px-4 md:px-16 lg:px-32 pt-16 md:pt-32 md:py-24">
         <ServicesOverview
           data={{
             headline: serviceHeadline,

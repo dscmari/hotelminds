@@ -10,7 +10,7 @@ export default function ServiceBtn({ className, text, link }: Props) {
   return (
     <Link
       href={href}
-      className={`bg-cta px-6 py-2 text-offwhite font-semibold tracking-tight rounded-xl inline-block whitespace-nowrap ${className}`}
+      className={`bg-cta px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl whitespace-nowrap flex gap-4 justify-center items-center w-full md:max-w-64 ${className}`}
     >
       {text}
     </Link>
