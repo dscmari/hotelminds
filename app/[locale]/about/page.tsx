@@ -2,7 +2,7 @@ import ContactBtn from "@/app/components/buttons/ContactBtn";
 import { FinalCtaData, FounderData, ServiceBullet } from "@/app/utils/types";
 import { TrendingDown, TrendingUp } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import { Key } from "react";
+import Image from "next/image";
 
 export default async function page() {
   const t = await getTranslations("about");
@@ -20,7 +20,7 @@ export default async function page() {
         <div className="flex flex-col lg:flex-row lg:gap-32 pb-16 lg:pb-24">
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="!text-4xl/10 md:!text-5xl/14 lg:!text-6xl/16">
+              <h1 className="!text-4xl/10 md:!text-5xl/14 lg:!text-6xl/16 dark:!text-charcoalDark">
                 {hero.headline}
               </h1>
             </div>
@@ -31,9 +31,9 @@ export default async function page() {
             />
           </div>
           <article className="flex flex-col gap-8 max-w-xl">
-            <p>{hero.intro_1}</p>
-            <p>{hero.intro_2}</p>
-            <p>{hero.intro_3}</p>
+            <p className="dark:!text-charcoalDark">{hero.intro_1}</p>
+            <p className="dark:!text-charcoalDark">{hero.intro_2}</p>
+            <p className="dark:!text-charcoalDark">{hero.intro_3}</p>
           </article>
           <ContactBtn
             text={contactBtnData.text}
@@ -56,13 +56,25 @@ export default async function page() {
           ))}
         </article>
       </section>
-      <section className="px-4 md:px-16 lg:px-32 pt-12 lg:pt-32 xl:pt-48">
-        <article>
-          <h1 className="max-w-4xl">{founderData.headline}</h1>
-          <div className="max-w-2xl flex flex-col gap-4">
-            <p>{founderData.text_1}</p>
-            <p>{founderData.text_2}</p>
-            <p>{founderData.text_3}</p>
+      <section className="md:px-16 lg:px-32 pt-12 lg:pt-32 xl:pt-48">
+        <article className="flex flex-col lg:flex-row gap-12">
+          <div className="px-4 md:px-0">
+            {" "}
+            <h1 className="max-w-3xl">{founderData.headline}</h1>
+            <div className="max-w-2xl flex flex-col gap-4">
+              <p>{founderData.text_1}</p>
+              <p>{founderData.text_2}</p>
+              <p>{founderData.text_3}</p>
+            </div>
+          </div>
+          <div className="sm:px-4 md:px-0">
+            <Image
+              src="/images/portrait_cris.jpeg"
+              alt="Business environment in the office"
+              width={400}
+              height={400}
+              className="lg:rounded-xl md:min-w-[400px]"
+            />
           </div>
         </article>
       </section>

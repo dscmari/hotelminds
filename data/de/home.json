@@ -10,8 +10,8 @@
     "btnOutro": "Wir verbinden strategische Beratung mit praxisnaher Umsetzung und schaffen so stärkere, profitablere kommerzielle Strukturen."
   },
   "services": {
-    "headlineExistingHotels": "Bestehende Hotels",
-     "headlinePreOpening": "Pre Opening",
+    "headlineExistingHotel": "Bestehende Hotels",
+    "headlinePreOpening": "Pre Opening",
     "subheader": "Leistungen",
     "intro": "Wir unterstützen unabhängige Hotels dabei, ihre Zimmer profitabler zu verkaufen – mit einer klaren Preisstrategie, einem starken Online-Vertrieb und mehr Direktbuchungen.",
     "bullets": [
@@ -35,30 +35,30 @@
         "header": "Performance kontinuierlich verbessern",
         "text": "Wir analysieren Buchungsverhalten, Markt eränderungen und die Entwicklung der einzelnen Kanäle und leiten daraus konkrete Maßnahmen ab."
       },
-        {
+      {
         "icon": "Rocket",
-        "header": "Pre-Opening Commercial Setup",
-        "text": "For new hotel openings, major renovations and re-openings that need the right commercial structure in place before entering the market."
+        "header": "Kommerzielles Pre-Opening-Setup",
+        "text": "Für neue Hoteleröffnungen, größere Renovierungen und Re-Openings, die vor dem Markteintritt die richtige kommerzielle Struktur benötigen."
       },
       {
         "icon": "Compass",
-        "header": "Build the Commercial Strategy Early",
-        "text": "Define positioning, target segments, pricing logic and distribution priorities before commercial decisions become rushed or expensive to change."
+        "header": "Verkaufsstrategie früh festlegen",
+        "text": "Positionierung, Zielgruppen, Preislogik und Verkaufsprioritäten definieren, bevor wichtige Entscheidungen unter Zeitdruck getroffen werden."
       },
       {
         "icon": "Cpu",
-        "header": "Put the Right Technology in Place",
-        "text": "Select and implement the PMS, channel manager, booking engine, revenue tools and payment infrastructure required for an efficient launch."
+        "header": "Die richtigen Systeme aufsetzen",
+        "text": "PMS, Channel Manager, Booking Engine, Revenue-Management-Tools und Zahlungslösungen auswählen und sauber implementieren."
       },
       {
         "icon": "Network",
-        "header": "Build Distribution Before Opening",
-        "text": "Set up room and rate structures, OTA connectivity, direct booking channels, policies and inventory so the property is commercially ready before doors open."
+        "header": "Vertrieb vor der Eröffnung aufbauen",
+        "text": "Zimmer- und Ratenstrukturen, OTA-Anbindungen, Direktbuchungskanäle, Richtlinien und Verfügbarkeiten rechtzeitig einrichten, damit das Hotel bereits vor der Eröffnung buchbar ist."
       },
       {
         "icon": "Flag",
-        "header": "Prepare for a Stronger Launch",
-        "text": "Establish reporting, workflows and commercial priorities early so the hotel can build demand before opening and enter the market with greater control."
+        "header": "Einen stärkeren Start vorbereiten",
+        "text": "Reporting, Abläufe und klare Verkaufsprioritäten früh festlegen, damit das Hotel bereits vor der Eröffnung Nachfrage aufbauen und strukturiert starten kann."
       }
     ]
   },
@@ -97,11 +97,11 @@
           "header": "Hotellerie",
           "text": "Praktische Erfahrung aus dem Hotelbetrieb und dem täglichen Umgang mit Gästen, Abläufen und Verkauf."
         },
-             {
+        {
           "header": "Buchungsplattformen (OTAs)",
-          "text":     "Erfahrung aus führenden Buchungsplattformen wie Booking.com, Expedia und Airbnb."
+          "text": "Erfahrung aus führenden Buchungsplattformen wie Booking.com, Expedia und Airbnb."
         },
-             {
+        {
           "header": "KI & Hoteltechnologie",
           "text": "Strategische Partnerschaften bringen zusätzliches Know-how in den Bereichen KI und moderne Hoteltechnologie ein – dort, wo es Mehrwert schafft."
         }
@@ -109,18 +109,9 @@
       "outro": "Mindset matters more than size or geography."
     }
   },
-  "contact": {
-    "headline": "Lassen Sie uns über Ihr Hotel sprechen.",
-    "subheader": "Kontakt",
-    "intro": "Distribution ist keine Nebenaufgabe. Sie ist ein strategischer Wachstumshebel. Wenn Umsatzwachstum Priorität hat, lassen Sie uns eine Struktur aufbauen, die für Sie arbeitet.",
-    "mail": "E-Mail",
-    "phone": "Telefon",
-        "whatsApp": "WhatsApp",
-    "address": "Adresse"
-  },
-  "finalCta" : {
-    "headline" : "Bereit für mehr Umsatz und einen stärkeren Vertrieb?",
+
+  "finalCta": {
+    "headline": "Bereit für mehr Umsatz und einen stärkeren Vertrieb?",
     "text": "Ob Sie ein bestehendes Hotel weiterentwickeln oder eine Neueröffnung vorbereiten - wir helfen Ihnen, die richtigen Prioritäten zu setzen und konsequent umzusetzen."
   }
-
 }

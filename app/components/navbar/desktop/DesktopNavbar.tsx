@@ -6,6 +6,7 @@ import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 import { ShiftingDropDown } from "./ShiftingDropDown";
 import { useScrolled } from "@/app/hooks/useScrolled";
 import { CustomBtn } from "@/app/utils/types";
+import { usePathname } from "next/navigation";
 
 type Props = {
   className?: string;
@@ -21,9 +22,14 @@ export default function DesktopNavbar({
   isScrolled
 }: Props) {
 
+  const pathname = usePathname()
+  const legalSlugs = ['agb', 'terms', 'datenschutz', 'privacy', 'impressum', 'imprint'];
+  const currentSegment = pathname?.split('/').filter(Boolean).pop();
+const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
+
   return (
     <div
-      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "bg-offwhite p-0 border-b " : "p-4"} ${className}`}
+      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "bg-offwhite p-0 border-b " : "p-4"} ${isLegal ? " dark:bg-offwhite" : ""} ${className}`}
     >
       {/* <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
@@ -41,9 +47,9 @@ export default function DesktopNavbar({
           <Image
             src="/images/hotelminds_logo_bg_transparent.png"
             alt="Logo hotelminds"
-            style={{ width: "150px" }}
-            width={150}
-            height={75}
+            style={{ width: "120px" }}
+            width={120}
+            height={60}
           />
         </Link>
         <div className="flex items-center justify-between w-full">

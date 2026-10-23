@@ -1,24 +1,18 @@
 import { useState, useLayoutEffect, useEffect } from 'react';
 
-// SSR-freundliche Ausführung von useLayoutEffect
 const useIsomorphicLayoutEffect = 
   typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 export function useScrolled(threshold = 0) {
-  // 1. Direkt mit der echten Position initialisieren (falls im Browser):
-  const [isScrolled, setIsScrolled] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.scrollY > threshold;
-    }
-    return false;
-  });
+  // WICHTIG: Immer erst mit `false` starten, damit Server und initialer Client-Render 100% identisch sind!
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useIsomorphicLayoutEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > threshold);
     };
 
-    // Sofort abfragen, bevor der Browser zeichnet
+    // Direkt nach dem Mounten einmal prüfen (falls die Seite mitten im Scroll geladen wurde)
     handleScroll();
 
     window.addEventListener('scroll', handleScroll, { passive: true });

@@ -11,6 +11,16 @@
   },
 
   "footer": {
+    "contact": {
+      "headline": "Let’s Talk About Your Hotel.",
+      "subheader": "Contact",
+      "intro": "Whether you are looking to improve an existing property or preparing for a new opening, the first step is a short conversation about where you are today and what you want to achieve.",
+      "mail": "Mail",
+      "phone": "Phone",
+      "whatsApp": "WhatsApp",
+      "address": "Address"
+    },
+
     "headline": "HotelMinds",
     "subheader": "Commercial hotel consulting for independent hotels — existing operations and pre-opening.",
     "agb": "Terms and Conditions",

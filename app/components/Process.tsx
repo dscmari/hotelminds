@@ -13,7 +13,7 @@ export default function Process({ className, data }: Props) {
         {bullets.map((e, index) => (
           <div key={index}>
             <div
-              className={`${index === 2 ? "bg-none" : "bg-offwhite"} lg:relative z-50 h-82 w-82 rounded-full flex flex-col gap-8 items-center border-4 border-gold/40 dark`}
+              className={`${index === 2 ? "bg-none" : "bg-offwhite"} lg:relative z-50 h-82 w-82 rounded-full flex flex-col gap-8 items-center border-4 border-gold/40 dark:bg-darkmodeblue`}
             >
               <div className="text-offwhite relative mt-12 bg-gold w-12 h-12 rounded-full flex items-center justify-center text-charcoalDark font-semibold ">
                 {index === 1 && (

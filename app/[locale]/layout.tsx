@@ -1,4 +1,3 @@
-
 import { Inter, Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/navbar/Navbar";
@@ -10,6 +9,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/app/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import ScrollToTopBtn from "../components/buttons/ScrollToTopBtn";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,12 +27,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://hotelminds.io"),
-  title: "hotelminds | Make your hotel impossible to ignore",
-  description: "hotel minds supports hotel to make them visible",
-};
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -44,9 +38,9 @@ export default async function RootLayout({
 }) {
   const navbar = await getTranslations("components.navbar");
   const bullets = navbar.raw("bullets") as string[];
-  const contactBtn = await getTranslations("components.contactBtn")
+  const contactBtn = await getTranslations("components.contactBtn");
   const contactBtnData = {
-    text: contactBtn("text")
+    text: contactBtn("text"),
   };
 
   return (
@@ -59,6 +53,7 @@ export default async function RootLayout({
           <Navbar data={bullets} contactBtn={contactBtnData} />
           <main>{children}</main>
           <Footer data={bullets} />
+          <ScrollToTopBtn />
         </NextIntlClientProvider>
       </body>
     </html>

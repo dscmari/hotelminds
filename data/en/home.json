@@ -11,7 +11,7 @@
     "btnOutro": "We combine strategic guidance with hands-on execution to create stronger, more profitable commercial structures."
   },
   "services": {
-    "headlineExistingHotels": "Existing Hotel Performance",
+    "headlineExistingHotel": "Existing Hotel Performance",
     "headlinePreOpening": "Pre Opening",
     "subheader": "Services",
     "intro": "For operating independent hotels looking to improve revenue performance, strengthen hotel distribution and gain greater control over pricing, direct bookings and commercial decision-making.",
@@ -109,16 +109,6 @@
       "outro": "Mindset matters more than size or geography."
     }
   },
-  "contact": {
-    "headline": "Let’s Talk About Your Hotel.",
-    "subheader": "Contact",
-    "intro": "Whether you are looking to improve an existing property or preparing for a new opening, the first step is a short conversation about where you are today and what you want to achieve.",
-    "mail": "Mail",
-    "phone": "Phone",
-    "whatsApp": "WhatsApp",
-    "address": "Address"
-  },
-
   "finalCta": {
     "headline": "Ready to Strengthen Your Hotel’s Performance?",
     "text": "Whether you are improving an existing hotel or preparing for a new opening, we help you identify the right commercial priorities and put them into action."

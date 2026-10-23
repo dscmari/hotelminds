@@ -34,7 +34,7 @@ export default async function page() {
       <Hero
         data={heroData}
         contactBtn={contactBtnData}
-        className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-gold)]/30 to-[var(--color-offwhite)]"
+        className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-gold)]/30 to-[var(--color-offwhite)] dark:!bg-offwhite"
       />
       {/* services */}
       <section className="px-4 md:px-16 lg:pl-32 lg:pr-8 xl:px-32 pt-12 md:pt-32 flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-8 xl:gap-16 2xl:gap-32">

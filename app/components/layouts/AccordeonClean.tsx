@@ -63,7 +63,7 @@ export default function AccordeonClean({
           />
           <label
             htmlFor={e.id}
-            className="flex items-center gap-4 p-4 cursor-pointer font-semibold select-none"
+            className="flex items-center gap-4 p-4 cursor-pointer font-semibold select-none dark:text-offwhite"
           >
             {e.icon}
             <h2 className="pointer-events-none !text-base lg:!text-xl !m-0">
@@ -80,7 +80,7 @@ export default function AccordeonClean({
         </div>
       ))}
       <ServiceBtn
-        className="mx-auto lg:mx-0 bg-gold mt-8 text-center"
+        className="mx-auto lg:mx-0 bg-gold mt-8 text-center w-full"
         text={preOpeningBtn.text}
         link={preOpeningBtn.link}
       />

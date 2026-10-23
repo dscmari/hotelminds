@@ -6,6 +6,7 @@
   --color-gold: #b89c5a;
   --color-offwhite: #f7f6f3;
   --color-cta: #3730a3;
+  --color-darkmodeblue: #102a43;
   --font-inter: var(--font-inter);
   --font-geistsans: var(--font-geist-sans);
   --font-geistmono: var(--font-geist-mono);
@@ -156,4 +157,22 @@ span:nth-child(3) {
 /* impressum */
 .imprint h2{
   padding-top: 1rem;
+}
+
+/* darkkmode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--color-darkmodeblue);
+  }
+
+  section {
+    background-color: var(--color-darkmodeblue);
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  span, a, li {
+    color: var(--color-offwhite) !important;
+  }
 }

@@ -17,19 +17,40 @@ export default getRequestConfig(async ({ locale }) => {
     }
   }
 
-  const [components, home, preOpening, existingHotelPerformance, about, contact, imprint, privacy] = await Promise.all([
+  const [
+    components,
+    home,
+    preOpening,
+    existingHotelPerformance,
+    about,
+    imprint,
+    privacy,
+    team,
+    terms,
+  ] = await Promise.all([
     load(locale, "components"),
     load(locale, "home"),
     load(locale, "preOpening"),
     load(locale, "existingHotelPerformance"),
     load(locale, "about"),
-    load(locale, "contact"),
     load(locale, "imprint"),
-    load(locale, "privacy")
+    load(locale, "privacy"),
+    load(locale, "team"),
+    load(locale, "terms"),
   ]);
 
   return {
     locale,
-    messages: { components, home, about, contact, imprint, preOpening, existingHotelPerformance, privacy },
+    messages: {
+      components,
+      home,
+      about,
+      imprint,
+      preOpening,
+      existingHotelPerformance,
+      privacy,
+      team,
+      terms,
+    },
   };
 });

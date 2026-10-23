@@ -1,12 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Calculator,
   CircleCheckBig,
+  Compass,
+  Cpu,
+  Flag,
   Globe,
-  Mail,
-  Phone,
+  Network,
   SearchCheck,
   Sliders,
 } from "lucide-react";
@@ -27,21 +28,18 @@ export async function generateMetadata() {
 }
 
 export default async function Home() {
+  const t = await getTranslations("home");
+  const serviceData = t.raw("services");
+  const serviceBullets = serviceData.bullets as ServiceBullet[];
   const heroHome = await getTranslations("home");
   const hero = heroHome.raw("hero") as HeroData;
-  const services = await getTranslations("home.services");
-  const serviceBullets = services.raw("bullets") as ServiceBullet[];
   const about = await getTranslations("home.about");
   const aboutSectionTwo = about.raw("sectionTwo") as AboutSectionTwo;
-  const contact = await getTranslations("home.contact");
   const contactBtn = await getTranslations("components.contactBtn");
   const existingHotelBtn = await getTranslations("components.existingHotelBtn");
   const preOpeningBtn = await getTranslations("components.preOpeningBtn");
   const aboutBtn = await getTranslations("components.aboutBtn");
   const finalCta = await getTranslations("home.finalCta");
-  const imprint = await getTranslations("imprint");
-  const imprintSections = imprint.raw("sections");
-  const imprintLines = imprintSections[0].lines;
 
   const contactBtnData = {
     text: contactBtn("text"),
@@ -56,20 +54,28 @@ export default async function Home() {
     Calculator,
     Globe,
     Sliders,
+    Compass,
+    Cpu,
+    Network,
+    Flag
   };
 
   return (
     <div>
-      <Hero data={hero} contactBtn={contactBtnData} className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-offwhite)] to-[var(--color-gold)]" />
+      <Hero
+        data={hero}
+        contactBtn={contactBtnData}
+        className="bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-offwhite)] to-[var(--color-gold)]"
+      />
       {/* services 1 */}
-      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 md:py-32 lg:p-32 scroll-mt-24">
+      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 md:py-32 lg:p-32 dark:pb-0 scroll-mt-24">
         <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
-            <h2 className="!mb-0">{services("subheader")}</h2>
+            <h2 className="!mb-0">{serviceData.subheader}</h2>
             <h1 className="lg:!text-5xl/14 !tracking-tight">
-              {services("headlineExistingHotels")}
+              {serviceData.headlineExistingHotel}
             </h1>
-            <p className="lg:text-base/8">{services("intro")}</p>
+            <p className="lg:text-base/8">{serviceData.intro}</p>
             <ServiceBtn
               className="mx-auto lg:mx-0 bg-gold mt-8"
               text={existingHotelBtn("text")}
@@ -92,12 +98,12 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      {/* services 2*/}
-      <section className="px-4 md:px-16 lg:px-32 pt-12 md:pt-32 xl:pt-48">
+      {/* services 2 accordeon*/}
+       <section className="px-4 md:px-16 lg:px-32 pt-16 md:pt-32 xl:pt-48">
         <div className="flex flex-col gap-4">
-          <h2 className="!mb-0">{services("subheader")}</h2>
+          <h2 className="!mb-0">{serviceData.subheader}</h2>
           <h1 className="lg:!text-5xl/14 !tracking-tight">
-            {services("headlinePreOpening")}
+            {serviceData.headlinePreOpening}
           </h1>
           <p className="max-w-2xl font-light">{serviceBullets[4].text}</p>
         </div>
@@ -117,18 +123,18 @@ export default async function Home() {
             preOpeningBtn={preOpeningBtnData}
           />
         </div>
-      </section>
+      </section> 
       {/* about */}
-      <section className="px-4 md:px-16 lg:px32 pt-12 md:pt-32 xl:pt-48">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24 lg:border-b-1 border-slate-300 pb-12">
-          <div className="flex-1 flex flex-col gap-4">
-            <h1 className="lg:!text-5xl/14 !tracking-tight">
+      <section className=" px-4 md:px-16 lg:px-32 pt-16 md:pt-32 xl:pt-48">
+        <div className="lg:border-b-1 border-slate-300 pb-12">
+          <div className="">
+            <h2 className="!mb-4">
               {aboutSectionTwo.headline}
-            </h1>
+            </h2>
           </div>
-          <p className="flex-1 lg:text-base/8 max-w-xl">
+          <h1 className="max-w-5xl">
             {aboutSectionTwo.intro}
-          </p>
+          </h1>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-24 lg:mt-24">
           <div className="flex-1">
@@ -161,77 +167,45 @@ export default async function Home() {
           </div>
         </div>
       </section>
+      {/* services 2 new */}
+      {/* <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 md:py-32 lg:p-32 mt-12 lg:mt-32 xl:mt-48 scroll-mt-24">
+        <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
+          <div className="flex-1 flex flex-col items-start gap-4">
+            <h2 className="!mb-0">{serviceData.subheader}</h2>
+            <h1 className="lg:!text-5xl/14 !tracking-tight">
+              {serviceData.headlinePreOpening}
+            </h1>
+            <p className="lg:text-base/8">{serviceData.intro}</p>
+            <ServiceBtn
+              className="mx-auto lg:mx-0 bg-gold mt-8"
+              text={preOpeningBtn("text")}
+              link={preOpeningBtn("link")}
+            />
+          </div>
+          <div className="flex-2 grid grid-cols-1 xl:grid-cols-2 gap-16 mt-4">
+            {serviceBullets.slice(5).map((bullet) => {
+              const Icon = icons[bullet.icon];
+              return (
+                <div key={bullet.header} className="flex flex-col gap-4">
+                  <div className="flex gap-4 lg:flex-col">
+                    {Icon && <Icon />}
+                    <h2>{bullet.header}</h2>
+                  </div>
+                  <p className="text-base/8">{bullet.text}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section> */}
       {/* final cta */}
-      <div className="px-4 md:px-16 lg:px-32 pb-32 md:py-32 xl:py-48flex flex-col">
+      <section className="px-4 md:px-16 lg:px-32 pt-16 pb-32 md:py-32 xl:py-48flex flex-col">
         <h1 className="lg:!text-5xl/14 !tracking-tight md:max-w-3xl">
           {finalCta("headline")}
         </h1>
         <div className="md:pt-12 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-32 lg:gap-40 max-w-5xl">
           <p className="max-w-xl">{finalCta("text")}</p>
           <ContactBtn text={contactBtn("text")} className="md:w-64" />
-        </div>
-      </div>
-      {/* contact */}
-      <section className="px-4 md:px-16 lg:px-32 pt-24 md:pt-32 bg-charcoalDark text-offwhite">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-24 xl:gap-32 lg:border-b-1 border-slate-300 lg:pb-32">
-          <div className="flex-1 flex flex-col gap-4">
-            <h2 className="!mb-0">{contact("subheader")}</h2>
-            <h1 className="lg:!text-5xl !tracking-tight">
-              {contact("headline")}
-            </h1>
-            <p className="max-w-sm">{contact("intro")}</p>
-            <ContactBtn text={contactBtn("text")} className="md:w-64 mt-8" />
-          </div>
-          <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-y-4 lg:gap-y-16 pt-8">
-            <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="hidden lg:block">{contact("phone")}</span>
-              <Link href="tel:+4912345678" className="flex items-center gap-4">
-                <Phone className="shrink-0 size-6 text-sage" />
-                <span className="!cursor-pointer text-lg underline underline-offset-2">
-                  {" "}
-                  +4912345678
-                </span>
-              </Link>
-            </div>
-            <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="hidden lg:block">{contact("mail")}</span>
-              <Link
-                href="mailto:hello@hotelminds.io"
-                className="flex items-center gap-4"
-              >
-                <Mail className="shrink-0 size-6 text-sage" />
-                <span className="!cursor-pointer lg:text-lg underline underline-offset-2">
-                  {" "}
-                  hello@hotelminds.io
-                </span>
-              </Link>
-            </div>
-            <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="hidden lg:block">{contact("whatsApp")}</span>
-              <Link href="#" className="flex items-center gap-4">
-                <Image
-                  src="/Digital_Glyph_Black_RGB_2026.svg"
-                  alt="WhatsApp Logo"
-                  width={24}
-                  height={24}
-                  className="text-white"
-                />
-                <span className="!cursor-pointer lg:text-lg underline underline-offset-2">
-                  {" "}
-                  +4912345678
-                </span>
-              </Link>
-            </div>
-            <div className="flex flex-col gap-2 lg:gap-4">
-              <span className="hidden lg:block">{contact("address")}</span>
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold">HotelMinds</span>
-                <span className="font-semibold">Leopoldstraße 31</span>
-                <span className="font-semibold">{imprintLines[2]}</span>
-                <span className="font-semibold">{imprintLines[3]}</span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

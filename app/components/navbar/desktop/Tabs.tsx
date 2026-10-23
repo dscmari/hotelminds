@@ -37,7 +37,7 @@ const Tabs = ({ data }: Props) => {
     {
       title: data[4],
       Component: NavPricing,
-      link: `/${data[4].toLowerCase()}/`,
+      link: `#contact`,
     },
   ].map((n, idx) => ({ ...n, id: idx + 1 }));
 

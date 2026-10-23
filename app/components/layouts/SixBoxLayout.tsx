@@ -43,9 +43,9 @@ export default function SixBoxLayout({className, boxes}: Props) {
           {services.map((e, index) => (
             <div
               key={index}
-              className="lg:aspect-square flex flex-col justify-between p-8 lg:p-4 xl:p-8 bg-white"
+              className="lg:aspect-square flex flex-col justify-between p-8 lg:p-4 xl:p-8 bg-offwhite dark:bg-darkmodeblue"
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col dark:text-offwhite">
                 {e.icon}
                 <h2 className="pt-4">{e.header}</h2>
                 <p className="lg:text-sm">{e.text}</p>

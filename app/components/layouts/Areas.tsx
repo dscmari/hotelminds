@@ -50,7 +50,7 @@ export default function ServicesOverview({
         )}
       </div>
 
-      <div className="grid md:grid-cols-2  md:gap-8 pt-8 pb-8 lg:pb-12 max-w-6xl">
+      <div className="grid md:grid-cols-2  gap-4 md:gap-8 pb-8 lg:pb-12 max-w-6xl">
         {data.services.map((service, index) => (
           <div key={index} className={``}>
             <div className="flex items-start gap-2">

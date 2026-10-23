@@ -1,0 +1,198 @@
+{
+  "headline": "General Terms and Conditions",
+  "company_info": {
+    "name": "HotelMinds UG (haftungsbeschränkt)",
+    "address": "Leopoldstraße 31, 80802 Munich, Germany",
+    "managing_director": "Managing Director: Cristian Pop",
+    "register_court": "Register Court: Munich Local Court (Amtsgericht München)",
+    "commercial_register": "Commercial Register: HRB 315040",
+    "vat_id": "VAT ID: DE465045560",
+    "email": "hello@hotelminds.io",
+    "last_updated": "Last updated: October 2026"
+  },
+  "general_terms_and_conditions": [
+    {
+      "section": 1,
+      "title": "Scope of Application",
+      "clauses": [
+        "These General Terms and Conditions apply to all contracts between HotelMinds and its clients concerning consulting, analysis, implementation and other services in the hospitality and accommodation sector.",
+        "These Terms apply exclusively to entrepreneurs within the meaning of Section 14 of the German Civil Code (BGB), legal entities under public law and special funds under public law. Contracts with consumers are not concluded on the basis of these Terms.",
+        "Deviating or supplementary terms of the client apply only if HotelMinds has expressly agreed to their application.",
+        "Individual agreements in the respective proposal, contract or a service description confirmed in text form take precedence over these Terms."
+      ]
+    },
+    {
+      "section": 2,
+      "title": "Conclusion of Contract",
+      "clauses": [
+        "The basis of the cooperation is generally an individual proposal issued by HotelMinds specifying, in particular, the scope of services, remuneration, commencement date and contract term.",
+        "A contract is concluded once the client accepts the proposal from HotelMinds or HotelMinds commences performance following the corresponding instruction by the client.",
+        "Changes or additions to the agreed scope of services require coordination between the parties. Confirmation in text form, including by email, is sufficient."
+      ]
+    },
+    {
+      "section": 3,
+      "title": "Scope of Services",
+      "clauses": [
+        "HotelMinds provides consulting and implementation services particularly in the areas of revenue management, pricing strategy, online sales, booking platforms, direct sales, hotel technology, pre-opening and re-opening.",
+        "The specific scope of services is determined exclusively by the accepted proposal or any supplementary service description agreed between the parties.",
+        "HotelMinds performs the agreed services at its professional discretion, taking into account the interests and objectives of the client.",
+        "Unless a specific result has expressly been agreed, HotelMinds owes the professional performance of the agreed services, but not any particular commercial outcome.",
+        "In particular, no specific increase in revenue, occupancy, rankings, booking volumes, direct-booking share or other commercial result can be guaranteed."
+      ]
+    },
+    {
+      "section": 4,
+      "title": "Booking Platforms, Technology and Third-Party Providers",
+      "clauses": [
+        "In providing the services, HotelMinds may work with external platforms, systems and service providers, including booking platforms, PMS providers, channel managers, booking engines, revenue-management systems, payment providers and other technology providers.",
+        "Decisions, technical changes, availability, rankings, policies and malfunctions of such third-party providers are outside the control of HotelMinds.",
+        "HotelMinds therefore does not warrant that external platforms or systems will permanently provide specific functions or accept or implement specific measures.",
+        "Contracts with third-party providers are generally concluded directly between the client and the relevant provider unless expressly agreed otherwise.",
+        "Third-party costs are not included in the remuneration payable to HotelMinds unless expressly included in the proposal."
+      ]
+    },
+    {
+      "section": 5,
+      "title": "Client Cooperation Obligations",
+      "clauses": [
+        "The client shall provide HotelMinds in due time with all information, documents, data and access rights required for the agreed services.",
+        "Where possible, separate user accounts or appropriate permissions should be created for HotelMinds in relevant platforms and systems.",
+        "The client shall ensure that the information it provides is accurate, complete and may lawfully be used.",
+        "Decisions or approvals required for further implementation shall be provided by the client within a reasonable period.",
+        "Delays caused by missing or late cooperation by the client extend agreed deadlines accordingly.",
+        "Any statutory rights of HotelMinds in the event of delay in acceptance or cooperation remain unaffected."
+      ]
+    },
+    {
+      "section": 6,
+      "title": "Use of Employees and External Specialists",
+      "clauses": [
+        "HotelMinds is entitled to use its own employees as well as qualified external specialists or subcontractors in providing the services.",
+        "HotelMinds remains responsible for the contractual performance of the agreed services.",
+        "Where external service providers are to process personal data on behalf of HotelMinds or the client, the data-protection agreements required by law will be entered into."
+      ]
+    },
+    {
+      "section": 7,
+      "title": "Fees and Payment Terms",
+      "clauses": [
+        "The remuneration is set out in the respective accepted proposal.",
+        "All prices are net amounts plus applicable statutory VAT, where VAT applies.",
+        "For ongoing monthly consulting mandates, invoices are issued at the beginning of each month. Invoices are due for payment within 14 days of the invoice date without deduction.",
+        "If the cooperation begins during a calendar month, the first invoice is issued at the start of the cooperation for the agreed billing period. Thereafter, invoices are issued at the beginning of each month.",
+        "Travel, accommodation and other incidental expenses are charged only where provided for in the proposal or agreed with the client in advance.",
+        "In the event of late payment, the statutory provisions apply.",
+        "HotelMinds may temporarily suspend further performance after prior notice if due invoices remain unpaid despite a reminder."
+      ]
+    },
+    {
+      "section": 8,
+      "title": "Contract Term and Termination",
+      "clauses": [
+        "Consulting mandates are generally concluded for a fixed term of 6 or 12 months. The specific term is set out in the respective proposal.",
+        "Other terms, including a three-month term, apply only where expressly agreed in the individual case.",
+        "A fixed-term contract ends automatically upon expiry of the agreed term. There is no automatic renewal unless the parties expressly agree otherwise.",
+        "Ordinary termination during the agreed fixed term is excluded.",
+        "Each party's right to terminate for good cause remains unaffected.",
+        "Where the good cause consists of a breach of contract, a reasonable period to remedy the breach or a prior warning must generally be given where required by law.",
+        "Notices of termination must be made at least in text form."
+      ]
+    },
+    {
+      "section": 9,
+      "title": "Changes to the Scope of Services",
+      "clauses": [
+        "Services exceeding the agreed scope are not automatically part of the existing contract.",
+        "Additional services will be agreed before they are performed and may be charged separately.",
+        "HotelMinds will inform the client if it becomes apparent during a project that additional services are advisable or necessary.",
+        "HotelMinds is not obliged to perform additional chargeable services without the client's corresponding approval."
+      ]
+    },
+    {
+      "section": 10,
+      "title": "Timelines and Performance",
+      "clauses": [
+        "Timelines and implementation dates will, where possible, be coordinated with the client.",
+        "Dates are binding fixed deadlines only where expressly agreed as such.",
+        "Delays caused by third-party providers, platforms, missing access rights, missing approvals or other circumstances outside the responsibility of HotelMinds are not considered delays caused by HotelMinds."
+      ]
+    },
+    {
+      "section": 11,
+      "title": "Rights of Use and Work Product",
+      "clauses": [
+        "Work products individually created for the client and fully paid for may be used by the client for its own business purposes.",
+        "General methods, templates, processes, frameworks, analytical models, presentation structures, know-how and other pre-existing or generally applicable working materials of HotelMinds remain with HotelMinds.",
+        "Such materials may be disclosed, published, resold or commercially exploited by third parties only with the prior consent of HotelMinds.",
+        "Third-party rights in software, platforms or other content remain unaffected."
+      ]
+    },
+    {
+      "section": 12,
+      "title": "Confidentiality",
+      "clauses": [
+        "Both parties undertake to keep confidential all confidential information of the other party that becomes known in connection with the cooperation.",
+        "Confidential information may be used solely for the performance of the relevant contract.",
+        "This obligation does not apply to information that is publicly known, becomes publicly known without breach of this obligation, or can be shown to have already been lawfully known.",
+        "The confidentiality obligation continues after termination of the contract. Trade secrets protected by law remain protected for as long as the statutory requirements are met."
+      ]
+    },
+    {
+      "section": 13,
+      "title": "Data Protection",
+      "clauses": [
+        "Both parties shall comply with the applicable data-protection laws.",
+        "Where HotelMinds processes personal data on behalf of the client in the course of a project and the statutory requirements are met, the parties will enter into a separate data processing agreement pursuant to Article 28 GDPR.",
+        "The client is responsible for ensuring that HotelMinds may lawfully process the data provided for the performance of the services."
+      ]
+    },
+    {
+      "section": 14,
+      "title": "Liability",
+      "clauses": [
+        "HotelMinds is liable without limitation for damage caused intentionally or through gross negligence.",
+        "HotelMinds is also liable without limitation for injury to life, body or health and in cases of mandatory statutory liability.",
+        "In cases of ordinary negligence, HotelMinds is liable only for breach of a material contractual obligation. In such cases, liability is limited to the damage typical for the contract and foreseeable at the time the contract was concluded.",
+        "Any further liability for ordinary negligence is excluded.",
+        "HotelMinds is not liable for decisions, measures or changes made by external booking platforms, technology providers or other third parties to the extent HotelMinds is not responsible for them.",
+        "The client remains responsible for entrepreneurial decisions, price approvals, contracts with third-party providers and the final approval of material measures."
+      ]
+    },
+    {
+      "section": 15,
+      "title": "Force Majeure",
+      "clauses": [
+        "Neither party is liable for delays or non-performance to the extent caused by events outside its reasonable control.",
+        "Such events may include, in particular, natural events, war, governmental measures, significant technical failures, failures of essential infrastructure or comparable events.",
+        "The affected party shall inform the other party without undue delay of the relevant event and its expected impact."
+      ]
+    },
+    {
+      "section": 16,
+      "title": "References and Trademarks",
+      "clauses": [
+        "HotelMinds will use the client's name, logo or other identifiers as a public reference only with the client's prior consent.",
+        "The same applies to the publication of project-related case studies or confidential results."
+      ]
+    },
+    {
+      "section": 17,
+      "title": "Governing Law and Jurisdiction",
+      "clauses": [
+        "All contractual relationships between HotelMinds and the client are governed by the laws of the Federal Republic of Germany.",
+        "To the extent legally permissible, Munich, Germany, is the exclusive place of jurisdiction for all disputes arising out of or in connection with the contractual relationship."
+      ]
+    },
+    {
+      "section": 18,
+      "title": "Final Provisions",
+      "clauses": [
+        "Changes or additions to the contract may be agreed in text form unless a stricter form is required by law.",
+        "If any provision of these Terms is or becomes wholly or partially invalid, the remaining provisions remain unaffected.",
+        "The invalid provision shall be replaced by the applicable statutory provisions.",
+        "This English version is provided for convenience only. In the event of any discrepancy or difference in interpretation, the German version shall prevail."
+      ]
+    }
+  ]
+}

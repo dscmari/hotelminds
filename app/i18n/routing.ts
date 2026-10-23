@@ -8,8 +8,9 @@ export const routing = defineRouting({
     "/pre-opening": {de: "/pre-opening/", en: "/pre-opening/"},
     "/existing-hotel-performance": {de: "/bestehende-hotels/", en: "/existing-hotel-performance/"},
     "/about": {de: "/about/", en: "/about/"},
-    "/contact": {de: "/kontakt/", en: "/contact/"},
+    "/team": {de: "/team/", en: "/team/"},
     "/imprint": { de: "/impressum/", en: "/imprint/" },
     "/privacy": { de: "/datenschutz/", en: "/privacy/" },
+    "/terms": {de: "/agb/", en: "/terms/"},
   },
 });

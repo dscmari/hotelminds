@@ -2,46 +2,48 @@ import Link from "next/link";
 import Image from "next/image";
 
 type Props = {
-  data?: string[]
-}
+  data?: string[];
+};
 
-const NavServices = ({data}: Props) => {
-  
+const NavServices = ({ data }: Props) => {
+  console.log(data);
+  const srcExistingHotel =
+    data?.[1] === "Existing Hotel Performance"
+      ? "/icons/existingHotels_en.svg"
+      : "/icons/existingHotels_de.svg";
+  const srcPreOpening =
+    data?.[2] === "Pre Opening"
+      ? "/icons/preOpening_en.svg"
+      : "/icons/preOpening_de.svg";
   return (
     <div>
-      <div className="flex p-8 gap-8">
-        <div className="flex-1 flex flex-col gap-8">
+      <div className="flex">
+        <Link
+          href={`/${data?.[1].toLowerCase().replace(/\s+/g, "-")}/`}
+          className="flex-1 border-r border-offwhite/50"
+        >
           <Image
-            src="/vercel.svg"
+            src={srcExistingHotel}
             alt="Logo hotelminds"
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "200px", height: "200px" }}
             width={50}
             height={50}
             className="mx-auto"
           />
-          <Link
-             href={`/${data?.[1].toLowerCase().replace(/\s+/g, "-")}/`}
-            className="text-offwhite text-center text-lg underline underline-offset-4"
-          >
-            {data?.[1]}
-          </Link>
-        </div>
-        <div className="flex-1 flex flex-col gap-8">
+        </Link>
+        <Link
+          href={`/${data?.[2].toLowerCase().replace(/\s+/g, "-")}/`}
+          className="flex-1 border-l border-offwhite/50"
+        >
           <Image
-            src="/vercel.svg"
+            src={srcPreOpening}
             alt="Logo hotelminds"
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "200px", height: "200px" }}
             width={50}
             height={50}
             className="mx-auto"
           />
-          <Link
-          href={`/${data?.[2].toLowerCase().replace(/\s+/g, "-")}`}
-            className="text-offwhite text-center text-lg underline underline-offset-4"
-          >
-              {data?.[2]}
-          </Link>
-        </div>
+        </Link>
       </div>
       {/* <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
         <span>View more</span>

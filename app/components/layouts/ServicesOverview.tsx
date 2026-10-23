@@ -18,7 +18,7 @@ export default function ServicesOverview({
 }: Props) {
   return (
     <div
-      className={`flex flex-col xl:flex-row gap-8 xl:gap-16 2xl:gap-32  md:py-16 border-b-1 border-slate-300 ${className}`}
+      className={`flex flex-col xl:flex-row gap-8 xl:gap-16 2xl:gap-32  md:py-16 lg:pt-0 border-b-1 border-slate-300 ${className}`}
     >
       <div className="xl:flex-1">
         <h1 className="max-w-lg">{data.headline}</h1>

@@ -11,6 +11,15 @@
   },
 
   "footer": {
+    "contact": {
+      "headline": "Lassen Sie uns über Ihr Hotel sprechen.",
+      "subheader": "Kontakt",
+      "intro": "Distribution ist keine Nebenaufgabe. Sie ist ein strategischer Wachstumshebel. Wenn Umsatzwachstum Priorität hat, lassen Sie uns eine Struktur aufbauen, die für Sie arbeitet.",
+      "mail": "E-Mail",
+      "phone": "Telefon",
+      "whatsApp": "WhatsApp",
+      "address": "Adresse"
+    },
     "headline": "Machen Sie Ihr Hotel unmöglich zu übersehen.",
     "subheader": "HotelMinds verbindet strategisches Denken mit präziser digitaler Umsetzung, um Premium-Hotels unverwechselbar zu machen.",
     "agb": "Allgemeine Geschäftsbedingungen",

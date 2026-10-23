@@ -48,7 +48,7 @@ export default async function page() {
           }}
         />
       </section>
-      <section className="px-4 md:px-16 lg:px-32 pb-12 md:pb-32 xl:pb-48">
+      <section className="px-4 md:px-16 lg:px-32 pt-12 md:pt-0 pb-12 md:pb-32 xl:pb-48">
         <Areas
           data={{
             headline: areasHeadline,
@@ -59,11 +59,11 @@ export default async function page() {
       </section>
 
       {/* threePhaseLayout */}
-      <section className="bg-charcoalDark text-offwhite p-4 py-24 md:px-16 md:py-32 lg:p-32">
+      <section className="bg-charcoalDark text-offwhite p-4 mt-16 lg:mt-0 py-24 md:px-16 md:py-32 lg:p-32 dark:py-0">
         <ThreePhaseLayout data={resultsData} />
       </section>
       {/* process */}
-      <section className="pt-12 px-4 md:px-16 md:pt-32 xl:pt-48 lg:px-32">
+      <section className="pt-16 px-4 md:px-16 md:pt-32 xl:pt-48 lg:px-32">
         <h2>{processData.subheader}</h2>
         <h1 className="">{processData.headline}</h1>
         <Process data={processData} />
