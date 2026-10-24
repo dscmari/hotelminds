@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { CustomBtn } from "@/app/utils/types";
 
 type Props = CustomBtn;

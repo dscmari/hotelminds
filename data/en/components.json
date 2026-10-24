@@ -44,6 +44,10 @@
   "contactBtn": {
     "text": "Book an intro call"
   },
+  "teamBtn": {
+    "text": "Learn more",
+    "link": "/team/"
+  },
   "notFound": {
     "headline": "Page not found",
     "text": "The page you are looking for doesn't exist or has been moved. Go back to ",

@@ -107,8 +107,8 @@ export default async function Home() {
           </h1>
           <p className="max-w-2xl font-light">{serviceBullets[4].text}</p>
         </div>
-        <div className="flex flex-col lg:flex-row-reverse lg:flex-row gap-16 mt-12 lg:mt-32">
-          <div className="flex-1">
+        <div className="mt-12">
+          {/* <div className="flex-1">
             <Image
               src="/images/consulting_stock.jpg"
               alt="Business environment in the office"
@@ -116,9 +116,9 @@ export default async function Home() {
               height={600}
               className="rounded-xl mx-auto"
             />
-          </div>
+          </div> */}
           <AccordeonClean
-            className="flex-1"
+            className="max-w-7xl"
             data={serviceBullets.slice(5)}
             preOpeningBtn={preOpeningBtnData}
           />

@@ -52,29 +52,24 @@ export default function AccordeonClean({
   });
 
   return (
-    <div className={`flex flex-col gap-4 ${className}`}>
+    <div className={`grid md:grid-cols-2 gap-4 lg:gap-8 ${className}`}>
       {home.map((e, index) => (
-        <div key={e.id} className="group border-b border-slate-300">
+        <div key={e.id} className="group border-b border-slate-300 max-w-xl">
           <input
             type="checkbox"
             id={e.id}
             className="peer hidden"
             defaultChecked={index === 0}
           />
-          <label
-            htmlFor={e.id}
-            className="flex items-center gap-4 p-4 cursor-pointer font-semibold select-none dark:text-offwhite"
-          >
+          <span className="flex items-center gap-4 cursor-pointer font-semibold select-none dark:text-offwhite">
             {e.icon}
             <h2 className="pointer-events-none !text-base lg:!text-xl !m-0">
               {e.bullet}
             </h2>
-          </label>
+          </span>
           <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-has-[:checked]:grid-rows-[1fr]">
-            <div className="overflow-hidden">
-              <div className="p-4 lg:pl-12 dark:bg-darkmode-blue">
-                <p className="whitespace-pre-line font-light">{e.text}</p>
-              </div>
+            <div className="py-4 dark:bg-darkmode-blue max-w-lg">
+              <p className="whitespace-pre-line font-light">{e.text}</p>
             </div>
           </div>
         </div>

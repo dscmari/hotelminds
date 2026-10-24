@@ -1,4 +1,5 @@
 import ContactBtn from "@/app/components/buttons/ContactBtn";
+import TeamBtn from "@/app/components/buttons/TeamBtn";
 import { FinalCtaData, FounderData, ServiceBullet } from "@/app/utils/types";
 import { TrendingDown, TrendingUp } from "lucide-react";
 import { getTranslations } from "next-intl/server";
@@ -10,6 +11,7 @@ export default async function page() {
   const servicesData = t.raw("services");
   const founderData = t.raw("founder") as FounderData;
   const finalCtaData = t.raw("finalCta") as FinalCtaData;
+  const teamBtn = await getTranslations("components.teamBtn");
   const contactBtn = await getTranslations("components.contactBtn");
   const contactBtnData = {
     text: contactBtn("text"),
@@ -65,6 +67,10 @@ export default async function page() {
               <p>{founderData.text_2}</p>
               <p>{founderData.text_3}</p>
             </div>
+            <TeamBtn
+              className="mx-auto lg:mx-0 bg-gold mt-8"
+              text={teamBtn("text")}
+            />
           </div>
           <div className="sm:px-4 md:px-0">
             <Image

@@ -90,19 +90,7 @@ export default async function Footer({ className, data }: Props) {
         </div>
       </section>
       <section className="px-4 md:px-16 lg:px-32 lg:px-32 pt-12 md:pt-32 text-offwhite bg-charcoalDark dark:!bg-charcoalDark ">
-        <div className=" grid grid-cols-1 gap-12 lg:grid-cols-4">
-          <div className="lg:col-span-2 order-1 mt-12 lg:mt-0">
-            <h1>{footerData.headline}</h1>
-            <p>{footerData.subheader}</p>
-            <div className="flex flex-col gap-2 pt-8">
-              <p>hello@hotelminds.io</p>
-              <p>+49 179 1769307</p>
-              <p>Leopoldstraße 31</p>
-              <p>80802 Munich</p>
-              <p>Germany</p>
-            </div>
-          </div>
-        </div>
+
         <div className="underline-offset-2">
           <div className="pt-8 lg:pt-0 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8 ">
             {bullets.map((e, index) => (

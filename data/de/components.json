@@ -38,10 +38,14 @@
   },
   "aboutBtn": {
     "text": "Mehr erfahren",
-    "link": "/about"
+    "link": "/about/"
   },
   "contactBtn": {
     "text": "Erstgespräch buchen"
+  },
+  "teamBtn": {
+"text": "Mehr erfahren",
+"link": "/team/"
   },
     "notFound": {
     "headline": "Seite nicht gefunden",

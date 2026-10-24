@@ -1,31 +1,36 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import ContactBtn from "../../buttons/ContactBtn";
 import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 import { ShiftingDropDown } from "./ShiftingDropDown";
-import { useScrolled } from "@/app/hooks/useScrolled";
 import { CustomBtn } from "@/app/utils/types";
 import { usePathname } from "next/navigation";
+import { Home } from "lucide-react";
+import Link from "next/link";
 
 type Props = {
   className?: string;
-  data: string[]
-  contactBtn: CustomBtn
-  isScrolled: boolean
+  data: string[];
+  contactBtn: CustomBtn;
+  isScrolled: boolean;
 };
 
 export default function DesktopNavbar({
   className,
   data,
   contactBtn,
-  isScrolled
+  isScrolled,
 }: Props) {
-
-  const pathname = usePathname()
-  const legalSlugs = ['agb', 'terms', 'datenschutz', 'privacy', 'impressum', 'imprint'];
-  const currentSegment = pathname?.split('/').filter(Boolean).pop();
-const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
+  const pathname = usePathname();
+  const legalSlugs = [
+    "agb",
+    "terms",
+    "datenschutz",
+    "privacy",
+    "impressum",
+    "imprint",
+  ];
+  const currentSegment = pathname?.split("/").filter(Boolean).pop();
+  const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
 
   return (
     <div
@@ -42,7 +47,7 @@ const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
         </div>
       </div> */}
       <div className="flex items-center gap-8 p-4 pb-0">
-        <Link href={"/"}>
+        {/* <Link href={"/"}>
           {" "}
           <Image
             src="/images/hotelminds_logo_bg_transparent.png"
@@ -51,7 +56,11 @@ const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
             width={120}
             height={60}
           />
+        </Link> */}
+        <Link href={"/"}>
+          <Home className="shrink-0 text-charcoalDark mb-2" />
         </Link>
+
         <div className="flex items-center justify-between w-full">
           <ShiftingDropDown data={data} />
           {/* <div className="flex items-center gap-8">
@@ -62,7 +71,7 @@ const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
             ))}
           </div> */}
           <div className="flex items-center gap-8">
-             <LanguageSwitcher /> 
+            <LanguageSwitcher />
             <ContactBtn className="hover:bg-gold" text={contactBtn.text} />
           </div>
         </div>
