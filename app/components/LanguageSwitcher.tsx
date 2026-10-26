@@ -23,9 +23,9 @@ export default function LanguageSwitcher({ className }: Props) {
           <Image
             src={`${index === 0 ? "/icons/DE.png" : "/icons/UK.png"}`}
             alt="Language Icon"
-            width={32}
-            height={32}
-            className="text-white min-w-12"
+            width={60}
+            height={60}
+            className="w-8 lg:w-28 xl:w-24 2xl:w-20"
           />
         </div>
       ))}
