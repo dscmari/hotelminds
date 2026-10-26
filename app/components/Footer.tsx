@@ -98,23 +98,33 @@ export default async function Footer({ className }: Props) {
       </section>
       <section className="px-4 md:px-16 lg:px-32 lg:px-32 pt-12 md:pt-32 text-offwhite bg-charcoalDark dark:!bg-charcoalDark ">
         <div className="underline-offset-2">
-          <div className="pt-8 lg:pt-0 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8 ">
-            {bullets.map((e, index) => (
-              <Link
-                key={index}
-                href={
-                  e === "Home"
-                    ? "/"
-                    : e === "Über Uns"
-                      ? "/about/"
-                      : `/${e.toLowerCase().replace(/\s+/g, "-")}/`
-                }
-                className="underline cursor-pointer"
-              >
-                {e}
-              </Link>
-            ))}
+          <div className="flex flex-col gap-8 lg:items-end">
+            <Image
+              src="/icons/HotelMinds_white_transparent_cropped.png"
+              alt="Logo hotelminds"
+              width={300}
+              height={100}
+              className="mx-auto lg:mx-0 w-64"
+            />
+            <div className="pt-8 lg:pt-0 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8 ">
+              {bullets.map((e, index) => (
+                <Link
+                  key={index}
+                  href={
+                    e === "Home"
+                      ? "/"
+                      : e === "Über Uns"
+                        ? "/about/"
+                        : `/${e.toLowerCase().replace(/\s+/g, "-")}/`
+                  }
+                  className="underline cursor-pointer"
+                >
+                  {e}
+                </Link>
+              ))}
+            </div>
           </div>
+
           <div className="pt-4 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8">
             <Link href={`/terms/`} className="underline">
               {footerData.agb}

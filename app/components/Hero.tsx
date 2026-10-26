@@ -17,13 +17,13 @@ export default function Hero({ data, contactBtn, className}: Props) {
     >
       <div className="pb-16 md:pb-24 lg:pb-32  mx-4 md:mx-16 lg:mx-32">
         <Image
-          src="/images/HotelMinds_black.png"
+          src="/icons/HotelMinds_black_transparent_cropped.png"
           alt="Logo hotelminds"
-          width={400}
+          width={300}
           height={100}
-          className="hidden lg:block"
+          className="mx-auto lg:mx-0 w-80 xl:"
         />
-        <h1 className="!text-4xl/10 md:!text-5xl/14 lg:!text-6xl/16 max-w-4xl text-center lg:text-start dark:!text-charcoalDark">
+        <h1 className="mt-8 !text-4xl/10 md:!text-5xl/14 xl:!text-6xl/16 max-w-4xl text-center lg:text-start dark:!text-charcoalDark">
           {data.headline}
         </h1>
 
