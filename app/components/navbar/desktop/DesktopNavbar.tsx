@@ -54,7 +54,7 @@ export default function DesktopNavbar({
             height={60}
           />
         </Link> */}
-        <Link href={"/"}>
+        <Link href={"/"} className="cursor-pointer">
           <Home className="shrink-0 text-charcoalDark mb-2" />
         </Link>
 

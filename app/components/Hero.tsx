@@ -15,13 +15,13 @@ export default function Hero({ data, contactBtn, className}: Props) {
       id="home"
       className={`min-h-screen flex flex-col items-center justify-end ${className}`}
     >
-      <div className="pb-16 md:pb-24 lg:pb-32  mx-4 md:mx-16 lg:mx-32">
+      <div className="pb-16 md:pb-24 xl:pb-32  mx-4 md:mx-16 lg:mx-32">
         <Image
           src="/icons/HotelMinds_black_transparent_cropped.png"
           alt="Logo hotelminds"
           width={300}
           height={100}
-          className="mx-auto lg:mx-0 w-80 xl:"
+          className="mx-auto lg:mx-0 w-48 lg:w-64 xl:w-80 xl:"
         />
         <h1 className="mt-8 !text-4xl/10 md:!text-5xl/14 xl:!text-6xl/16 max-w-4xl text-center lg:text-start dark:!text-charcoalDark">
           {data.headline}
