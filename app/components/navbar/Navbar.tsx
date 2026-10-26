@@ -5,18 +5,19 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import DesktopNavbar from "./desktop/DesktopNavbar";
 import LanguageSwitcher from "../LanguageSwitcher";
-import { CustomBtn } from "@/app/utils/types";
 import { useScrolled } from "@/app/hooks/useScrolled";
 import ContactBtn from "../buttons/ContactBtn";
+import { useTranslations } from "next-intl";
 
 type Props = {
   className?: string;
-  data: string[];
-  contactBtn: CustomBtn;
 };
 
-export default function Navbar({ className, data, contactBtn }: Props) {
-  const mobileNavlinks = data.slice(0, 5);
+export default function Navbar({ className}: Props) {
+  const navbar = useTranslations("components.navbar");
+  const bullets = navbar.raw("bullets") as string[];
+
+  const mobileNavlinks = bullets.slice(0, 5);
   const isScrolled = useScrolled(50);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -92,18 +93,14 @@ export default function Navbar({ className, data, contactBtn }: Props) {
                 ))}
               </div>
 
-              <ContactBtn text={contactBtn.text} className="mt-12" />
+              <ContactBtn className="mt-12" />
             </div>
           </motion.div>
         ) : null}
       </div>
       {/* Desktop */}
       <div className="hidden lg:block z-100 fixed w-full max-w-[2048px]">
-        <DesktopNavbar
-          data={data}
-          contactBtn={contactBtn}
-          isScrolled={isScrolled}
-        />
+        <DesktopNavbar data={bullets} isScrolled={isScrolled} />
       </div>
     </div>
   );

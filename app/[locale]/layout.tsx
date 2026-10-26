@@ -1,14 +1,10 @@
 import { Inter, Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/navbar/Navbar";
-
 import Footer from "../components/Footer";
 import { NextIntlClientProvider } from "next-intl";
-import { locale } from "next/root-params";
-import { notFound } from "next/navigation";
+import { getMessages } from "next-intl/server";
 import { routing } from "@/app/i18n/routing";
-import { getTranslations } from "next-intl/server";
-import { Metadata } from "next";
 import ScrollToTopBtn from "../components/buttons/ScrollToTopBtn";
 
 const inter = Inter({
@@ -33,26 +29,28 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  const navbar = await getTranslations("components.navbar");
-  const bullets = navbar.raw("bullets") as string[];
-  const contactBtn = await getTranslations("components.contactBtn");
-  const contactBtnData = {
-    text: contactBtn("text"),
-  };
+  const { locale } = await params;
+
+
+  // Alle Messages für den Client-Provider laden
+  const messages = await getMessages();
 
   return (
     <html
-      lang={await locale()}
+      lang={locale} // <-- Direkte Nutzung der Variable statt await locale()
       className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body>
-        <NextIntlClientProvider>
-          <Navbar data={bullets} contactBtn={contactBtnData} />
+        {/* 3. messages an den Provider übergeben */}
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
           <main>{children}</main>
-          <Footer data={bullets} />
+          <Footer />
           <ScrollToTopBtn />
         </NextIntlClientProvider>
       </body>

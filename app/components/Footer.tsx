@@ -7,17 +7,19 @@ import PhoneBtn from "./buttons/PhoneBtn";
 
 type Props = {
   className?: string;
-  data: string[];
 };
 
-export default async function Footer({ className, data }: Props) {
+export default async function Footer({ className }: Props) {
   const t = await getTranslations("components");
+  const navbarData = t.raw("navbar") as { bullets: string[] };
+  const navbarBullets = navbarData.bullets;
   const imprintT = await getTranslations("imprint");
 
   const footerData = t.raw("footer");
-  const contactData = t.raw("contactBtn");
   const targetIndices = [1, 2, 3];
-  const bullets = data.filter((_, index) => targetIndices.includes(index));
+  const bullets = navbarBullets.filter((_, index) =>
+    targetIndices.includes(index),
+  );
   const imprintSections = imprintT.raw("sections");
   const imprintLines = imprintSections[0].lines;
 
@@ -35,7 +37,7 @@ export default async function Footer({ className, data }: Props) {
               {footerData.contact.headline}
             </h1>
             <p className="max-w-sm">{footerData.contact.intro}</p>
-            <ContactBtn text={contactData.text} className="md:w-64 mt-8" />
+            <ContactBtn className="md:w-64 mt-8" />
           </div>
           <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-y-4 lg:gap-y-16 pt-8">
             <div className="flex flex-col gap-2 lg:gap-4">
@@ -61,7 +63,12 @@ export default async function Footer({ className, data }: Props) {
               <span className="hidden lg:block">
                 {footerData.contact.whatsApp}
               </span>
-              <Link href="https://wa.me/491791769307" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
+              <Link
+                href="https://wa.me/491791769307"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4"
+              >
                 <Image
                   src="/Digital_Glyph_Black_RGB_2026.svg"
                   alt="WhatsApp Logo"
@@ -90,7 +97,6 @@ export default async function Footer({ className, data }: Props) {
         </div>
       </section>
       <section className="px-4 md:px-16 lg:px-32 lg:px-32 pt-12 md:pt-32 text-offwhite bg-charcoalDark dark:!bg-charcoalDark ">
-
         <div className="underline-offset-2">
           <div className="pt-8 lg:pt-0 flex flex-col lg:flex-row lg:justify-end gap-2 lg:gap-8 ">
             {bullets.map((e, index) => (
@@ -113,13 +119,10 @@ export default async function Footer({ className, data }: Props) {
             <Link href={`/terms/`} className="underline">
               {footerData.agb}
             </Link>
-            <Link href={'/privacy/'} className="underline">
+            <Link href={"/privacy/"} className="underline">
               {footerData.privacy}
             </Link>
-            <Link
-              href={'/imprint/'}
-              className="underline"
-            >
+            <Link href={"/imprint/"} className="underline">
               {footerData.imprint}
             </Link>
           </div>

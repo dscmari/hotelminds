@@ -2,7 +2,6 @@
 import ContactBtn from "../../buttons/ContactBtn";
 import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 import { ShiftingDropDown } from "./ShiftingDropDown";
-import { CustomBtn } from "@/app/utils/types";
 import { usePathname } from "next/navigation";
 import { Home } from "lucide-react";
 import Link from "next/link";
@@ -10,14 +9,12 @@ import Link from "next/link";
 type Props = {
   className?: string;
   data: string[];
-  contactBtn: CustomBtn;
   isScrolled: boolean;
 };
 
 export default function DesktopNavbar({
   className,
   data,
-  contactBtn,
   isScrolled,
 }: Props) {
   const pathname = usePathname();
@@ -34,7 +31,7 @@ export default function DesktopNavbar({
 
   return (
     <div
-      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "bg-offwhite p-0 border-b " : "p-4"} ${isLegal ? " dark:bg-offwhite" : ""} ${className}`}
+      className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "bg-offwhite pb-4 border-b " : "p-4"} ${isLegal ? " dark:bg-offwhite" : ""} ${className}`}
     >
       {/* <div className="flex gap-8 justify-end items-center text-sm">
         <div className="flex gap-2 items-center">
@@ -72,7 +69,7 @@ export default function DesktopNavbar({
           </div> */}
           <div className="flex items-center gap-8">
             <LanguageSwitcher />
-            <ContactBtn className="hover:bg-gold" text={contactBtn.text} />
+            <ContactBtn className="hover:bg-gold" />
           </div>
         </div>
       </div>

@@ -17,10 +17,9 @@ export default function Hero({ data, contactBtn, className}: Props) {
     >
       <div className="pb-16 md:pb-24 lg:pb-32  mx-4 md:mx-16 lg:mx-32">
         <Image
-          src="/images/hotelminds_logo_bg_transparent_big.png"
+          src="/images/HotelMinds_black.png"
           alt="Logo hotelminds"
-          style={{ width: "200px" }}
-          width={200}
+          width={400}
           height={100}
           className="hidden lg:block"
         />
@@ -35,7 +34,6 @@ export default function Hero({ data, contactBtn, className}: Props) {
           </p>
           <ContactBtn
             className="hover:bg-gold text-charcoalDark md:w-64"
-            text={contactBtn.text}
           />
         </div>
       </div>

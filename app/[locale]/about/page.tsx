@@ -1,7 +1,7 @@
 import ContactBtn from "@/app/components/buttons/ContactBtn";
 import TeamBtn from "@/app/components/buttons/TeamBtn";
 import { FinalCtaData, FounderData, ServiceBullet } from "@/app/utils/types";
-import { TrendingDown, TrendingUp } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
@@ -12,10 +12,7 @@ export default async function page() {
   const founderData = t.raw("founder") as FounderData;
   const finalCtaData = t.raw("finalCta") as FinalCtaData;
   const teamBtn = await getTranslations("components.teamBtn");
-  const contactBtn = await getTranslations("components.contactBtn");
-  const contactBtnData = {
-    text: contactBtn("text"),
-  };
+  
   return (
     <div>
       <section className="px-4 md:px-16 lg:px-32 pt-32 lg:pt-48 min-h-screen flex flex-col items-center justify-end bg-linear-to-br from-[var(--color-offwhite)] via-[var(--color-offwhite)] to-[var(--color-gold)]">
@@ -27,7 +24,6 @@ export default async function page() {
               </h1>
             </div>
             <ContactBtn
-              text={contactBtnData.text}
               className="hidden xl:flex md:max-w-64 mt-8 lg:mt-32"
             />
           </div>
@@ -37,7 +33,7 @@ export default async function page() {
             <p className="dark:!text-charcoalDark">{hero.intro_3}</p>
           </article>
           <ContactBtn
-            text={contactBtnData.text}
+  
             className="lg:hidden  md:max-w-64 mt-8 lg:mt-32"
           />
         </div>
@@ -90,7 +86,7 @@ export default async function page() {
         </h1>
         <div className="md:pt-12 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-32 lg:gap-40 max-w-5xl">
           <p className="max-w-xl">{finalCtaData.text}</p>
-          <ContactBtn text={contactBtn("text")} className="md:w-64" />
+          <ContactBtn className="md:w-64" />
         </div>
       </section>
     </div>

@@ -6,15 +6,15 @@ type Props = {
 };
 
 const NavServices = ({ data }: Props) => {
-  console.log(data);
+  console.log(data)
   const srcExistingHotel =
     data?.[1] === "Existing Hotel Performance"
-      ? "/icons/existingHotels_en.svg"
-      : "/icons/existingHotels_de.svg";
+      ? "/icons/existingHotel_en.png"
+      : "/icons/existingHotel_de.png";
   const srcPreOpening =
-    data?.[2] === "Pre Opening"
-      ? "/icons/preOpening_en.svg"
-      : "/icons/preOpening_de.svg";
+    data?.[1] === "Existing Hotel Performance"
+      ? "/icons/preOpening_en.png"
+      : "/icons/preOpening_de.png";
   return (
     <div>
       <div className="flex">
@@ -26,8 +26,8 @@ const NavServices = ({ data }: Props) => {
             src={srcExistingHotel}
             alt="Logo hotelminds"
             style={{ width: "200px", height: "200px" }}
-            width={50}
-            height={50}
+            width={200}
+            height={200}
             className="mx-auto"
           />
         </Link>
@@ -39,8 +39,8 @@ const NavServices = ({ data }: Props) => {
             src={srcPreOpening}
             alt="Logo hotelminds"
             style={{ width: "200px", height: "200px" }}
-            width={50}
-            height={50}
+            width={200}
+            height={200}
             className="mx-auto"
           />
         </Link>

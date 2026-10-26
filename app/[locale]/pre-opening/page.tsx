@@ -1,6 +1,5 @@
 import ContactBtn from "@/app/components/buttons/ContactBtn";
 import Hero from "@/app/components/Hero";
-import Areas from "@/app/components/layouts/Areas";
 import SixBoxLayout from "@/app/components/layouts/SixBoxLayout";
 import Subservices from "@/app/components/layouts/Subservices";
 import Process from "@/app/components/Process";
@@ -45,7 +44,6 @@ export default async function page() {
             <p className="lg:pt-4">{servicesData.bullets[0].text}</p>
           </div>
           <ContactBtn
-            text={contactBtnData.text}
             className="hidden lg:flex md:w-64"
           />
         </article>
@@ -72,7 +70,7 @@ export default async function page() {
         </h1>
         <div className="md:pt-12 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-32 lg:gap-40 max-w-5xl">
           <p className="max-w-xl">{finalCtaData.text}</p>
-          <ContactBtn text={contactBtn("text")} className="md:w-64" />
+          <ContactBtn className="md:w-64" />
         </div>
       </section>
     </div>

@@ -42,7 +42,8 @@
     "link": "/about"
   },
   "contactBtn": {
-    "text": "Book an intro call"
+    "text": "Book an intro call",
+        "link": "https://calendly.com/cristian_pop/30min"
   },
   "teamBtn": {
     "text": "Learn more",

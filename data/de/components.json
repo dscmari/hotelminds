@@ -41,7 +41,8 @@
     "link": "/about/"
   },
   "contactBtn": {
-    "text": "Erstgespräch buchen"
+    "text": "Erstgespräch buchen",
+    "link": "https://calendly.com/daniel-hotelminds/hotelminds?back=1&month=2026-10"
   },
   "teamBtn": {
 "text": "Mehr erfahren",

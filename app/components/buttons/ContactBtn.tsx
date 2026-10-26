@@ -2,18 +2,23 @@
 import { CustomBtn } from "@/app/utils/types";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
+type Props = {
+  className?: string
+}
 
-type Props = CustomBtn;
 
-export default function ContactBtn({ className, text }: Props) {
+
+export default function ContactBtn({ className}: Props) {
+  const t = useTranslations('components.contactBtn');
+
   return (
     <Link
-      href="https://calendly.com/cristian_pop/30min"
+      href={t("link")}
       target="_blank"
       className={`bg-cta px-4 py-2 text-offwhite font-semibold tracking-tight rounded-xl whitespace-nowrap flex gap-4 justify-center items-center w-full ${className}`}
     >
-      {text}
-
+      {t("text")}
       <ExternalLink className="shrink-0 text-offwhite" size={20} />
     </Link>
   );
