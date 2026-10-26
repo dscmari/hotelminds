@@ -44,7 +44,6 @@ export default function ServicesOverview({
         </h1>
         {contactBtn && (
           <ContactBtn
-            text={contactBtn.text}
             className="hidden md:flex md:w-64"
           />
         )}
@@ -63,7 +62,7 @@ export default function ServicesOverview({
         ))}
       </div>
       {contactBtn && (
-        <ContactBtn text={contactBtn.text} className="md:hidden" />
+        <ContactBtn className="md:hidden" />
       )}
     </div>
   );

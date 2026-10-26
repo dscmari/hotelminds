@@ -39,7 +39,6 @@ export default function ServicesOverview({
       </div>
       {contactBtn && (
         <ContactBtn
-          text={contactBtn.text}
           className="lg:hidden mt-8 md:mt-16"
         />
       )}
