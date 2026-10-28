@@ -21,7 +21,7 @@ export default function Hero({ data, contactBtn, className}: Props) {
           alt="Logo hotelminds"
           width={300}
           height={100}
-          className="mx-auto lg:mx-0 w-48 lg:w-64 xl:w-80 xl:"
+          className="mx-auto lg:mx-0 w-52 md:w-64 lg:w-80 xl:w-[500px]"
         />
         <h1 className="mt-8 !text-4xl/10 md:!text-5xl/14 xl:!text-6xl/16 max-w-4xl text-center lg:text-start dark:!text-charcoalDark">
           {data.headline}

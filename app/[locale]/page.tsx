@@ -69,7 +69,7 @@ export default async function Home() {
       />
       {/* services 1 */}
       <section className="bg-charcoalDark text-offwhite p-4 py-24 md:p-16 md:py-32 lg:p-32 dark:pb-0 scroll-mt-24">
-        <div className="flex flex-col xl:flex-row xl:items-start gap-24 lg:gap-32">
+        <div className="flex flex-col xl:flex-row xl:items-start xl:gap-32">
           <div className="flex-1 flex flex-col items-start gap-4">
             <h2 className="!mb-0">{serviceData.subheader}</h2>
             <h1 className="lg:!text-5xl/14 !tracking-tight">
@@ -77,12 +77,12 @@ export default async function Home() {
             </h1>
             <p className="lg:text-base/8">{serviceData.intro}</p>
             <ServiceBtn
-              className="mx-auto lg:mx-0 bg-gold mt-8"
+              className="hidden xl:flex mx-auto lg:mx-0 bg-gold mt-8"
               text={existingHotelBtn("text")}
               link={existingHotelBtn("link")}
             />
           </div>
-          <div className="flex-2 grid grid-cols-1 xl:grid-cols-2 gap-16 mt-4">
+          <div className="flex-2 grid grid-cols-1 xl:grid-cols-2 gap-16 mt-16 md:mt-24 xl:mt-4">
             {serviceBullets.slice(0, 4).map((bullet) => {
               const Icon = icons[bullet.icon];
               return (
@@ -96,6 +96,11 @@ export default async function Home() {
               );
             })}
           </div>
+               <ServiceBtn
+              className="xl:hidden mx-auto lg:mx-0 bg-gold mt-16"
+              text={existingHotelBtn("text")}
+              link={existingHotelBtn("link")}
+            />
         </div>
       </section>
       {/* services 2 accordeon*/}
@@ -107,7 +112,7 @@ export default async function Home() {
           </h1>
           <p className="max-w-2xl font-light">{serviceBullets[4].text}</p>
         </div>
-        <div className="mt-12">
+        <div className="mt-12 lg:mt-16 xl:mt-24">
           {/* <div className="flex-1">
             <Image
               src="/images/consulting_stock.jpg"

@@ -52,7 +52,7 @@ export default function AccordeonClean({
   });
 
   return (
-    <div className={`grid md:grid-cols-2 gap-4 lg:gap-8 ${className}`}>
+    <div className={`grid md:grid-cols-2 gap-4 lg:gap-8 xl:gap-16 ${className}`}>
       {home.map((e, index) => (
         <div key={e.id} className="group border-b border-slate-300 max-w-xl">
           <input

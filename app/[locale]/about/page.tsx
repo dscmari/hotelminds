@@ -21,7 +21,7 @@ export default async function page() {
           alt="Logo hotelminds"
           width={300}
           height={100}
-          className="mx-auto w-64 xl:w-80 mb-12 xl:mb-24"
+          className="mx-auto w-52 md:w-64 lg:w-80 xl:w-[500px] mb-12 xl:mb-24"
         />
         <div className="flex flex-col xl:flex-row xl:gap-32 pb-16 lg::pb-24">
           <div className="flex flex-col justify-between">
