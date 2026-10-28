@@ -39,11 +39,11 @@ export default function SixBoxLayout({className, boxes}: Props) {
     };
   });
   return (
-     <div className={`grid md:grid-cols-2 gap-2 max-w-lg ${className}`}>
+     <div className={`grid md:grid-cols-2 3xl:grid-cols-4 gap-2 max-w-2xl 3xl:max-w-full ${className}`}>
           {services.map((e, index) => (
             <div
               key={index}
-              className="lg:aspect-square flex flex-col justify-between pt-8 lg:p-4 xl:p-8 bg-offwhite dark:bg-darkmodeblue"
+              className="flex flex-col justify-between pt-8 md:p-8 lg:p-4 xl:p-8 bg-offwhite dark:bg-darkmodeblue"
             >
               <div className="flex flex-col dark:text-offwhite">
                 {e.icon}

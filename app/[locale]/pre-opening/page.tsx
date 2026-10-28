@@ -44,7 +44,7 @@ export default async function page() {
             <p className="lg:pt-4">{servicesData.bullets[0].text}</p>
           </div>
           <ContactBtn
-            className="hidden lg:flex md:w-64"
+            className="hidden lg:flex md:w-64 lg:mt-12 xl:mt-0 3xl:mt-12"
           />
         </article>
         <SixBoxLayout boxes={servicesData.bullets} />

@@ -38,7 +38,7 @@ export default function ServicesOverview({
 }: Props) {
   return (
     <div className={` ${className}`}>
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between max-w-6xl">
         <h1 className="md:!text-5xl/14 !tracking-tight max-w-2xl">
           {data.headline}
         </h1>
@@ -46,10 +46,11 @@ export default function ServicesOverview({
           <ContactBtn
             className="hidden md:flex md:w-64"
           />
+    
         )}
       </div>
 
-      <div className="grid md:grid-cols-2 pt-4 md:pt-8 lg:pt-12  gap-4 md:gap-8 pb-8 lg:pb-12 max-w-6xl">
+      <div className="grid md:grid-cols-2 pt-4 md:pt-8 lg:pt-12  gap-4 md:gap-8 pb-8 lg:pb-12 max-w-7xl">
         {data.services.map((service, index) => (
           <div key={index} className={``}>
             <div className="flex items-start gap-2">

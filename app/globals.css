@@ -10,6 +10,7 @@
   --font-inter: var(--font-inter);
   --font-geistsans: var(--font-geist-sans);
   --font-geistmono: var(--font-geist-mono);
+  --breakpoint-3xl: 120rem;
 }
 
 :root {
