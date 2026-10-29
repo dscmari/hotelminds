@@ -75,7 +75,7 @@ export default async function page() {
         </h1>
         <div className="md:pt-12 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-32 lg:gap-40 max-w-5xl">
           <p className="max-w-xl">{finalCtaData.text}</p>
-          <ContactBtn className="md:w-64" />
+          <ContactBtn className="md:w-64 dark:bg-gold" />
         </div>
       </section>
     </div>

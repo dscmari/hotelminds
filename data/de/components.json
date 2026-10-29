@@ -30,25 +30,28 @@
   },
   "existingHotelBtn": {
     "text": "Mehr erfahren",
-    "link": "/bestehende-hotels/"
+    "link": "/bestehende-hotels/",
+    "description": "über unsere Strategie für bestehende Hotels."
   },
   "preOpeningBtn": {
     "text": "Mehr erfahren",
-    "link": "/pre-opening/"
+    "link": "/pre-opening/",
+    "description": "über unsere pre-opening Strategie im Vorfeld der Hoteleröffnung."
   },
   "aboutBtn": {
     "text": "Mehr erfahren",
-    "link": "/about/"
+    "link": "/about/",
+    "description": "über HotelMinds."
   },
   "contactBtn": {
     "text": "Erstgespräch buchen",
     "link": "https://calendly.com/daniel-hotelminds/hotelminds?back=1&month=2026-10"
   },
   "teamBtn": {
-"text": "Mehr erfahren",
-"link": "/team/"
+    "text": "Mehr erfahren",
+    "link": "/team/"
   },
-    "notFound": {
+  "notFound": {
     "headline": "Seite nicht gefunden",
     "text": "Entschuldigung, die von dir aufgerufene Seite existiert leider nicht oder wurde verschoben. Zurück zur ",
     "link": "/"

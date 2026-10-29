@@ -1,25 +1,9 @@
 "use client";
 import { CustomBtn, ServiceBullet } from "@/app/utils/types";
 import {
-  BarChart3,
-  Calculator,
-  Compass,
-  Cpu,
+
   Diamond,
-  Eye,
-  Flag,
-  Globe,
-  LineChart,
-  Network,
-  Rocket,
-  SearchCheck,
-  Sliders,
-  Target,
-  TrendingUp,
-  Wrench,
 } from "lucide-react";
-import ServiceBtn from "../buttons/ServiceBtn";
-import { div } from "motion/react-client";
 import ContactBtn from "../buttons/ContactBtn";
 
 type Props = {
@@ -44,7 +28,7 @@ export default function ServicesOverview({
         </h1>
         {contactBtn && (
           <ContactBtn
-            className="hidden md:flex md:w-64"
+            className="hidden md:flex md:w-64 dark:bg-gold"
           />
     
         )}
@@ -63,7 +47,7 @@ export default function ServicesOverview({
         ))}
       </div>
       {contactBtn && (
-        <ContactBtn className="md:hidden" />
+        <ContactBtn className="md:hidden dark:bg-gold" />
       )}
     </div>
   );

@@ -1,5 +1,4 @@
 "use client";
-import { CustomBtn } from "@/app/utils/types";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';

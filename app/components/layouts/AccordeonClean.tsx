@@ -13,7 +13,7 @@ import {
   Target,
   Wrench,
 } from "lucide-react";
-import ServiceBtn from "../buttons/ServiceBtn";
+import PreOpeningBtn from "../buttons/PreOpeningBtn";
 
 type Props = {
   className?: string;
@@ -74,10 +74,9 @@ export default function AccordeonClean({
           </div>
         </div>
       ))}
-      <ServiceBtn
+      <PreOpeningBtn
         className="mx-auto lg:mx-0 bg-gold mt-8 text-center w-full"
-        text={preOpeningBtn.text}
-        link={preOpeningBtn.link}
+
       />
     </div>
   );

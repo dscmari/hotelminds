@@ -44,7 +44,7 @@ export default function Navbar({ className}: Props) {
         className={`lg:hidden p-4 fixed w-full ${isScrolled || showMenu ? "bg-offwhite" : ""}`}
       >
         <div className="flex justify-between items-center">
-          <Link href="/">
+          <Link href="/" aria-label="Home">
             <Image
               src="/images/hotelminds_logo_bg_transparent.png"
               alt="Logo"

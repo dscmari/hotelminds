@@ -31,19 +31,22 @@
   },
   "existingHotelBtn": {
     "text": "Learn more",
-    "link": "/existing-hotel-performance/"
+    "link": "/existing-hotel-performance/",
+    "description": "about our existing hotel performance strategy."
   },
   "preOpeningBtn": {
     "text": "Learn more",
-    "link": "/pre-opening/"
+    "link": "/pre-opening/",
+    "description": "about our pre-opening strategy for hotel openings."
   },
   "aboutBtn": {
     "text": "Learn more",
-    "link": "/about"
+    "link": "/about",
+    "description": "about Hotelminds."
   },
   "contactBtn": {
     "text": "Book an intro call",
-        "link": "https://calendly.com/cristian_pop/30min"
+    "link": "https://calendly.com/cristian_pop/30min"
   },
   "teamBtn": {
     "text": "Learn more",

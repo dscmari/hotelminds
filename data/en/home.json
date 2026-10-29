@@ -65,7 +65,7 @@
   },
   "about": {
     "sectionOne": {
-      "headline": "About Hotelminds",
+      "headline": "About Us",
       "subheader": "Why HotelMinds",
       "intro": "HotelMinds is a hotel consulting company focused on revenue, profitability and sales for independent hotels.",
       "accordeonBullets": [
@@ -88,7 +88,7 @@
       ]
     },
     "sectionTwo": {
-      "headline": "ABOUT HOTELMINDS",
+      "headline": "About Us",
       "subheader": "The HotelMinds Edge",
       "intro": "HotelMinds is a hotel consulting company focused on revenue, profitability and sales for independent hotels.",
       "bulletHeadline": "Our international team brings together three perspectives that are rarely found in one place:",
