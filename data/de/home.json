@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "SEO Title: Hotelberatung für unabhängige Hotels | HotelMinds",
+    "title": "Hotelberatung für unabhängige Hotels | HotelMinds",
     "description": "HotelMinds berät unabhängige Hotels zu Revenue Management, Preisstrategie, Buchungsplattformen, Direktvertrieb und Pre-Opening.",
     "alternates": "https://hotelminds.io/de/"
   },
   "hero": {
     "headline": "Marge sichern. Kommerzielle Performance stärken.",
-    "subheader": "HotelMinds unterstützt unabhängige Hotels, Hoteleigentümer und Projektentwickler dabei, Revenue Management, Preisstrategie, Distribution, Direktbuchungen und kommerzielle Systeme zu optimieren – von der Weiterentwicklung bestehender Hotels bis zum kommerziellen Setup für Neueröffnungen, umfassende Renovierungen und Re-Openings.",
+    "subheader": "HotelMinds unterstützt Hoteleigentümer, Betreiber und Projektentwickler dabei, ihre Hotels online besser zu vermarkten und die richtigen technischen Lösungen einzusetzen – bei bestehenden Hotels ebenso wie bei Neu- und Wiedereröffnungen.",
     "btnOutro": "Wir verbinden strategische Beratung mit praxisnaher Umsetzung und schaffen so stärkere, profitablere kommerzielle Strukturen."
   },
   "services": {
     "headlineExistingHotel": "Bestehende Hotels",
-    "headlinePreOpening": "Pre Opening",
+    "headlinePreOpening": "Pre-Opening",
     "subheader": "Leistungen",
     "intro": "Wir unterstützen unabhängige Hotels dabei, ihre Zimmer profitabler zu verkaufen – mit einer klaren Preisstrategie, einem starken Online-Vertrieb und mehr Direktbuchungen.",
     "bullets": [
@@ -23,7 +23,7 @@
       {
         "icon": "Calculator",
         "header": "Mehr Nachfrage in profitable Buchungen umwandeln",
-        "text": "Wir optimieren Zimmerdarstellung, Inhalte, Ratenstruktur und Buchungswege, damit aus bestehender Nachfrage mehr Umsatz entsteht"
+        "text": "Wir optimieren Zimmerdarstellung, Inhalte, Ratenstruktur und Buchungswege, damit aus bestehender Nachfrage mehr Umsatz entsteht."
       },
       {
         "icon": "Globe",
@@ -33,7 +33,7 @@
       {
         "icon": "Sliders",
         "header": "Performance kontinuierlich verbessern",
-        "text": "Wir analysieren Buchungsverhalten, Markt eränderungen und die Entwicklung der einzelnen Kanäle und leiten daraus konkrete Maßnahmen ab."
+        "text": "Wir analysieren Buchungsverhalten, Marktveränderungen und die Entwicklung der einzelnen Kanäle und leiten daraus konkrete Maßnahmen ab."
       },
       {
         "icon": "Rocket",

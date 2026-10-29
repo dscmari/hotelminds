@@ -16,12 +16,12 @@ export default async function TermsPage() {
       <div className="py-12">
         <p className="font-semibold">{companyInfo.name}</p>
         <p>{companyInfo.adress}</p>
-        <p>Geschäftsführer: {companyInfo.managing_director}</p>
+        <p>{companyInfo.managing_director}</p>
         <p>
-          Registergericht: {companyInfo.register_court} | HRB:{" "}
+          {companyInfo.register_court} | HRB:{" "}
           {companyInfo.commercial_register}
         </p>
-        <p>USt-IdNr.: {companyInfo.vat_id}</p>
+        <p>{companyInfo.vat_id}</p>
         <p>
           E-Mail:{" "}
             {companyInfo.email}

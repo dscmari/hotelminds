@@ -7,14 +7,14 @@
 
   "hero": {
     "headline": "Protect Your Margin. Strengthen Your Commercial Performance.",
-    "subheader": "HotelMinds helps independent hotels, hotel owners and developers strengthen revenue management, pricing, hotel distribution, direct bookings and commercial technology - from optimizing existing properties to building the commercial setup for new openings, major renovations and re-openings.",
+    "subheader": "HotelMinds helps hotel owners, operators and developers improve their online sales and implement the right technology solutions — for existing hotels as well as new openings and re-openings.",
     "btnOutro": "We combine strategic guidance with hands-on execution to create stronger, more profitable commercial structures."
   },
   "services": {
     "headlineExistingHotel": "Existing Hotel Performance",
-    "headlinePreOpening": "Pre Opening",
-    "subheader": "Services",
-    "intro": "For operating independent hotels looking to improve revenue performance, strengthen hotel distribution and gain greater control over pricing, direct bookings and commercial decision-making.",
+    "headlinePreOpening": "Pre-Opening",
+    "subheader": "Services", 
+    "intro": "We help independent hotels improve revenue performance, strengthen hotel distribution and gain greater control over pricing, direct bookings and commercial decision-making.",
     "bullets": [
       {
         "icon": "SearchCheck",
@@ -110,7 +110,7 @@
     }
   },
   "finalCta": {
-    "headline": "Ready to Strengthen Your Hotel’s Performance?",
+    "headline": "Ready to strengthen your hotel’s performance?",
     "text": "Whether you are improving an existing hotel or preparing for a new opening, we help you identify the right commercial priorities and put them into action."
   }
 }

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "headline": "About HotelMinds",
+    "headline": "About Us",
     "intro_1": "HotelMinds is a hotel consulting company focused on revenue, profitability and sales for independent hotels.",
     "intro_2": "Our international team brings together different perspectives from hospitality and the travel industry. Some of  our experts have hands-on hotel experience, while others have worked at leading booking platforms including Booking.com, Expedia and Airbnb.",
     "intro_3": "Through strategic partnerships, we bring additional expertise in AI and emerging hospitality technology into our projects where it creates real value."
@@ -34,7 +34,7 @@
     "text_3": "Today, he and his team combine platform-side expertise with hands-on consulting to support hotel owners, operators, asset managers, investors and developers in building stronger, more profitable commercial structures — both in ongoing operations and during pre-opening."
   },
     "finalCta": {
-    "headline": "Ready to Strengthen Your Hotel’s Performance?",
+    "headline": "Ready to strengthen your hotel’s performance?",
     "text": "Whether you are improving an existing hotel or preparing for a new opening, we help you identify the right commercial priorities and put them into action."
   }
 }

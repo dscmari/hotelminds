@@ -32,7 +32,7 @@ const Tabs = ({ data }: Props) => {
     {
       title: data[3],
       Component: NavReferences,
-      link: `${data[3] === "Über Uns" ? "/about/" : `/${data[3].toLowerCase()}/`}`,
+      link: `${`/about/`}`,
     },
     {
       title: data[4],

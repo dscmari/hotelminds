@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/app/i18n/routing";
 import ScrollToTopBtn from "../components/buttons/ScrollToTopBtn";
+import { createMeta } from "../utils/createMeta";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export async function generateMetadata() {
+  return createMeta("home.meta");
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
