@@ -47,7 +47,7 @@ export default async function RootLayout({
 
   return (
     <html
-      lang={locale} // <-- Direkte Nutzung der Variable statt await locale()
+      lang={locale}
       className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body>
