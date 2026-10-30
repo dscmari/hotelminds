@@ -1,19 +1,21 @@
+"use client"
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import ContactBtn from "./buttons/ContactBtn";
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import PhoneBtn from "./buttons/PhoneBtn";
+import { useLocale, useTranslations } from "next-intl";
 
 type Props = {
   className?: string;
 };
 
-export default async function Footer({ className }: Props) {
-  const t = await getTranslations("components");
+export default function Footer({ className }: Props) {
+  const t = useTranslations("components");
   const navbarData = t.raw("navbar") as { bullets: string[] };
   const navbarBullets = navbarData.bullets;
-  const imprintT = await getTranslations("imprint");
+  const imprintT = useTranslations("imprint");
 
   const footerData = t.raw("footer");
   const targetIndices = [1, 2, 3];
@@ -22,6 +24,8 @@ export default async function Footer({ className }: Props) {
   );
   const imprintSections = imprintT.raw("sections");
   const imprintLines = imprintSections[0].lines;
+
+  const locale = useLocale()
 
   return (
     <footer className={` ${className}`}>
@@ -112,8 +116,8 @@ export default async function Footer({ className }: Props) {
                   key={index}
                   href={
                     e === "Home"
-                      ? "/"
-                      : e === "Über Uns"
+                      ? `/${locale}/`
+                      : e === "Über Uns" || e === "About Us"
                         ? "/about/"
                         : `/${e.toLowerCase().replace(/\s+/g, "-")}/`
                   }
