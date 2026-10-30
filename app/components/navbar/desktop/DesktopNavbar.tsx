@@ -5,6 +5,7 @@ import { ShiftingDropDown } from "./ShiftingDropDown";
 import { usePathname } from "next/navigation";
 import { Home } from "lucide-react";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 type Props = {
   className?: string;
@@ -28,7 +29,7 @@ export default function DesktopNavbar({
   ];
   const currentSegment = pathname?.split("/").filter(Boolean).pop();
   const isLegal = currentSegment ? legalSlugs.includes(currentSegment) : false;
-
+  const locale = useLocale()
   return (
     <div
       className={`mx-auto z-50 px-8 transition-all duration-200 border-charcoalDark/10 ${isScrolled ? "bg-offwhite pb-4 border-b " : "p-4"} ${isLegal ? " dark:bg-offwhite" : ""} ${className}`}
@@ -54,7 +55,7 @@ export default function DesktopNavbar({
             height={60}
           />
         </Link> */}
-        <Link href={"/"} className="cursor-pointer">
+        <Link href={`/${locale}/`} className="cursor-pointer">
           <Home className="shrink-0 text-charcoalDark mb-2" />
         </Link>
 
