@@ -41,7 +41,7 @@ export default function Navbar({ className}: Props) {
     <div className={`${className}`}>
       {/* Mobile */}
       <div
-        className={`lg:hidden p-4 fixed w-full ${isScrolled || showMenu ? "bg-offwhite" : ""}`}
+        className={`z-100 lg:hidden p-4 fixed w-full ${isScrolled || showMenu ? "bg-offwhite" : ""}`}
       >
         <div className="flex justify-between items-center">
           <Link href="/" aria-label="Home">
